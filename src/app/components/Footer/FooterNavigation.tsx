@@ -2,7 +2,7 @@ import { navigationData } from "../../utils/navigationData";
 
 export const FooterNavigation = () => {
   return (
-    <div className="flex flex-col w-full font-semibold desktop:max-w-[203px]">
+    <div className="flex flex-col w-full font-medium desktop:max-w-[203px]">
       <h4 className="font-semibold leading-6 mb-3 text-base desktop:mb-6">
         Strona główna
       </h4>
