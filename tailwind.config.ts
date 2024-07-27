@@ -41,12 +41,15 @@ const config: Config = {
         grey: "#F2F2F2",
         yellow: "#FCD503",
         violet: "#B603FC",
+        greyLight: "#C6CCD7",
       },
       borderRadius: {
         "footer-radius": "40px 40px 0px 0px",
+        "contact-radius": "24px",
       },
       boxShadow: {
         "footer-shadow": "0px 4px 10px 0px #000",
+        "contact-shadow": "0px 4px 10px 0px rgba(205, 205, 205, 0.65)",
       },
       backgroundImage: {
         "gradient-btn":
