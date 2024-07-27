@@ -1,12 +1,13 @@
 export const MapContactMobile = () => {
   return (
     <svg
-      width="323"
-      height="207"
+      width="100%"
+      height="100%"
       viewBox="0 0 342 219"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
+      className="w-full h-auto"
     >
       <path
         d="M0 24.2188C0 10.9639 10.7452 0.21875 24 0.21875H317.868C331.123 0.21875 341.868 10.9639 341.868 24.2188V194.961C341.868 208.216 331.123 218.961 317.868 218.961H24C10.7452 218.961 0 208.216 0 194.961V24.2188Z"
