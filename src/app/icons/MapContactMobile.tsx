@@ -1,8 +1,8 @@
 export const MapContactMobile = () => {
   return (
     <svg
-      width="342"
-      height="219"
+      width="323"
+      height="207"
       viewBox="0 0 342 219"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
