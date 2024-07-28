@@ -6,7 +6,7 @@ export const IconArrowRight = () => {
       viewBox="0 0 24 19"
       stroke-width="1.5"
       stroke="currentColor"
-      class="size-4"
+      className="size-4"
     >
       <path
         stroke-linecap="round"
