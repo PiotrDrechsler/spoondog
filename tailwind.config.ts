@@ -30,6 +30,7 @@ const config: Config = {
       },
       fontFamily: {
         dmSans: ["DM Sans", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
       colors: {
         white: "#ffffff",
