@@ -48,10 +48,18 @@ const config: Config = {
       boxShadow: {
         "footer-shadow": "0px 4px 10px 0px #000",
         "contact-shadow": "0px 4px 10px 0px rgba(205, 205, 205, 0.65)",
+        "button-shadow": " 0px 2px 2px 0px #00000040",
       },
       backgroundImage: {
         "gradient-btn":
           "linear-gradient(180deg, #FCD503 14.87%, #FCB603 107.5%)",
+      },
+      backgroundSize: {
+        "size-200": "200% 200%",
+      },
+      backgroundPosition: {
+        "pos-0": "0% 0%",
+        "pos-100": "100% 100%",
       },
     },
   },
