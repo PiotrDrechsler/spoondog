@@ -29,9 +29,7 @@ const config: Config = {
         "50": "50px",
       },
       fontFamily: {
-        roboto: ["Roboto", "sans-serif"],
-        lobster: ["Lobster Two", "cursive"],
-        montserrat: ["Montserrat", "sans-serif"],
+        dmSans: ["DM Sans", "sans-serif"],
       },
       colors: {
         white: "#ffffff",
