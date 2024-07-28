@@ -3,8 +3,8 @@ import { IconInstagram } from "@/app/icons/IconInstagram";
 
 export const FooterFooter = () => {
   return (
-    <div className="flex flex-col gap-[18px] pt-[16px] pb-[40px] border-t-[1px] border-dark border-solid desktop:flex-row desktop:items-center desktop:justify-between desktop:pt-[32px] desktop:pb-[86px]">
-      <div className="flex flex-col gap-[24px] text-14  leading-[21px] desktop:flex-row">
+    <div className="flex flex-col gap-[18px] border-t-[1px] border-solid border-dark pb-[40px] pt-[16px] desktop:flex-row desktop:items-center desktop:justify-between desktop:pb-[86px] desktop:pt-[32px]">
+      <div className="flex flex-col gap-[24px] text-14 leading-[21px] desktop:flex-row">
         <p>2024</p>
         <a
           href="/regulations"
