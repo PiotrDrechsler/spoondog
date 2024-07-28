@@ -3,10 +3,10 @@ export const IconArrowRight = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      viewBox="0 0 24 19"
-      stroke-width="1.5"
+      viewBox="0 0 24 20"
+      stroke-width="1.9"
       stroke="currentColor"
-      className="size-4"
+      className="size-3"
     >
       <path
         stroke-linecap="round"
