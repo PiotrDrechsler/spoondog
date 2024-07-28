@@ -8,7 +8,7 @@ export const ContactTitle = () => {
         Kontakt
       </h4>
       <div className="relative">
-        <h2 className="text-26 font-bold font-lobster leading-[1.2] mb-[42px] desktop:text-48">
+        <h2 className="text-26 font-bold tracking-[-0.04em] leading-[1.2] mb-[42px] desktop:text-48">
           Skontaktuj się z nami!
         </h2>
         <div className="hidden desktop:block absolute bottom-[-28px] left-0">
