@@ -40,10 +40,16 @@ const config: Config = {
         yellow: "#FCD503",
         violet: "#B603FC",
         greyLight: "#C6CCD7",
+        greyFont: "#6B6B6B",
+        greyLines: "#CCCCCC",
+        greyLightLines: "#EAEAEA",
+        backdrop: "rgba(0, 0, 0, 0.5)",
       },
       borderRadius: {
         "footer-radius": "40px 40px 0px 0px",
         "contact-radius": "24px",
+        "header-radius": "0px 0px 12px 12px",
+        "menu-radius": "0px 0px 26px 26px",
       },
       boxShadow: {
         "footer-shadow": "0px 4px 10px 0px #000",
