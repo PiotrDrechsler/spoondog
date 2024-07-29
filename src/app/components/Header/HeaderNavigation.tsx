@@ -1,16 +1,31 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   navigationHeaderData,
   aboutSubMenu,
 } from "@/app/utils/navigationHeaderData";
 import { IconArrowAbout } from "@/app/icons/IconArrowAbout";
 
-export const HeaderNavigation = () => {
+interface HeaderNavigationProps {
+  onLinkClick?: (event: React.MouseEvent) => void;
+  closeAboutSection?: boolean;
+}
+
+export const HeaderNavigation = ({
+  onLinkClick,
+  closeAboutSection,
+}: HeaderNavigationProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const handleToggle = (index: number | null) => {
+  useEffect(() => {
+    if (closeAboutSection) {
+      setOpenIndex(null);
+    }
+  }, [closeAboutSection]);
+
+  const handleToggle = (index: number | null, event: React.MouseEvent) => {
+    event.stopPropagation();
     setOpenIndex(openIndex === index ? null : index);
   };
 
@@ -24,7 +39,13 @@ export const HeaderNavigation = () => {
           >
             <div
               className="group flex cursor-pointer items-center gap-[10px]"
-              onClick={() => handleToggle(index)}
+              onClick={(event) => {
+                if (index === 1) {
+                  handleToggle(index, event);
+                } else if (onLinkClick) {
+                  onLinkClick(event);
+                }
+              }}
             >
               <a
                 href={item.href}

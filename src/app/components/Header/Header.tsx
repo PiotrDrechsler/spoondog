@@ -12,6 +12,7 @@ export const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [iconOpen, setIconOpen] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [closeAboutSection, setCloseAboutSection] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -25,9 +26,17 @@ export const Header = () => {
 
   const handleToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+    if (isMenuOpen) {
+      setCloseAboutSection(true);
+      setTimeout(() => setCloseAboutSection(false), 300);
+    }
     setTimeout(() => {
       setIconOpen(!iconOpen);
     }, 300);
+  };
+
+  const handleMenuClick = (event: React.MouseEvent) => {
+    event.stopPropagation();
   };
 
   return (
@@ -61,7 +70,12 @@ export const Header = () => {
 
               <Container>
                 <div className="flex">
-                  <HeaderNavigation />
+                  <div onClick={handleMenuClick}>
+                    <HeaderNavigation
+                      onLinkClick={handleToggleMenu}
+                      closeAboutSection={closeAboutSection}
+                    />
+                  </div>
                 </div>
                 <div className="bg-greyLines mb-[20px] mt-[12px] h-[1px] w-full"></div>
                 <div className="mx-auto">
