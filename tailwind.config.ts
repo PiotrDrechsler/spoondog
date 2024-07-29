@@ -54,10 +54,10 @@ const config: Config = {
       boxShadow: {
         "footer-shadow": "0px 4px 10px 0px #000",
         "contact-shadow": "0px 4px 10px 0px rgba(205, 205, 205, 0.65)",
+        "button-shadow": "0 2px 2px rgba(0, 0, 0, 0.25)",
       },
       backgroundImage: {
-        "gradient-btn":
-          "linear-gradient(180deg, #FCD503 14.87%, #FCB603 107.5%)",
+        "gradient-btn": "linear-gradient(180deg, #FCD503 14%, #FCB603 100%)",
       },
     },
   },
