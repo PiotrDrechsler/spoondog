@@ -20,7 +20,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="relative rounded-footer-radius bg-cream shadow-footer-shadow desktop:bg-white desktop:shadow-none">
+    <footer className="relative rounded-footer-radius">
       <div className="absolute bottom-[60px] left-1/2 -translate-x-1/2 transform desktop:hidden">
         <PawMobile />
       </div>
@@ -31,23 +31,25 @@ export const Footer = () => {
         <Paw45Desktop />
       </div>
       <Container>
-        <div className="relative z-10 flex flex-col pb-[30px] pt-[75px] desktop:flex-row desktop:pb-[26px] desktop:pt-[80px]">
-          <div className="mx-auto mb-[51px] desktop:mx-0 desktop:mr-[123px]">
-            <LogoFooter />
+        <div className="relative z-10">
+          <div className="flex flex-col pb-[30px] pt-[75px] desktop:flex-row desktop:pb-[26px] desktop:pt-[80px]">
+            <div className="mx-auto mb-[51px] desktop:mx-0 desktop:mr-[123px]">
+              <LogoFooter />
+            </div>
+            <div className="flex w-full flex-col gap-[30px] desktop:flex-row desktop:gap-[40px]">
+              <FooterNavigation />
+              <FooterContacts />
+              <FooterLinks />
+            </div>
+            <div
+              className="hidden cursor-pointer transition duration-500 ease-in-out hover:scale-[1.05] focus:scale-[1.05] desktop:block"
+              onClick={handleMapClick}
+            >
+              <MapFooter />
+            </div>
           </div>
-          <div className="flex w-full flex-col gap-[30px] desktop:flex-row desktop:gap-[40px]">
-            <FooterNavigation />
-            <FooterContacts />
-            <FooterLinks />
-          </div>
-          <div
-            className="hidden cursor-pointer transition duration-500 ease-in-out hover:scale-[1.05] focus:scale-[1.05] desktop:block"
-            onClick={handleMapClick}
-          >
-            <MapFooter />
-          </div>
+          <FooterFooter />
         </div>
-        <FooterFooter />
       </Container>
     </footer>
   );

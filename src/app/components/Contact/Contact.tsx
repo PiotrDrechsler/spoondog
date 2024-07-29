@@ -15,7 +15,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-[48px]">
+    <section id="contact" className="pb-[48px] pt-[70px] desktop:pt-[88px]">
       <Container>
         <ContactTitle />
         <div className="flex flex-col-reverse gap-[20px] desktop:flex-row desktop:gap-[0px]">

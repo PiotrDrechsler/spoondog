@@ -8,7 +8,7 @@ export const ContactContacts = () => {
       <p className="mb-[4px] text-26 leading-[1.2] desktop:mb-[32px] desktop:text-48">
         Tułowice
       </p>
-      <div className="mb-[16px] h-[1px] w-full bg-greyLight desktop:mb-[32px] desktop:max-w-[490px]"></div>
+      <div className="bg-greyLines mb-[16px] h-[1px] w-full desktop:mb-[32px] desktop:max-w-[490px]"></div>
       <div className="flex flex-col gap-[24px] leading-[1.5] desktop:text-18">
         <div>
           <div className="mb-[8px] flex items-center gap-[10px] desktop:flex-col desktop:items-start desktop:gap-[16px]">
