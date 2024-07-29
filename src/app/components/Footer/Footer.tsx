@@ -20,7 +20,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="relative rounded-footer-radius bg-cream shadow-footer-shadow desktop:bg-white desktop:shadow-none">
+    <footer className="relative rounded-footer-radius">
       <div className="absolute bottom-[60px] left-1/2 -translate-x-1/2 transform desktop:hidden">
         <PawMobile />
       </div>
