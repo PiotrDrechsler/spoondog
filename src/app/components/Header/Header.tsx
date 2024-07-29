@@ -6,7 +6,7 @@ import { HeaderMobile } from "./HeaderMobile";
 import { HeaderDesktop } from "./HeaderDesktop";
 import { IconOpenMobileMenu } from "@/app/icons/IconOpenMobileMenu";
 import { IconCloseMobileMenu } from "@/app/icons/IconCloseMobileMenu";
-import { HeaderPhone } from "./HeaderPhone";
+import { PhoneButton } from "../Share/PhoneButton";
 
 export const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -65,7 +65,7 @@ export const Header = () => {
                 </div>
                 <div className="bg-greyLines mb-[20px] mt-[12px] h-[1px] w-full"></div>
                 <div className="mx-auto">
-                  <HeaderPhone />
+                  <PhoneButton />
                 </div>
               </Container>
             </div>

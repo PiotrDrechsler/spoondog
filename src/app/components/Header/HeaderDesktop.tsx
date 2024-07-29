@@ -1,7 +1,7 @@
 import Container from "../Share/Container";
 import { HeaderNavigation } from "./HeaderNavigation";
 import { HeaderSocialmedia } from "./HeaderSocialmedia";
-import { HeaderPhone } from "./HeaderPhone";
+import { PhoneButton } from "../Share/PhoneButton";
 import { LogoHeaderDesktop } from "@/app/icons/LogoHeaderDesktop";
 
 export const HeaderDesktop = () => {
@@ -14,7 +14,7 @@ export const HeaderDesktop = () => {
         <div className="flex items-center gap-[64px]">
           <HeaderNavigation />
           <HeaderSocialmedia />
-          <HeaderPhone />
+          <PhoneButton />
         </div>
       </div>
     </Container>

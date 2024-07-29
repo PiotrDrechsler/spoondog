@@ -1,6 +1,6 @@
 import { IconPhoneHeader } from "@/app/icons/IconPhoneHeader";
 
-export const HeaderPhone = () => {
+export const PhoneButton = () => {
   return (
     <a
       href="tel:+48692394385"
