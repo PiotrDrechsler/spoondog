@@ -29,6 +29,10 @@ export const HeaderNavigation = ({
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const handleSubMenuLinkClick = () => {
+    setOpenIndex(null);
+  };
+
   return (
     <nav>
       <ul className="flex flex-col gap-[12px] desktop:flex-row desktop:gap-[32px]">
@@ -50,6 +54,7 @@ export const HeaderNavigation = ({
               <a
                 href={item.href}
                 className="transition duration-300 ease-in-out focus:text-violet group-hover:text-violet"
+                onClick={handleSubMenuLinkClick}
               >
                 {item.label}
               </a>
@@ -73,6 +78,7 @@ export const HeaderNavigation = ({
                     <a
                       href={subItem.href}
                       className="transition duration-300 ease-in-out hover:text-violet focus:text-violet"
+                      onClick={handleSubMenuLinkClick}
                     >
                       {subItem.label}
                     </a>

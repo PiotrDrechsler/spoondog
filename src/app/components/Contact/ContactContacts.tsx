@@ -4,7 +4,7 @@ import { IconEmail } from "@/app/icons/IconEmail";
 
 export const ContactContacts = () => {
   return (
-    <div className="relative z-10 w-full rounded-contact-radius bg-cream p-[32px] shadow-contact-shadow">
+    <div className="rounded-radius24 border-greyBorders shadow-boxes-shadow relative z-10 w-full border-[1px] bg-cream p-[32px]">
       <p className="mb-[4px] text-26 leading-[1.2] desktop:mb-[32px] desktop:text-48">
         Tułowice
       </p>

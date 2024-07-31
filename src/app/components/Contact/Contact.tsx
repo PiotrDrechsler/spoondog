@@ -5,7 +5,6 @@ import { ContactTitle } from "./ContactTitle";
 import { MapContactDesktop } from "@/app/icons/MapContactDesktop";
 import { MapContactMobile } from "@/app/icons/MapContactMobile";
 import { ContactContacts } from "./ContactContacts";
-import Button from "../Share/Button";
 
 export const Contact = () => {
   const handleMapClick = () => {
@@ -16,24 +15,23 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="pb-[48px] pt-[70px] desktop:pt-[88px]">
+    <section id="contact" className="desktop:pt-[88px] pb-[48px] pt-[70px]">
       <Container>
         <ContactTitle />
-        <div className="flex flex-col-reverse gap-[20px] desktop:flex-row desktop:gap-[0px]">
+        <div className="desktop:flex-row desktop:gap-[0px] flex flex-col-reverse gap-[20px]">
           <div
-            className="cursor-pointer transition duration-500 ease-in-out desktop:mt-[77px] desktop:hover:scale-[1.03] desktop:focus:scale-[1.05]"
+            className="desktop:mt-[77px] desktop:hover:scale-[1.03] desktop:focus:scale-[1.05] cursor-pointer transition duration-500 ease-in-out"
             onClick={handleMapClick}
           >
-            <div className="hidden desktop:block">
+            <div className="desktop:block hidden">
               <MapContactDesktop />
             </div>
-            <div className="block desktop:hidden">
+            <div className="desktop:hidden block">
               <MapContactMobile />
             </div>
           </div>
           <ContactContacts />
         </div>
-        <Button/>
       </Container>
     </section>
   );
