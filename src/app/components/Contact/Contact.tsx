@@ -5,7 +5,6 @@ import { ContactTitle } from "./ContactTitle";
 import { MapContactDesktop } from "@/app/icons/MapContactDesktop";
 import { MapContactMobile } from "@/app/icons/MapContactMobile";
 import { ContactContacts } from "./ContactContacts";
-import Button from "../Share/Button";
 
 export const Contact = () => {
   const handleMapClick = () => {
@@ -33,7 +32,6 @@ export const Contact = () => {
           </div>
           <ContactContacts />
         </div>
-        <Button/>
       </Container>
     </section>
   );
