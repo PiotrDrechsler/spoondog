@@ -4,14 +4,14 @@ import { IconEmail } from "@/app/icons/IconEmail";
 
 export const ContactContacts = () => {
   return (
-    <div className="relative z-10 w-full bg-cream rounded-contact-radius shadow-contact-shadow p-[32px]">
-      <p className="text-26 leading-[1.2] mb-[4px] desktop:text-48 desktop:mb-[32px]">
+    <div className="relative z-10 w-full rounded-contact-radius bg-cream p-[32px] shadow-contact-shadow">
+      <p className="mb-[4px] text-26 leading-[1.2] desktop:mb-[32px] desktop:text-48">
         Tułowice
       </p>
-      <div className="w-full h-[1px] bg-greyLight mb-[16px] desktop:max-w-[490px] desktop:mb-[32px]"></div>
+      <div className="bg-greyLines mb-[16px] h-[1px] w-full desktop:mb-[32px] desktop:max-w-[490px]"></div>
       <div className="flex flex-col gap-[24px] leading-[1.5] desktop:text-18">
         <div>
-          <div className="flex items-center gap-[10px] mb-[8px] desktop:flex-col desktop:items-start desktop:gap-[16px]">
+          <div className="mb-[8px] flex items-center gap-[10px] desktop:flex-col desktop:items-start desktop:gap-[16px]">
             <div>
               <IconLocation />
             </div>
@@ -23,7 +23,7 @@ export const ContactContacts = () => {
           <p className="font-normal">49-130 Tułowice</p>
         </div>
         <div>
-          <div className="flex items-center gap-[10px] mb-[8px] desktop:flex-col desktop:items-start desktop:gap-[16px]">
+          <div className="mb-[8px] flex items-center gap-[10px] desktop:flex-col desktop:items-start desktop:gap-[16px]">
             <div>
               <IconPhone />
             </div>
@@ -42,7 +42,7 @@ export const ContactContacts = () => {
           </p>
         </div>
         <div>
-          <div className="flex items-center gap-[10px] mb-[8px] desktop:flex-col desktop:items-start desktop:gap-[16px]">
+          <div className="mb-[8px] flex items-center gap-[10px] desktop:flex-col desktop:items-start desktop:gap-[16px]">
             <div>
               <IconEmail />
             </div>

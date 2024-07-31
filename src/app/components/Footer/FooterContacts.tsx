@@ -1,7 +1,7 @@
 export const FooterContacts = () => {
   return (
-    <div className="flex flex-col gap-[4px] w-full text-14 leading-[21px] font-medium desktop:max-w-[203px]">
-      <h4 className=" leading-6 mb-3 text-base font-semibold desktop:mb-6">
+    <div className="flex w-full flex-col gap-[4px] text-14 font-medium leading-[21px] desktop:max-w-[203px]">
+      <h4 className="mb-3 text-base font-semibold leading-6 desktop:mb-6">
         Kontakt
       </h4>
       <p>Katarzyna Bober</p>
