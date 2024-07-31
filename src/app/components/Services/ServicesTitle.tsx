@@ -5,7 +5,7 @@ export const ServicesTitle = () => {
         O nas / Nasze usługi
       </h4>
       <div className="bg-greyLightLines mb-[16px] h-[1px] w-full desktop:hidden"></div>
-      <h2 className="text-26 font-bold leading-[1.2] tracking-[-0.04em] desktop:text-32 desktop:font-medium">
+      <h2 className="text-26 font-bold leading-[1.2] desktop:text-32 desktop:font-medium">
         Nasze usługi
       </h2>
     </div>
