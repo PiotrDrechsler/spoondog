@@ -52,7 +52,7 @@ const config: Config = {
       },
       boxShadow: {
         "contact-shadow": "0px 4px 10px 0px rgba(205, 205, 205, 0.65)",
-        "services-shadow": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+        "boxes-shadow": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
         "button-shadow": "0 2px 2px rgba(0, 0, 0, 0.25)",
       },
       backgroundImage: {

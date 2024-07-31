@@ -16,7 +16,7 @@ export const ServicesServices = () => {
       {servicesData.map((service, index) => (
         <div
           key={index}
-          className="rounded-radius24 shadow-services-shadow border-greyBorders flex w-full flex-col items-center gap-[16px] border-[1px] bg-cream px-[16px] py-[28px] desktop:flex-row desktop:justify-between"
+          className="rounded-radius24 shadow-boxes-shadow border-greyBorders flex w-full flex-col items-center gap-[16px] border-[1px] bg-cream px-[16px] py-[28px] desktop:flex-row desktop:justify-between"
         >
           <div
             className={`h-[180px] w-[180px] bg-cover desktop:h-[223px] desktop:w-[223px] ${index === 0 ? "bg-services-dog1" : "bg-services-dog2"}`}
