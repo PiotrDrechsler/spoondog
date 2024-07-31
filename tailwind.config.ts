@@ -30,32 +30,37 @@ const config: Config = {
       },
       fontFamily: {
         dmSans: ["DM Sans", "sans-serif"],
+        roboto: ["Roboto", "sans-serif"],
       },
       colors: {
         white: "#ffffff",
-        cream: "#FCFCF8",
+        cream: "#FFFEFC",
+        light: "#FFF8E3",
         dark: "#151513",
+        grey: "#F2F2F2",
         yellow: "#FCD503",
-        yellowLight: "#FFF8E3",
         violet: "#B603FC",
-        greyFont: "#6B6B6B",
-        greyLines: "#CCCCCC",
-        greyLightLines: "#EAEAEA",
-        backdrop: "rgba(0, 0, 0, 0.5)",
+        greyLight: "#C6CCD7",
       },
       borderRadius: {
         "footer-radius": "40px 40px 0px 0px",
         "contact-radius": "24px",
-        "header-radius": "0px 0px 12px 12px",
-        "menu-radius": "0px 0px 26px 26px",
       },
       boxShadow: {
         "footer-shadow": "0px 4px 10px 0px #000",
         "contact-shadow": "0px 4px 10px 0px rgba(205, 205, 205, 0.65)",
-        "button-shadow": "0 2px 2px rgba(0, 0, 0, 0.25)",
+        "button-shadow": " 0px 2px 2px 0px #00000040",
       },
       backgroundImage: {
-        "gradient-btn": "linear-gradient(180deg, #FCD503 14%, #FCB603 100%)",
+        "gradient-btn":
+          "linear-gradient(180deg, #FCD503 14.87%, #FCB603 107.5%)",
+      },
+      backgroundSize: {
+        "size-200": "200% 200%",
+      },
+      backgroundPosition: {
+        "pos-0": "0% 0%",
+        "pos-100": "100% 100%",
       },
     },
   },
