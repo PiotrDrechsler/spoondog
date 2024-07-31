@@ -40,7 +40,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="rounded-header-radius fixed top-0 z-20 w-full bg-white shadow-contact-shadow">
+    <header className="rounded-header-radius shadow-contact-shadow fixed top-0 z-20 w-full bg-white">
       <div className="relative">
         {!isDesktop && (
           <Container>
@@ -78,7 +78,7 @@ export const Header = () => {
                   </div>
                 </div>
                 <div className="bg-greyLines mb-[20px] mt-[12px] h-[1px] w-full"></div>
-                <div className="mx-auto">
+                <div className="flex justify-center">
                   <PhoneButton />
                 </div>
               </Container>

@@ -1,51 +1,41 @@
 "use client";
 
 import { servicesData } from "@/app/utils/servicesData";
+import Button from "../Share/Button";
 
 export const ServicesServices = () => {
-  const handleButtonClick = (index: number) => {
-    if (index === 0) {
-      window.location.href = "/care-services";
-    } else {
-      window.location.href = "/hygiene-services";
-    }
-  };
-
   return (
-    <div className="flex flex-col gap-[20px] desktop:flex-row desktop:gap-[50px]">
+    <div className="desktop:flex-row desktop:gap-[50px] flex flex-col gap-[20px]">
       {servicesData.map((service, index) => (
         <div
           key={index}
-          className="rounded-radius24 shadow-boxes-shadow border-greyBorders flex w-full flex-col items-center gap-[16px] border-[1px] bg-cream px-[16px] py-[28px] desktop:flex-row desktop:justify-between"
+          className="rounded-radius24 shadow-boxes-shadow border-greyBorders bg-cream desktop:flex-row desktop:justify-between flex w-full flex-col items-center gap-[16px] border-[1px] px-[16px] py-[28px]"
         >
           <div
-            className={`h-[180px] w-[180px] bg-cover desktop:h-[223px] desktop:w-[223px] ${index === 0 ? "bg-services-dog1" : "bg-services-dog2"}`}
+            className={`desktop:h-[223px] desktop:w-[223px] h-[180px] w-[180px] bg-cover ${index === 0 ? "bg-services-dog1" : "bg-services-dog2"}`}
           ></div>
-          <div className="w-full desktop:max-w-[320px]">
-            <h3 className="mb-[4px] text-18 font-bold leading-[1.5] desktop:mb-[8px] desktop:text-[20px] desktop:font-medium">
+          <div className="desktop:max-w-[320px] w-full">
+            <h3 className="text-18 desktop:mb-[8px] desktop:text-[20px] desktop:font-medium mb-[4px] font-bold leading-[1.5]">
               {service.title}
             </h3>
-            <p className="text-greyFont text-14 leading-[1.5] desktop:text-[16px]">
+            <p className="text-greyFont text-14 desktop:text-[16px] leading-[1.5]">
               <span>{service.label1}</span>
               <span className="mx-2">•</span>
               <span>{service.label2}</span>
               <span className="mx-2">•</span>
               <span>{service.label3}</span>
             </p>
-            <p className="my-[16px] text-14 leading-[1.3] desktop:mb-[34px] desktop:mt-[24px]">
+            <p className="text-14 desktop:mb-[34px] desktop:mt-[24px] my-[16px] leading-[1.3]">
               {service.description}
             </p>
 
-            <div className="flex flex-col gap-[12px] desktop:flex-row desktop:justify-between">
-              <p className="text-18 font-bold leading-[1.5] desktop:text-[24px]">
+            <div className="desktop:flex-row desktop:justify-between desktop:items-center flex flex-col gap-[12px]">
+              <p className="text-18 desktop:text-[24px] font-bold leading-[1.5]">
                 {service.price}
               </p>
-              <button
-                className="h-[42px] w-[211px] rounded-full border-[1px] border-dark"
-                onClick={() => handleButtonClick(index)}
-              >
-                Dowiedz się więcej
-              </button>
+              <div>
+                <Button href={service.href} />
+              </div>
             </div>
           </div>
         </div>
