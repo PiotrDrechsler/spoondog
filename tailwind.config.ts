@@ -48,6 +48,7 @@ const config: Config = {
         "footer-radius": "40px 40px 0px 0px",
         radius24: "24px",
         "header-radius": "0px 0px 12px 12px",
+        "menu-radius": "0px 0px 26px 26px",
       },
       boxShadow: {
         "boxes-shadow": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
