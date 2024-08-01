@@ -44,7 +44,9 @@ export const FaqTable = () => {
               </div>
             </div>
             <div
-              className={`text-14 desktop:text-18 text-violet flex h-[0px] justify-between overflow-hidden transition duration-300 ease-in-out ${index === openIndex ? "h-full" : "h-[0px]"}`}
+              className={`text-14 desktop:text-18 text-violet transition-max-height flex max-h-0 overflow-hidden duration-500 ease-in-out ${
+                index === openIndex ? "max-h-[500px]" : "max-h-0"
+              }`}
             >
               <p>{item.reply}</p>
               <div className="pl-[24px]"></div>
