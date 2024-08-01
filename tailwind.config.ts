@@ -30,31 +30,35 @@ const config: Config = {
       },
       fontFamily: {
         dmSans: ["DM Sans", "sans-serif"],
-        roboto: ["Roboto", "sans-serif"],
       },
       colors: {
         white: "#ffffff",
-        cream: "#FFFEFC",
-        light: "#FFF8E3",
+        cream: "#FCFCF8",
         dark: "#151513",
-        grey: "#F2F2F2",
         yellow: "#FCD503",
+        yellowLight: "#FFF8E3",
         violet: "#B603FC",
-        greyLight: "#C6CCD7",
+        greyFont: "#6B6B6B",
+        greyLines: "#CCCCCC",
+        greyLightLines: "#EAEAEA",
+        greyBorders: "#EAEAE7",
+        backdrop: "rgba(0, 0, 0, 0.5)",
       },
       borderRadius: {
         "footer-radius": "40px 40px 0px 0px",
-        "contact-radius": "24px",
+        radius24: "24px",
+        "header-radius": "0px 0px 12px 12px",
       },
       boxShadow: {
+        "boxes-shadow": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
+        "button-shadow": "0 2px 2px rgba(0, 0, 0, 0.25)",
         "footer-shadow": "0px 4px 10px 0px #000",
-        "contact-shadow": "0px 4px 10px 0px rgba(205, 205, 205, 0.65)",
-        "button-shadow": " 0px 2px 2px 0px #00000040",
-        "newOffer-shadow": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)"
       },
       backgroundImage: {
-        "gradient-btn":
-          "linear-gradient(180deg, #FCD503 14.87%, #FCB603 107.5%)",
+        "gradient-btn": "linear-gradient(180deg, #FCD503 14%, #FCB603 100%)",
+        "services-dog1": "url('/images/servicesDog1.png')",
+        "services-dog2": "url('/images/servicesDog2.png')",
+        "button-shadow": "0px 2px 2px 0px #00000040",
       },
       backgroundSize: {
         "size-200": "200% 200%",
@@ -67,4 +71,5 @@ const config: Config = {
   },
   plugins: [],
 };
+
 export default config;
