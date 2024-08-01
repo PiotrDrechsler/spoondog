@@ -54,6 +54,7 @@ const config: Config = {
         "boxes-shadow": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
         "button-shadow": "0 2px 2px rgba(0, 0, 0, 0.25)",
         "footer-shadow": "0px 4px 10px 0px #000",
+        "header-shadow": "0px 4px 10px 0px #F0F1F8",
       },
       backgroundImage: {
         "gradient-btn": "linear-gradient(180deg, #FCD503 14%, #FCB603 100%)",
