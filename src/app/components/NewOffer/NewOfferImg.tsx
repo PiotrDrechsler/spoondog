@@ -17,7 +17,7 @@ export const NewOfferImg: React.FC<NewOfferImgProps> = ({
 }) => {
   return (
     <div className={`absolute ${positionClass}`} style={positionStyle}>
-      <div className="relative h-[256px] w-[154px] desktop:h-[384px] desktop:w-[240px] ">
+      <div className="relative h-[191px] w-[115px] desktop:h-[384px] desktop:w-[240px] ">
         <div className="mb-[10px]">
           <p className="text-[20px] font-bold leading-[1.2] desktop:text-[28px]">
             {title}
@@ -27,7 +27,7 @@ export const NewOfferImg: React.FC<NewOfferImgProps> = ({
           <Image
             src={imageSrc}
             alt={title}
-            className="h-[221px] w-full rounded-radius24 desktop:h-[350px]"
+            className="h-auto w-full rounded-radius24 desktop:h-[350px]"
             priority
           />
         </div>

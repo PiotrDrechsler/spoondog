@@ -8,7 +8,7 @@ export const Hero = () => {
     <section id="hero">
       <Container>
         <div className="h-full w-full desktop:h-[850px]">
-          <div className="flex flex-col desktop:flex-row desktop:place-content-between">
+          <div className="flex shrink flex-col desktop:flex-row desktop:place-content-between">
             <div className="block desktop:hidden">
               <HeroImg />
             </div>
