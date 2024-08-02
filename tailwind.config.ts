@@ -49,6 +49,7 @@ const config: Config = {
         radius24: "24px",
         "header-radius": "0px 0px 12px 12px",
         "menu-radius": "0px 0px 26px 26px",
+        "hero-radius": "400px 0px 0px 400px",
       },
       boxShadow: {
         "boxes-shadow": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
@@ -58,6 +59,7 @@ const config: Config = {
       },
       backgroundImage: {
         "gradient-btn": "linear-gradient(180deg, #FCD503 14%, #FCB603 100%)",
+        "hero-bg": "linear-gradient(180deg, #FCD503 0%, #FCB603 100%)",
         "services-dog1": "url('/images/servicesDog1.png')",
         "services-dog2": "url('/images/servicesDog2.png')",
         "button-shadow": "0px 2px 2px 0px #00000040",
