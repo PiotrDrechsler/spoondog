@@ -40,7 +40,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="rounded-header-radius shadow-contact-shadow fixed top-0 z-20 w-full bg-white">
+    <header className="rounded-header-radius shadow-header-shadow fixed top-0 z-20 w-full bg-white">
       <div className="relative">
         {!isDesktop && (
           <Container>
