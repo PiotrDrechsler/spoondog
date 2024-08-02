@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className="font-dmSans tracking-[-0.02em] text-dark">
+      <body className="font-dmSans text-dark">
         <Layout>{children}</Layout>
         <SpeedInsights />
       </body>

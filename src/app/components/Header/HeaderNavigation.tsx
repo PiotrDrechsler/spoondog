@@ -35,11 +35,11 @@ export const HeaderNavigation = ({
 
   return (
     <nav>
-      <ul className="flex flex-col gap-[12px] desktop:flex-row desktop:gap-[32px]">
+      <ul className="desktop:flex-row desktop:gap-[32px] flex flex-col gap-[12px]">
         {navigationHeaderData.map((item, index) => (
           <li
             key={index}
-            className={`group text-14 font-medium leading-[1.5] desktop:text-16 ${index === 1 ? "desktop:relative" : ""}`}
+            className={`text-14 desktop:text-16 group font-medium leading-[1.5] ${index === 1 ? "desktop:relative" : ""}`}
           >
             <div
               className="group flex cursor-pointer items-center gap-[10px]"
@@ -53,23 +53,23 @@ export const HeaderNavigation = ({
             >
               <a
                 href={item.href}
-                className="transition duration-300 ease-in-out focus:text-violet group-hover:text-violet"
+                className="focus:text-violet group-hover:text-violet transition duration-300 ease-in-out"
                 onClick={handleSubMenuLinkClick}
               >
                 {item.label}
               </a>
               {index === 1 && (
                 <div
-                  className={`arrow-icon transform transition-transform duration-300 ease-in-out ${
+                  className={`transform transition-transform duration-300 ease-in-out ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                 >
-                  <IconArrowAbout className="transform fill-dark transition-transform duration-300 ease-in-out group-hover:fill-violet" />
+                  <IconArrowAbout className="fill-dark group-hover:fill-violet transform transition-transform duration-300 ease-in-out" />
                 </div>
               )}
             </div>
             {index === 1 && openIndex === index && (
-              <ul className="ml-[24px] w-auto bg-white pt-[12px] desktop:absolute desktop:z-50 desktop:ml-[12px] desktop:px-[8px] desktop:pt-[18px]">
+              <ul className="desktop:absolute desktop:z-50 desktop:ml-[12px] desktop:px-[8px] desktop:pt-[18px] ml-[24px] w-auto bg-white pt-[12px]">
                 {aboutSubMenu.map((subItem, subIndex) => (
                   <li
                     key={subIndex}
@@ -77,7 +77,7 @@ export const HeaderNavigation = ({
                   >
                     <a
                       href={subItem.href}
-                      className="transition duration-300 ease-in-out hover:text-violet focus:text-violet"
+                      className="hover:text-violet focus:text-violet transition duration-300 ease-in-out"
                       onClick={handleSubMenuLinkClick}
                     >
                       {subItem.label}
