@@ -2,6 +2,7 @@ import { CareHygieneService } from "./CareHygieneDataInterface";
 
 export const careServicesData: CareHygieneService[] = [
   {
+    id: "combing",
     title: "Rozczesywanie",
     smallTitle: "Na czym polega zabieg rozczesywania?",
     description1:
@@ -25,6 +26,7 @@ export const careServicesData: CareHygieneService[] = [
     alt: "Zdjęcie psa podczas rozczesywania",
   },
   {
+    id: "haircut",
     title: "Strzyżenie",
     smallTitle: "Na czym polega zabieg strzyżenia?",
     description1:
@@ -47,6 +49,7 @@ export const careServicesData: CareHygieneService[] = [
     alt: "Zdjęcie psa podczas strzyżenia",
   },
   {
+    id: "trimming",
     title: "Trymowanie",
     smallTitle: "Na czym polega zabieg trymowania?",
     description1:

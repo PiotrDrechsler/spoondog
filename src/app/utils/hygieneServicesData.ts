@@ -2,6 +2,7 @@ import { CareHygieneService } from "./CareHygieneDataInterface";
 
 export const hygieneServicesData: CareHygieneService[] = [
   {
+    id: "bath",
     title: "Kąpiel",
     smallTitle: "Na czym polega zabieg kąpieli?",
     description1:
@@ -26,6 +27,7 @@ export const hygieneServicesData: CareHygieneService[] = [
     alt: "Zdjęcie psa podczas kąpieli",
   },
   {
+    id: "ears",
     title: "Higiena uszu",
     smallTitle: "Na czym polega zabieg higieny uszu?",
     description1:
@@ -48,6 +50,7 @@ export const hygieneServicesData: CareHygieneService[] = [
     alt: "Zdjęcie psa podczas usuwania kamienia nazębnego",
   },
   {
+    id: "claws",
     title: "Przycięcie pazurów",
     smallTitle: "Na czym polega zabieg przycięcia pazurów?",
     description1:
@@ -71,6 +74,7 @@ export const hygieneServicesData: CareHygieneService[] = [
     alt: "Zdjęcie psa podczas przycinania pazurków",
   },
   {
+    id: "teeth",
     title: "Usuwanie kamienia nazębnego metodą ultradźwięków",
     smallTitle: "Na czym polega zabieg usuwania kamienia nazębnego?",
     description1:

@@ -37,7 +37,11 @@ export const CareHygieneServices: React.FC<CareHygieneServicesProps> = ({
           subtitleBold={subtitleBold}
         />
         {data.map((service, index) => (
-          <div key={index} className="pt-[132px] desktop:pt-[192px]">
+          <div
+            key={index}
+            id={service.id}
+            className="pt-[132px] desktop:pt-[192px]"
+          >
             <h4 className="mb-[4px] text-20 font-medium leading-[1.2] desktop:text-24">
               {service.title}
             </h4>

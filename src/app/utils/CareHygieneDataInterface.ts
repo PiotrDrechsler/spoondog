@@ -1,4 +1,5 @@
 export interface CareHygieneService {
+  id: string;
   title: string;
   smallTitle: string;
   description1: string;
