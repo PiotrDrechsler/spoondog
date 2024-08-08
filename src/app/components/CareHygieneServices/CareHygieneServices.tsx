@@ -3,7 +3,7 @@
 import Container from "../Share/Container";
 import { CareHygieneServicesTitle } from "./CareHygieneServicesTitle";
 import { useEffect, useState } from "react";
-import { BookButton } from "../Share/BookButton";
+import { PhoneButton } from "../Share/PhoneButton";
 import { CareHygieneService } from "@/app/utils/CareHygieneDataInterface";
 
 interface CareHygieneServicesProps {
@@ -103,7 +103,7 @@ export const CareHygieneServices: React.FC<CareHygieneServicesProps> = ({
                 </div>
               </div>
             </div>
-            <BookButton />
+            <PhoneButton content="Umów wizytę" />
           </div>
         ))}
       </Container>

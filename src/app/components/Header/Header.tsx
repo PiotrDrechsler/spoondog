@@ -40,7 +40,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="rounded-header-radius shadow-header-shadow fixed top-0 z-20 w-full bg-white">
+    <header className="fixed top-0 z-20 w-full rounded-header-radius bg-white shadow-header-shadow">
       <div className="relative">
         {!isDesktop && (
           <Container>
@@ -55,9 +55,9 @@ export const Header = () => {
         {!isDesktop && (
           <div
             onClick={handleToggleMenu}
-            className={`z-100 ${isMenuOpen ? "translate-x-[0%]" : "translate-x-[100%]"} bg-backdrop absolute left-0 top-0 h-screen w-screen transition duration-300 ease-in-out`}
+            className={`z-100 ${isMenuOpen ? "translate-x-[0%]" : "translate-x-[100%]"} absolute left-0 top-0 h-screen w-screen bg-backdrop transition duration-300 ease-in-out`}
           >
-            <div className="rounded-menu-radius w-full bg-white pb-[20px]">
+            <div className="w-full rounded-menu-radius bg-white pb-[20px]">
               <Container>
                 <HeaderMobile
                   iconOpen={iconOpen}
@@ -66,7 +66,7 @@ export const Header = () => {
                   onClick={handleToggleMenu}
                 />
               </Container>
-              <div className="bg-greyLines my-[20px] h-[1px] w-full"></div>
+              <div className="my-[20px] h-[1px] w-full bg-greyLines"></div>
 
               <Container>
                 <div className="flex">
@@ -77,9 +77,9 @@ export const Header = () => {
                     />
                   </div>
                 </div>
-                <div className="bg-greyLines mb-[20px] mt-[12px] h-[1px] w-full"></div>
+                <div className="mb-[20px] mt-[12px] h-[1px] w-full bg-greyLines"></div>
                 <div className="flex justify-center">
-                  <PhoneButton />
+                  <PhoneButton content="+48 692 394 385" />
                 </div>
               </Container>
             </div>

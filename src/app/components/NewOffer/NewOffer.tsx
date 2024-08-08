@@ -30,7 +30,10 @@ export const NewOffer = () => {
 
               {/* Button only for desktop */}
               <div className="hidden h-[52px] w-[259px] desktop:block">
-                <Button href="/hygiene-services#teeth" />
+                <Button
+                  href="/hygiene-services#teeth"
+                  content="Dowiedz się więcej"
+                />
               </div>
             </div>
             {/* Right column - Images */}
@@ -47,7 +50,10 @@ export const NewOffer = () => {
               />
             </div>
             <div className="block h-[42px] w-[210px] desktop:hidden">
-              <Button href="/hygiene-services#teeth" />
+              <Button
+                href="/hygiene-services#teeth"
+                content="Dowiedz się więcej"
+              />
             </div>
           </div>
         </div>
