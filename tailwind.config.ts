@@ -26,6 +26,7 @@ const config: Config = {
         "34": "34px",
         "36": "36px",
         "48": "48px",
+        "44": "44px",
         "50": "50px",
       },
       fontFamily: {
