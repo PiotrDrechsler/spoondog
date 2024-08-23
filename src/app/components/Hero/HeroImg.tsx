@@ -3,9 +3,9 @@ import heroDog from "@images/heroDog.png";
 
 export const HeroImg = () => {
   return (
-    <div className="relative h-full w-full">
-      <div className="rounded-hero-radius bg-hero-bg shadow-hero-shadow absolute right-0 top-[80px] h-[305px] w-[264px] desktop:h-[693px] desktop:w-[700px]"></div>
-      <div className="absolute right-0 top-[105px] h-[280px] w-[280px] -rotate-90 desktop:right-[-8px] desktop:top-[116px] desktop:mb-[30px] desktop:h-[650px] desktop:w-[665px]">
+    <div className="relative right-0 top-[80px] h-full max-h-[700px] w-full">
+    <div className="absolute right-0 w-[60vw] h-[60vw] rounded-hero-radius bg-hero-bg shadow-hero-shadow tablet:w-[45vw] tablet:h-[45vw] desktop:w-[50vw] desktop:h-[50vw] desktop:max-h-[750px] desktop:max-w-[750px]">
+      <div className="absolute right-0 bottom-0 h-[55vw] w-[55vw] -rotate-90 tablet:h-[40vw] tablet:w-[40vw] desktop:h-[45vw] desktop:w-[45vw] desktop:max-h-[750px] desktop:max-w-[750px]">
         <Image
           src={heroDog}
           alt="Dog image"
@@ -16,5 +16,7 @@ export const HeroImg = () => {
         />
       </div>
     </div>
+  </div>
+  
   );
 };

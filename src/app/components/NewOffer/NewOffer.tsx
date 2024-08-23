@@ -12,10 +12,10 @@ const hygieneServicesHref = servicesData.find(service => service.title === "Zabi
   return (
     <section id="newOffer" className="pt-[10px]">
       <Container>
-      <div className="shadow-boxes-shadow mx-auto my-[12px] w-full max-w-[364px] rounded-radius24 border-2 bg-cream py-[40px] desktop:my-0 desktop:max-w-[1340px] desktop:px-[100px]">
-        <div className="flex flex-col items-center desktop:flex-row desktop:justify-center desktop:space-x-[140px]">
+      <div className="shadow-boxes-shadow mx-auto my-[12px] w-full max-w-[364px] tablet:max-w-[100vw] rounded-radius24 border-2 bg-cream py-[40px] desktop:my-0 desktop:max-w-[1340px] desktop:px-[100px]">
+        <div className="flex flex-col items-center tablet:flex-row tablet:justify-center tablet:space-x-auto tablet:mx-[10px] desktop:flex-row desktop:justify-center desktop:space-x-[140px]">
           {/* Left Column - Texts and Button */}
-          <div className="flex w-[292px] flex-col items-center desktop:w-[328px]">
+          <div className="flex w-[292px] flex-col items-center tablet:w-[50vw] desktop:w-[328px]">
             <div className="border-b-greyLightLines h-[32px] border-b-[1px] text-center text-[20px] font-normal leading-[24px]">
               <p>Nowość w salonie</p>
             </div>
@@ -33,12 +33,12 @@ const hygieneServicesHref = servicesData.find(service => service.title === "Zabi
             </div>
 
             {/* Button only for desktop */}
-            <div className="hidden h-[52px] w-[259px] desktop:block">
+            <div className="hidden h-[52px] w-[259px] tablet:block desktop:block">
               <Button href={hygieneServicesHref} />
             </div>
           </div>
           {/* Right column - Images */}
-          <div className="relative mx-auto mb-[36px] h-[234px] w-full max-w-[250px]  desktop:mb-0 desktop:h-[432px] desktop:max-w-[510px] desktop:space-x-[140px]">
+          <div className="relative mx-auto mb-[36px] h-[234px] w-full max-w-[250px] desktop:mb-0 desktop:h-[432px] desktop:max-w-[510px] desktop:space-x-[140px]">
             <NewOfferImg
               imageSrc={newOfferBefore}
               title="Przed"
@@ -50,7 +50,7 @@ const hygieneServicesHref = servicesData.find(service => service.title === "Zabi
               positionClass="bottom-0 right-0"
             />
           </div>
-          <div className="block h-[42px] w-[210px] desktop:hidden">
+          <div className="block h-[42px] w-[210px] tablet:hidden desktop:hidden">
             <Button href={hygieneServicesHref} />
           </div>
         </div>
