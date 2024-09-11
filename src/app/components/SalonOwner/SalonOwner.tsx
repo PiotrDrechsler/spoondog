@@ -7,7 +7,7 @@ const SalonOwner: React.FC = () => {
   return (
     <section id="owner" className="pb-[48px] pt-[70px] desktop:pt-[88px]">
       <Container>
-        <h2 className="mb-4 text-left font-bold">O właścicielce salonu...</h2>
+        <h2 className="mb-4 text-left font-bold">O właścicielce salonu</h2>
         <div className="mb-4 flex justify-center">
           <Image
             src={owner as StaticImageData}
