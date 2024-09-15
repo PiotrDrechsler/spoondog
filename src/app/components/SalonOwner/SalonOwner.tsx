@@ -10,7 +10,7 @@ const SalonOwner: React.FC = () => {
         <p className="mb-3 border-b border-x-greyLightLines pb-1 text-14 leading-6 text-greyFont desktop:border-b-0 desktop:pb-0 desktop:text-16">
           O nas / Katarzyna Bober
         </p>
-        <h2 className="mb-10 text-left text-26 font-bold leading-5 tracking-[-.52px] desktop:text-32 desktop:tracking-[-.64px]">
+        <h2 className="mb-10 text-left text-26 font-bold leading-5 tracking-[-.52px] desktop:text-32 desktop:font-medium desktop:tracking-[-.64px]">
           O właścicielce salonu
         </h2>
         <div className="desktop:flex desktop:flex-row-reverse desktop:justify-between">
@@ -25,10 +25,10 @@ const SalonOwner: React.FC = () => {
             <h3 className="text-md mb-1 text-left text-20 font-medium leading-6 tracking-[-.4px] desktop:mb-4 desktop:text-26 desktop:font-normal desktop:-tracking-normal">
               Katarzyna Bober
             </h3>
-            <p className="mb-4 text-left text-16 text-sm leading-6 tracking-[-.32px] text-gray-700 desktop:mb-4 desktop:text-18 desktop:font-medium desktop:tracking-normal">
+            <p className="mb-4 text-left text-16 text-sm leading-6 tracking-[-.32px] desktop:mb-4 desktop:text-18 desktop:font-medium desktop:tracking-normal">
               Technik weterynarii
             </p>
-            <p className="mb-[26px] self-stretch text-left text-14 text-sm leading-6 text-gray-700 desktop:mb-4 desktop:text-16">
+            <p className="mb-[26px] self-stretch text-left text-14 text-sm leading-6 desktop:mb-4 desktop:text-16">
               Katarzyna Bober, technik weterynarii i właścicielka salonu
               groomerskiego Spoon Dog od 2011 roku, zdobyła swoje doświadczenie
               w Opolskim Schronisku dla Bezdomnych Zwierząt oraz studiując
