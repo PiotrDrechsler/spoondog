@@ -7,7 +7,10 @@ const SalonOwner: React.FC = () => {
   return (
     <section id="owner" className="pb-[48px] pt-[70px] desktop:pt-[88px]">
       <Container>
-        <h2 className="mb-4 text-left text-26 font-bold desktop:text-32">
+        <p className="border-b border-x-greyLightLines pb-1 text-14 text-greyFont mb-3 desktop:border-b-0 desktop:pb-0 desktop:text-16">
+          O nas / Katarzyna Bober
+        </p>
+        <h2 className="mb-5 text-left text-26 font-bold desktop:text-32">
           O właścicielce salonu
         </h2>
         <div className="mb-4 flex justify-center">
