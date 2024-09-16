@@ -2,6 +2,7 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import owner from "@images/owner.png";
 import Container from "../Share/Container";
+import Button from "../Share/Button";
 
 const SalonOwner: React.FC = () => {
   return (
@@ -29,7 +30,7 @@ const SalonOwner: React.FC = () => {
             <p className="mb-4 text-left text-16 text-sm leading-6 tracking-[-.32px] desktop:mb-4 desktop:text-18 desktop:font-medium desktop:tracking-normal">
               Technik weterynarii
             </p>
-            <p className="mb-[26px] self-stretch text-left text-14 text-sm leading-6 desktop:mb-4 desktop:text-16">
+            <p className="mb-[26px] self-stretch text-left text-14 text-sm leading-6 desktop:mb-8 desktop:text-16">
               Katarzyna Bober, technik weterynarii i właścicielka salonu
               groomerskiego Spoon Dog od 2011 roku, zdobyła swoje doświadczenie
               w Opolskim Schronisku dla Bezdomnych Zwierząt oraz studiując
@@ -41,9 +42,9 @@ const SalonOwner: React.FC = () => {
               wieloletnie doświadczenie zapewnia najwyższy poziom usług
               pielęgnacyjnych.
             </p>
-            <button className="bg-yellow-400 rounded-full px-4 py-2 font-semibold text-black">
-              Dowiedz się więcej
-            </button>
+            <div className="block h-[42px] w-[210px] desktop:ml-auto desktop:h-[52px] desktop:w-[259px]">
+              <Button href="/owner" content="Dowiedz się więcej" />
+            </div>
           </div>
         </div>
       </Container>
