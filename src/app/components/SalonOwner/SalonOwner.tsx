@@ -19,6 +19,7 @@ const SalonOwner: React.FC = () => {
               src={owner as StaticImageData}
               alt="Katarzyna Bober"
               className="h-full w-full object-cover"
+              sizes="(max-width: 1439px) 342px, (min-width: 1440px) 540px"
             />
           </div>
           <div className="text-center desktop:h-[430px] desktop:w-[486px]">
