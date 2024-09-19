@@ -3,6 +3,7 @@ import { NewOffer } from "./components/NewOffer/NewOffer";
 import { Services } from "./components/Services/Services";
 import { Faq } from "./components/Faq/Faq";
 import { Hero } from "./components/Hero/Hero";
+import { Prices } from "./components/Prices/Prices";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <NewOffer />
       <Services />
+      <Prices />
       <Contact />
       <Faq />
     </>
