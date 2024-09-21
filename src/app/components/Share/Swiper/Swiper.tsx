@@ -13,7 +13,6 @@ interface SwiperProps {
   spaceBetween?: number;
   breakpoints?: { [width: number]: any };
   loop?: boolean;
-  className?: string;
 }
 
 export const Swiper = ({
@@ -23,10 +22,9 @@ export const Swiper = ({
   spaceBetween = 10,
   breakpoints,
   loop,
-  className,
 }: SwiperProps) => {
   return (
-    <div className="relative pb-11">
+    <div className="relative pb-9 desktop:pb-12">
       <ReactSwiper
         modules={[Navigation, Pagination, A11y]}
         slidesPerView={slidesPerView}
@@ -43,8 +41,8 @@ export const Swiper = ({
         loop={loop}
         breakpoints={
           breakpoints || {
-            640: { slidesPerView: 2, spaceBetween: 20 },
-            768: { slidesPerView: 3, spaceBetween: 30 },
+            640: { slidesPerView: 2.2, spaceBetween: 20 },
+            768: { slidesPerView: 3.2, spaceBetween: 30 },
             1024: { slidesPerView: 4, spaceBetween: 40 },
           }
         }
