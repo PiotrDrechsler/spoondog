@@ -18,7 +18,7 @@ const SalonOwner: React.FC = () => {
           <div className="mb-10 flex h-[248px] w-[342px] justify-center desktop:h-[391px] desktop:w-[540px]">
             <Image
               src={owner as StaticImageData}
-              alt="Katarzyna Bober"
+              alt="Katarzyna Bober, właścicielka salonu groomerskiego Spoon Dog"
               className="h-full w-full object-cover"
               sizes="(max-width: 1439px) 342px, (min-width: 1440px) 540px"
             />
@@ -27,7 +27,7 @@ const SalonOwner: React.FC = () => {
             <h3 className="text-md mb-1 text-left text-20 font-medium leading-6 tracking-[-.4px] desktop:mb-4 desktop:text-26 desktop:font-normal desktop:-tracking-normal">
               Katarzyna Bober
             </h3>
-            <p className="mb-4 text-left text-16 text-sm leading-6 tracking-[-.32px] desktop:mb-4 desktop:text-18 desktop:font-medium desktop:tracking-normal">
+            <p className="mb-4 text-left text-16 leading-6 tracking-[-.32px] desktop:mb-4 desktop:text-18 desktop:font-medium desktop:tracking-normal">
               Technik weterynarii
             </p>
             <p className="mb-[26px] self-stretch text-left text-14 text-sm leading-6 desktop:mb-8 desktop:text-16">
