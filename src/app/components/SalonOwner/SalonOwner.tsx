@@ -14,8 +14,8 @@ const SalonOwner: React.FC = () => {
         <h2 className="mb-10 text-left text-26 font-bold leading-5 tracking-[-.52px] desktop:text-32 desktop:font-medium desktop:tracking-[-.64px]">
           O właścicielce salonu
         </h2>
-        <div className="desktop:flex desktop:flex-row-reverse desktop:justify-between">
-          <div className="mb-10 flex h-[248px] w-[342px] justify-center desktop:h-[391px] desktop:w-[540px]">
+        <div className="tablet:flex tablet:flex-row tablet:gap-10 desktop:flex-row-reverse desktop:justify-between">
+          <div className="mb-10 flex h-[248px] w-[342px] justify-center tablet:my-auto desktop:h-[391px] desktop:w-[540px]">
             <Image
               src={owner as StaticImageData}
               alt="Katarzyna Bober, właścicielka salonu groomerskiego Spoon Dog"
@@ -23,7 +23,7 @@ const SalonOwner: React.FC = () => {
               sizes="(max-width: 1439px) 342px, (min-width: 1440px) 540px"
             />
           </div>
-          <div className="text-center desktop:h-[430px] desktop:w-[486px]">
+          <div className="text-center tablet:w-[342px] desktop:h-[430px] desktop:w-[486px]">
             <h3 className="text-md mb-1 text-left text-20 font-medium leading-6 tracking-[-.4px] desktop:mb-4 desktop:text-26 desktop:font-normal desktop:-tracking-normal">
               Katarzyna Bober
             </h3>
@@ -43,7 +43,11 @@ const SalonOwner: React.FC = () => {
               pielęgnacyjnych.
             </p>
             <div className="block h-[42px] w-[210px] desktop:ml-auto desktop:h-[52px] desktop:w-[259px]">
-              <Button href="/owner" content="Dowiedz się więcej" aria-label="Dowiedz się więcej o właścicielce salonu Spoon Dog" />
+              <Button
+                href="/owner"
+                content="Dowiedz się więcej"
+                aria-label="Dowiedz się więcej o właścicielce salonu Spoon Dog"
+              />
             </div>
           </div>
         </div>
