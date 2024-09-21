@@ -14,7 +14,7 @@ export const HeaderDesktop = () => {
         <div className="flex items-center gap-[64px]">
           <HeaderNavigation />
           <HeaderSocialmedia />
-          <PhoneButton />
+          <PhoneButton content="+48 692 394 385" />
         </div>
       </div>
     </Container>

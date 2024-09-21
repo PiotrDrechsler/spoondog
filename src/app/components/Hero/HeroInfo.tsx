@@ -18,19 +18,20 @@ export const HeroInfo = () => {
           <p className="hidden desktop:block desktop:text-[20px] desktop:leading-[1.5]">
             Jeżeli chcesz aby Twój pies polubił zabiegi pielęgnacyjne to
             zapraszam do mojego salonu. Moim priorytetem jest jest ograniczenie
-            stresu zwierzęciu. Nie podaję środków farmakologicznych. </p>
-            <span className="hidden desktop:block desktop:text-[20px] desktop:font-medium desktop:leading-[1.5]">Przyjdź i
-            przekonaj się jak działa magia gestów i porozumienia.</span>
-          
+            stresu zwierzęciu. Nie podaję środków farmakologicznych.{" "}
+          </p>
+          <span className="hidden desktop:block desktop:text-[20px] desktop:font-medium desktop:leading-[1.5]">
+            Przyjdź i przekonaj się jak działa magia gestów i porozumienia.
+          </span>
         </div>
-        <div className="mt-[20px] flex flex-col items-center justify-center gap-[26px] desktop:items-start desktop:justify-end desktop:mt-0">
+        <div className="mt-[20px] flex flex-col items-center justify-center gap-[26px] desktop:mt-0 desktop:items-start desktop:justify-end">
           <div className="h-auto w-[230px] text-center">
-            <p className="block desktop:hidden text-18 font-normal leading-[1.3] tracking-[-0.02em] desktop:text-[22px]">
+            <p className="block text-18 font-normal leading-[1.3] tracking-[-0.02em] desktop:hidden desktop:text-[22px]">
               Zadzwoń i umów się na wizytę już dziś!
             </p>
           </div>
           <div className="h-[42px] w-[243px]">
-          <PhoneButton />
+            <PhoneButton content="+48 692 394 385" />
           </div>
         </div>
       </div>

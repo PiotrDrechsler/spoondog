@@ -1,31 +1,35 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Container from "../Share/Container";
 import { PricesTable } from "./PricesTable";
 import { PricesData } from "@/app/utils/PricesData";
+import { IconArrowRight } from "../../icons/IconArrowRight";
 
 export const Prices = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === PricesData.length - 1 ? 0 : prevIndex + 1,
-    );
+  const handleResize = () => {
+    setIsMobile(window.innerWidth < 600);
   };
 
-//   const handlePrev = () => {
-//     setCurrentIndex((prevIndex) =>
-//       prevIndex === 0 ? PricesData.length - 1 : prevIndex - 1,
-//     );
-//   };
+  useEffect(() => {
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
-  const currentData = PricesData[currentIndex];
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % PricesData.length);
+  };
 
   return (
-    <section id="prices">
+    <section id="prices" className="overflow-hidden">
       <Container>
         <div className="h-auto">
-          <div className="tablet:h-auto desktop:h-[920px]">
+          <div className="tablet:h-auto desktop:h-auto">
             <div className="py-[48px]">
               <h1 className="mb-[8px] text-center text-[26px] font-bold leading-[1.3] desktop:text-[28px] desktop:leading-[1.2]">
                 Cennik
@@ -35,15 +39,19 @@ export const Prices = () => {
               </p>
             </div>
             <div className="relative flex items-center justify-center">
-              <PricesTable
-                imageSrc={currentData.imageSrc}
-                title={currentData.title}
-                subTitle={currentData.subTitle}
-                services={currentData.services}
-              />
-              <button onClick={handleNext} className="absolute bg-slate-500 ml-1 p-2">
-                &#8250;
-              </button>
+              {isMobile ? (
+                <>
+                  <PricesTable servicesData={[PricesData[currentIndex]]} />
+                  <button
+                    onClick={handleNext}
+                    className="ml-[10px] h-[38px] w-[38px] rounded-full border-2 border-black bg-white p-[6px]"
+                  >
+                    <IconArrowRight className="h-5 w-5 text-black" />
+                  </button>
+                </>
+              ) : (
+                <PricesTable servicesData={PricesData} />
+              )}
             </div>
           </div>
         </div>
