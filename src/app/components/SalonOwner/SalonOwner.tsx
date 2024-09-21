@@ -43,7 +43,7 @@ const SalonOwner: React.FC = () => {
               pielęgnacyjnych.
             </p>
             <div className="block h-[42px] w-[210px] desktop:ml-auto desktop:h-[52px] desktop:w-[259px]">
-              <Button href="/owner" content="Dowiedz się więcej" />
+              <Button href="/owner" content="Dowiedz się więcej" aria-label="Dowiedz się więcej o właścicielce salonu Spoon Dog" />
             </div>
           </div>
         </div>
