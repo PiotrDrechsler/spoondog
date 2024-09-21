@@ -3,7 +3,6 @@
 import React from "react";
 import { Swiper as ReactSwiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination } from "swiper/modules";
-import { cn } from "@/app/utils/helpers";
 import { SwiperButton } from "./SwiperButton";
 import "./Swiper.css";
 

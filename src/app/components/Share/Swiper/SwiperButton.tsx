@@ -1,6 +1,7 @@
 import { useSwiper } from "swiper/react";
 import { cn } from "@/app/utils/helpers";
 import { IconArrowRight } from "@/app/icons/IconArrowRight";
+import { IconArrowLeft } from "@/app/icons/IconArrowLeft";
 
 interface SwiperButtonProps {
   direction: "next" | "prev";
@@ -14,8 +15,10 @@ export const SwiperButton = ({ direction, visibility }: SwiperButtonProps) => {
     <button
       id={`swiper-button-${direction}`}
       className={cn(
-        "absolute top-1/2 z-10 -translate-y-1/2 transform cursor-pointer items-center justify-center rounded-full border border-black bg-white bg-opacity-50 p-2 hover:bg-opacity-75",
-        visibility === "always" ? "flex" : "hidden md:flex",
+        "absolute top-1/2 z-10 flex size-14 -translate-y-1/2 transform cursor-pointer rounded-full border border-black bg-white bg-opacity-50 hover:bg-opacity-75",
+        visibility === "always"
+          ? "flex items-center justify-center"
+          : "hidden md:flex md:items-center md:justify-center",
         direction === "next" ? "right-4" : "left-4",
       )}
       aria-label={direction === "next" ? "Następny slajd" : "Poprzedni slajd"}
@@ -23,9 +26,11 @@ export const SwiperButton = ({ direction, visibility }: SwiperButtonProps) => {
         direction === "next" ? swiper.slideNext() : swiper.slidePrev()
       }
     >
-      <IconArrowRight
-        className={cn("size-4", direction === "prev" && "rotate-180")}
-      />
+      {direction === "next" ? (
+        <IconArrowRight className="size-6" />
+      ) : (
+        <IconArrowLeft className="size-6" />
+      )}
     </button>
   );
 };
