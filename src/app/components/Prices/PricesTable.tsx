@@ -18,9 +18,9 @@ export const PricesTable: React.FC<PricesTableProps> = ({ servicesData }) => {
   }
 
   return (
-    <div className="mx-auto mt-[12px] rounded-radius24 border-2 bg-white pt-[40px] shadow-prices-shadow tablet:max-w-[100vw] desktop:my-0 desktop:max-w-[1440px] desktop:px-0">
+    <div className="mx-auto mt-[12px] rounded-radius24 border-2 bg-white pt-[40px] shadow-prices-shadow desktop:my-0 desktop:px-0">
       {/* Widok dla desktopu */}
-      <div className="hidden desktop:block">
+      <div className="hidden tablet:block desktop:block">
         <table className="w-full table-fixed border-collapse">
           <thead>
             <tr>
@@ -59,7 +59,7 @@ export const PricesTable: React.FC<PricesTableProps> = ({ servicesData }) => {
       </div>
 
       {/* Widok dla mobile */}
-      <div className="block desktop:hidden">
+      <div className="block tablet:hidden desktop:hidden">
         {servicesData.map((data, index) => (
           <table
             key={index}

@@ -67,7 +67,6 @@ const config: Config = {
         "services-dog1": "url('/images/servicesDog1.png')",
         "services-dog2": "url('/images/servicesDog2.png')",
         "button-shadow": "0px 2px 2px 0px #00000040",
-        "striped": "rgba(255, 248, 227, 1)",
       },
       backgroundSize: {
         "size-200": "200% 200%",
