@@ -5,7 +5,7 @@ export const Regulations = () => {
   return (
     <section className="pb-[48px] pt-[100px] desktop:pt-[120px]">
       <Container>
-        <h2 className="mb-[26px] text-center text-26 font-bold leading-[1.2] tracking-[-0.02em] desktop:mb-[60px] desktop:text-36">
+        <h2 className="mb-[26px] text-center text-24 font-bold leading-[28.8px] tracking-[-0.48px] desktop:mb-[60px] desktop:text-44 desktop:leading-[52.8px] desktop:tracking-[-1.76px]">
           Regulamin salonu Spoondog
         </h2>
         <div className="w-full rounded-radius24 border-[1px] border-greyBorders bg-cream p-[20px] leading-[1.5] shadow-boxes-shadow desktop:p-[40px] desktop:text-18">
