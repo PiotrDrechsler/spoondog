@@ -13,8 +13,8 @@ export const Regulations = () => {
             {regulationsData.map((item, index) => (
               <li key={index} className="mb-[10px]">
                 {index === 0 && (
-                  <span className="font-medium">
-                    WIZYTY UMAWIANE SĄ TELEFONICZNIE{" "}
+                  <span className="font-medium mr-4 tablet:m-0">
+                    WIZYTY UMAWIANE SĄ TELEFONICZNIE -{" "}
                   </span>
                 )}
                 {item}
