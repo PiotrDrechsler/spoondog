@@ -51,7 +51,7 @@ export const ClickOnMe = () => {
                             </div>
                         )}
                         {activeBox === 3 && (
-                            <div className="absolute top-[300px] left-[200px] bg-yellow p-4 shadow-lg rounded-md">
+                            <div className="absolute top-[320px] left-[200px] bg-yellow p-4 shadow-lg rounded-md">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, temporibus.</p>
                             </div>
                         )}
