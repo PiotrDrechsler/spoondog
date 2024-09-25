@@ -6,12 +6,14 @@ import { ClickOnMeArrow } from './ClickOnMeArrow';
 import { ClickOnMeIcon } from './ClickOnMeIcon';
 import { useState } from 'react';
 
-export const ClickOnMe = () => {
-    const [activeBox, setActiveBox] = useState(null);
 
-    const toggleBox = (index) => {
-        setActiveBox(activeBox === index ? null : index);
-    }
+export const ClickOnMe: React.FC = () => {
+    const [activeBox, setActiveBox] = useState<number | null>(null);
+  
+    const toggleBox = (index: number) => {
+      setActiveBox(activeBox === index ? null : index);
+    };
+
     return (
       <section id="clickOnMe" className='hidden xl:block'>
         <Container>
@@ -41,29 +43,69 @@ export const ClickOnMe = () => {
                             <ClickOnMeIcon />
                         </div>
                         {activeBox === 1 && (
-                            <div className="absolute top-[50px] left-[100px] bg-yellow p-4 shadow-lg rounded-md">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, minus.</p>
-                            </div>
+                        <>
+                        <div className="absolute top-[46.8px] left-[250px] w-[150px] h-[2px] bg-greyLines" /> 
+                        <div className="absolute top-[20px] left-[367px] w-[300px] bg-cream p-4 shadow-clickonmeshadow rounded-md">
+                            <>
+                                <div className="w-[2px] h-[40px] bg-yellow mr-4" > 
+                                <h4 className="text-20 ml-2 p-2 w-[300px]">Usuwanie kamienia</h4>
+                                </div>
+                            </>
+                            <p className="text-16 p-2">Oferujemy usługę usuwania kamienia nazębnego nowoczesną metodą Emmy PET, niewymagającej narkozy.</p>
+                        </div>
+                        </>
                         )}
                         {activeBox === 2 && (
-                            <div className="absolute top-[120px] left-[50px] bg-yellow p-4 shadow-lg rounded-md">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dignissimos?</p>
-                            </div>
+                            <>
+                                <div className="absolute top-[102.7px] left-[90px] w-[150px] h-[2px] bg-greyLines" /> 
+                                <div className="absolute top-[60px] left-[207px] w-[300px] bg-cream p-4 shadow-clickonmeshadow rounded-md">
+                                    <>
+                                        <div className="w-[2px] h-[40px] bg-yellow mr-4" > 
+                                        <h4 className="text-20 ml-2 p-2 w-[300px]">Czyszczenie uszu</h4>
+                                        </div>
+                                    </>
+                                <p className="text-16 p-2">To proces usuwania nagromadzonego wosku, brudu i zanieczyszczeń z przewodów słuchowych i małżowin usznych, a także na usuwaniu włosów wewnątrz ucha.</p>
+                                </div>
+                            </>
                         )}
                         {activeBox === 3 && (
-                            <div className="absolute top-[320px] left-[200px] bg-yellow p-4 shadow-lg rounded-md">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, temporibus.</p>
-                            </div>
+                            <>
+                                <div className="absolute top-[310px] left-[230px] w-[150px] h-[2px] bg-greyLines" /> 
+                                <div className="absolute top-[280px] left-[350px] w-[300px] bg-cream p-4 shadow-clickonmeshadow rounded-md">
+                                <>
+                                        <div className="w-[2px] h-[40px] bg-yellow mr-4" > 
+                                        <h4 className="text-20 ml-2 p-2 w-[300px]">Kąpiel</h4>
+                                        </div>
+                                </>
+                                <p className="text-16 p-2">Oczyszczanie sierści i skóry z brudu, zanieczyszczeń, pasożytów i martwego naskórka, co pomaga utrzymać ich zdrowie, komfort i przyjemny zapach.</p>
+                                </div>
+                            </>
                         )}
                         {activeBox === 4 && (
-                            <div className="absolute top-[400px] left-[60px] bg-yellow p-4 shadow-lg rounded-md">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, a?</p>
-                            </div>
+                            <>
+                                <div className="absolute top-[393px] left-[90px] w-[150px] h-[2px] bg-greyLines" /> 
+                                <div className="absolute top-[360px] left-[207.6px] w-[300px] bg-cream p-4 shadow-clickonmeshadow rounded-md">
+                                <>
+                                    <div className="w-[2px] h-[40px] bg-yellow mr-4" > 
+                                    <h4 className="text-20 ml-2 p-2 w-[300px]">Usługi fryzjerskie</h4>
+                                    </div>
+                                </>
+                                <p className="text-16 p-2">Czesanie, rozczesywanie, strzyżenie i trymowanie to nasze zabiegi podstawowe, wykonywane w ramach dbania o zdrowie, komfort i dobre samopoczucie Twojego czworonoga.</p>
+                                </div>
+                            </>
                         )}
                         {activeBox === 5 && (
-                            <div className="absolute top-[700px] left-[200px] bg-yellow p-4 shadow-lg rounded-md">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, natus.</p>
-                            </div>
+                            <>
+                                <div className="absolute top-[693px] left-[250px] w-[150px] h-[2px] bg-greyLines" /> 
+                                <div className="absolute top-[660px] left-[367px] w-[300px] bg-cream p-4 shadow-clickonmeshadow rounded-md">
+                                <>
+                                    <div className="w-[2px] h-[40px] bg-yellow mr-4" > 
+                                    <h4 className="text-20 ml-2 p-2 w-[300px]">Przycięcie pazurków</h4>
+                                    </div>
+                                </>
+                                <p className="text-16 p-2">Polega na usuwaniu nadmiaru ich zrogowaciałej części, co zapobiega dyskomfortowi, bólom i problemom z poruszaniem się, a także chroni meble i podłogi przed zarysowaniami.</p>
+                                </div>
+                            </>
                         )}
                     </div>
                 </div>
