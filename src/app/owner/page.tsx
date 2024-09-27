@@ -35,7 +35,7 @@ const About = () => {
             <AboutHeading>O mnie</AboutHeading>
 
             <SubHeading>Wykształcenie i doświadczenie zawodowe</SubHeading>
-            <ul className="list-disc">
+            <ul className="list-disc ml-6">
               {educationAndExperience.map((item, index) => (
                 <li key={index}>
                   {item.title}: {item.description}
@@ -43,7 +43,7 @@ const About = () => {
               ))}
             </ul>
             <SubHeading>Certyfikaty i osiągnięcia</SubHeading>
-            <ul className="list-disc">
+            <ul className="list-disc ml-6">
               {certificatesAndAchievements.map((item, index) => (
                 <li key={index}>
                   {item.title}: {item.description}
@@ -73,7 +73,7 @@ const About = () => {
                         mb-[100px]
                         md:mt-[100px] 
                         sm:mt-[40px] 
-                        ml-[35%]">
+                        mx-auto">
             <Button
               href="/hygiene-service"
               content="Zobacz nasze usługi"
