@@ -1,5 +1,5 @@
 import { type StaticImageData } from "next/image";
-import Lightbox, { SlideImage } from "yet-another-react-lightbox";
+import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 interface LightboxGalleryProps {
