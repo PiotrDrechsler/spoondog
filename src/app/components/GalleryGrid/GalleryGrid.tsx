@@ -30,6 +30,7 @@ export const GalleryGrid = () => {
                   alt={`gallery image ${index + 1}`}
                   fill
                   sizes="25vw"
+                  priority={index < 4}
                   className="rounded-s object-cover desktop:rounded-3xl"
                 />
                 <div className="absolute inset-0 flex shrink-0 flex-col items-center justify-center space-y-0.5 rounded-s bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100 tablet:space-y-1 desktop:space-y-2 desktop:rounded-3xl">
