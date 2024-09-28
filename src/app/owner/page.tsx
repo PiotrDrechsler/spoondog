@@ -14,7 +14,7 @@ const About = () => {
       <Container>
         <main>
           <nav className="text-[16px] mb-4 mt-[70px]">
-            <a href="/" className="font-semibold leading-6 underline hidden md:block" aria-label="Wróć do strony głównej">powrót</a>
+            <a href="/" className="font-semibold leading-6 underline hidden tablet:block" aria-label="Wróć do strony głównej">powrót</a>
           </nav>
 
           <p className="font-bold text-[16px] leading-6 mt-[80px] md:mt-[29px]">O nas // Katarzyna Bober</p>
@@ -63,8 +63,8 @@ const About = () => {
 
             <p className='font-medium mt-[40px]'> Kilkuletnie doświadczenie sprawia, że możecie Państwo mi w pełni zaufać. </p>
 
-            <p className='hidden lg:block mt-[40px]'>Zapraszam</p>
-            <p className='hidden lg:block mt-[40px]'>Katarzyna Bober</p>
+            <p className='hidden desktop:block mt-[40px]'>Zapraszam</p>
+            <p className='hidden desktop:block mt-[40px]'>Katarzyna Bober</p>
 
           </div>
 
@@ -72,7 +72,7 @@ const About = () => {
                         mt-[80px] 
                         mb-[100px]
                         md:mt-[100px] 
-                        sm:mt-[40px] 
+                        tablet:mt-[40px] 
                         mx-auto">
             <Button
               href="/hygiene-service"
