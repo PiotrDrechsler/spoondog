@@ -17,7 +17,7 @@ const About = () => {
             <a href="/" className="font-semibold leading-6 underline hidden md:block" aria-label="Wróć do strony głównej">powrót</a>
           </nav>
 
-          <p className="font-bold text-[16px] text-sm leading-6 mt-[80px] md:mt-[29px]">O nas // Katarzyna Bober</p>
+          <p className="font-bold text-[16px] leading-6 mt-[80px] md:mt-[29px]">O nas // Katarzyna Bober</p>
           <h1 className="text-center font-dm-sans font-medium text-[44px] leading-[52.8px] tracking-[-0.04em] mt-[40px]">Katarzyna Bober</h1>
 
           <div className="flex justify-center mb-[20px]">
