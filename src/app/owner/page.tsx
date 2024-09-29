@@ -14,11 +14,11 @@ const About = () => {
       <Container>
         <main>
           <nav className="text-[16px] mb-4 mt-[70px]">
-            <a href="/" className="font-semibold leading-6 underline hidden tablet:block" aria-label="Wróć do strony głównej">powrót</a>
+            <a href="/" className="font-semibold leading-6 underline hidden desktop:block" aria-label="Wróć do strony głównej">powrót</a>
           </nav>
 
-          <p className="font-bold text-[16px] leading-6 mt-[80px] md:mt-[29px]">O nas // Katarzyna Bober</p>
-          <h1 className="text-center font-dm-sans font-medium text-[44px] leading-[52.8px] tracking-[-0.04em] mt-[40px]">Katarzyna Bober</h1>
+          <p className="font-bold text-[16px] leading-6 mt-[80px] desktop:md:mt-[29px]">O nas // Katarzyna Bober</p>
+          <h1 className="text-center font-medium text-[24px] leading-[28.8px] tracking-[-0.04em] mt-[40px] desktop:text-[44px] desktop:leading-[52.8px]">Katarzyna Bober</h1>
 
           <div className="flex justify-center mb-[20px]">
             <Image src={about as StaticImageData}
