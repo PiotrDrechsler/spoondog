@@ -21,14 +21,10 @@ const About = () => {
           <h1 className="text-center font-dm-sans font-medium text-[44px] leading-[52.8px] tracking-[-0.04em] mt-[40px]">Katarzyna Bober</h1>
 
           <div className="flex justify-center mb-[20px]">
-            <Image
-              src={about as StaticImageData}
+            <Image src={about as StaticImageData}
               alt="Katarzyna Bober with dog"
-              width={1217}
-              height={600}
-              className="rounded-lg mt-[100px] max-w-full"
-              priority
-            />
+              className="mt-[100px] h-auto w-[338px] max-w-full rounded-lg tablet:w-[602px] desktop:w-[1217px]"
+              priority />
           </div>
 
           <div className="font-normal text-sm leading-6 text-left mb-[80px] mt-[100px]">
