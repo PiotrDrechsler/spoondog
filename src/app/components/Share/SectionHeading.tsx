@@ -1,25 +1,27 @@
 interface SectionHeadingProps {
   sectionTitle?: string;
-  sectionMainHeading: string;
-  sectionInfo: string;
+  sectionMainHeading: React.ReactNode;
+  sectionInfo: React.ReactNode; // Sometimes when you need to use tags like <strong> for better SEO for 1 word, ReactNode is a better solution.
 }
 
 export const SectionHeading: React.FC<SectionHeadingProps> = ({
-  sectionTitle,
+  sectionTitle = "", // Default value as an empty string
   sectionMainHeading,
   sectionInfo,
 }) => {
   return (
-    <>
-      <p className="mb-[12px] border-b pb-[2px] text-14 leading-[1.5] text-greyFont">
-        {sectionTitle}
-      </p>
+    <section aria-labelledby={`section-heading-for-${sectionMainHeading}`}>
+      {sectionTitle && (
+        <p className="mb-[12px] border-b pb-[2px] text-14 leading-[1.5] text-greyFont">
+          {sectionTitle}
+        </p>
+      )}
       {/* h2 tag - important text for SEO! */}
       <h2 className="mb-[8px] text-26 font-bold leading-[1.2] tracking-tight">
         {sectionMainHeading}
       </h2>
-      {/* in h3 tag - important text for SEO! */}
-      <h3>{sectionInfo}</h3>
-    </>
+      {/* h3 tag - important text for SEO! */}
+      <h3 className="pb-[24px] text-16 leading-[1.5]">{sectionInfo}</h3>
+    </section>
   );
 };
