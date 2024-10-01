@@ -4,7 +4,7 @@ import { footerLinksData } from "../../utils/footerLinksData";
 export const FooterLinks = () => {
   return (
     <div className="flex w-full flex-col desktop:max-w-[203px]">
-      <h4 className="mb-3 text-base font-semibold leading-6 desktop:mb-6">
+      <h4 className="mb-3 text-base font-semibold tablet:font-bold leading-6 desktop:mb-6">
         Linki
       </h4>
       <ul className="flex flex-col gap-[8px] desktop:gap-[16px]">
