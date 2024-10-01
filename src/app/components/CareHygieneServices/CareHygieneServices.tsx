@@ -40,7 +40,7 @@ export const CareHygieneServices: React.FC<CareHygieneServicesProps> = ({
           <div
             key={index}
             id={service.id}
-            className="pt-[132px] desktop:pt-[192px]"
+            className="pt-[132px] desktop:py-[40px] desktop:mt-[100px]"
           >
             <h4 className="mb-[4px] text-20 font-medium leading-[1.2] desktop:text-24">
               {service.title}
