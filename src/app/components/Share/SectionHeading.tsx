@@ -11,7 +11,9 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
 }) => {
   return (
     <>
-      <p>{sectionTitle}</p>
+      <p className="mb-[12px] border-b pb-[2px] leading-6 text-greyFont">
+        {sectionTitle}
+      </p>
       <h2>{sectionMainHeading}</h2> {/* text important for SEO */}
       <h3>{sectionInfo}</h3> {/* text important for SEO */}
     </>
