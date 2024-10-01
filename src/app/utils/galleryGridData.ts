@@ -1,5 +1,5 @@
 import { type StaticImageData } from "next/image";
-import gallery1 from "@images/gallery/gallery2.jpg";
+import gallery1 from "@images/gallery/gallery1.jpg";
 import gallery2 from "@images/gallery/gallery2.jpg";
 import gallery3 from "@images/gallery/gallery3.jpg";
 import gallery4 from "@images/gallery/gallery4.jpg";
