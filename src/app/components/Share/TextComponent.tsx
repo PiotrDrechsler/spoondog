@@ -9,8 +9,7 @@ export const TestComponent = () => {
         sectionMainHeading="Skontaktuj się z nami!"
         sectionInfo={
           <>
-            Zapraszamy do naszego salonu w{" "}
-            <strong className="font-medium">Tułowicach</strong>.
+            Zapraszamy do naszego salonu w <strong>Tułowicach</strong>.
           </>
         }
       />
