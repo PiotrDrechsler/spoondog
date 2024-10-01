@@ -3,17 +3,21 @@ import Image, { StaticImageData } from "next/image";
 import owner from "@images/owner.png";
 import Container from "../Share/Container";
 import Button from "../Share/Button";
+import { SectionHeading } from "../Share/SectionHeading";
 
 const SalonOwner: React.FC = () => {
   return (
     <section id="owner" className="pb-[48px] pt-[70px] desktop:pt-[88px]">
       <Container>
-        <p className="mb-3 border-b border-x-greyLightLines pb-1 text-14 leading-6 text-greyFont desktop:border-b-0 desktop:pb-0 desktop:text-16">
-          O nas / Katarzyna Bober
-        </p>
-        <h2 className="mb-10 text-left text-26 font-bold leading-5 tracking-[-.52px] desktop:text-32 desktop:font-medium desktop:tracking-[-.64px]">
-          O właścicielce salonu
-        </h2>
+        <SectionHeading
+          sectionTitle="O nas / Katarzyna Bober"
+          sectionMainHeading="O właścicielce salonu"
+          sectionInfo={
+            <>
+              Katarzyna Bober - <strong>Technik weterynarii</strong>
+            </>
+          }
+        />
         <div className="tablet:flex tablet:flex-row tablet:gap-10 desktop:flex-row-reverse desktop:justify-between">
           <div className="mb-10 flex h-[248px] w-[342px] justify-center tablet:my-auto desktop:h-[391px] desktop:w-[540px]">
             <Image
@@ -24,12 +28,6 @@ const SalonOwner: React.FC = () => {
             />
           </div>
           <div className="text-center tablet:w-[342px] desktop:h-[430px] desktop:w-[486px]">
-            <h3 className="text-md mb-1 text-left text-20 font-medium leading-6 tracking-[-.4px] desktop:mb-4 desktop:text-26 desktop:font-normal desktop:-tracking-normal">
-              Katarzyna Bober
-            </h3>
-            <p className="mb-4 text-left text-16 leading-6 tracking-[-.32px] desktop:mb-4 desktop:text-18 desktop:font-medium desktop:tracking-normal">
-              Technik weterynarii
-            </p>
             <p className="mb-[26px] self-stretch text-left text-14 text-sm leading-6 desktop:mb-8 desktop:text-16">
               Katarzyna Bober, technik weterynarii i właścicielka salonu
               groomerskiego Spoon Dog od 2011 roku, zdobyła swoje doświadczenie
