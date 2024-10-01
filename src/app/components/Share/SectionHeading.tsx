@@ -12,7 +12,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
   return (
     <section aria-labelledby={`section-heading-for-${sectionMainHeading}`}>
       {sectionTitle && (
-        <p className="mb-[12px] border-b pb-[2px] text-14 leading-[1.5] text-greyFont desktop:text-16">
+        <p className="mb-[12px] border-b border-x-greyLightLines pb-[2px] text-14 leading-[1.5] text-greyFont desktop:text-16">
           {sectionTitle}
         </p>
       )}

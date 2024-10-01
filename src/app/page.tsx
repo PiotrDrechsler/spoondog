@@ -5,7 +5,6 @@ import { Faq } from "./components/Faq/Faq";
 import { Hero } from "./components/Hero/Hero";
 import SalonOwner from "./components/SalonOwner/SalonOwner";
 import { SwiperGallery } from "./components/SwiperGallery/SwiperGallery";
-import { TestComponent } from "./components/Share/TextComponent";
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <NewOffer />
       <Services />
       <SwiperGallery />
-      <TestComponent />
       <Contact />
       <Faq />
     </>
