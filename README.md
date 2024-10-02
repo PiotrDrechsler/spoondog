@@ -15,7 +15,7 @@ The `SectionHeading` component is used to display section headings on our page. 
 
 - **`variant?: "opinions-section" | "default-section"`**  
   An optional prop that controls the layout style of the heading. 
-  - When the value is `"opinions-section"`, the main heading (`<h2>`) will have a maximum width of 200px, which is useful for specific design needs where the heading should be constrained in width.
+  - When the value is `"opinions-section"`, the main heading (`<h2>`) will have a maximum width of 230px [for mobile devices], which is useful for specific design needs where the heading should be constrained in width.
   - The default value is `"default-section"`, where no specific width is applied to the main heading.
 
 ### Example Usage
