@@ -32,6 +32,7 @@ const config: Config = {
       },
       fontFamily: {
         dmSans: ["DM Sans", "sans-serif"],
+        jakarta: ["Plus Jakarta Sans", "sans-serif"],
       },
       colors: {
         white: "#ffffff",
