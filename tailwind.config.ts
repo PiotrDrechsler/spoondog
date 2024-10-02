@@ -59,6 +59,8 @@ const config: Config = {
         "hero-shadow": "0px 4px 10px 0px rgba(207, 207, 207, 0.7)",
         "footer-shadow": "0px 4px 10px 0px #000",
         "header-shadow": "0px 4px 10px 0px #F0F1F8",
+        "google-shadow":
+          "11.456px 8.019px 22.912px rgba(0, 0, 0, 0.08), -2.291px -1.146px 9.165px rgba(0, 0, 0, 0.08)",
         "reg-shadow": "2px 4px 10px 0px rgba(222, 223, 230, 0.70)",
       },
       backgroundImage: {
