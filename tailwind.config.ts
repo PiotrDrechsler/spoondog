@@ -26,6 +26,7 @@ const config: Config = {
         },
       },
       screens: {
+        tablet: "835px",
         desktop: "1440px",
       },
       fontSize: {
@@ -76,6 +77,7 @@ const config: Config = {
         "footer-shadow": "0px 4px 10px 0px #000",
         "header-shadow": "0px 4px 10px 0px #F0F1F8",
         "clickonmeshadow": "0px 4px 10px rgba(222, 223, 230, 0.7)",
+        "reg-shadow": "2px 4px 10px 0px rgba(222, 223, 230, 0.70)",
       },
       backgroundImage: {
         "gradient-btn": "linear-gradient(180deg, #FCD503 14%, #FCB603 100%)",
