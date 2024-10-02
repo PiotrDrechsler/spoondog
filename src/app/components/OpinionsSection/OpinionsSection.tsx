@@ -10,6 +10,7 @@ export const OpinionsSection = () => {
             sectionTitle="Strona główna / Opinie"
             sectionMainHeading="Dołącz do grona zadowolonych klientów!"
             sectionInfo="Przykładowe recenzje naszych usług"
+            variant="opinions-section"
           />
 
           <div className="shadow-google-shadow absolute right-2 top-10 flex h-[64px] w-[67px] flex-col items-center rounded-md bg-white p-[9px]">
