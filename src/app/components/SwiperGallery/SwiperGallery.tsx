@@ -1,19 +1,17 @@
 "use client";
 
-import { useState } from "react";
 import Image, { type StaticImageData } from "next/image";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
 import { swiperGalleryData } from "@/app/utils/swiperGalleryData";
 import Container from "../Share/Container";
 import { Swiper } from "../Share/Swiper/Swiper";
 import { SwiperGalleryTitle } from "./SwiperGalleryTitle";
+import { useLightbox } from "@/app/hooks/useLightbox";
+import { LightboxGallery } from "../Share/LightboxGallery";
 
 type SwiperGalleryImage = string | StaticImageData;
 
 export const SwiperGallery = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [photoIndex, setPhotoIndex] = useState(0);
+  const { isOpen, photoIndex, openLightbox, closeLightbox } = useLightbox();
 
   return (
     <section id="gallery" className="pb-12 pt-[70px] desktop:pt-[88px]">
@@ -24,10 +22,7 @@ export const SwiperGallery = () => {
             <div
               key={index}
               className="relative aspect-square w-full cursor-pointer"
-              onClick={() => {
-                setPhotoIndex(index);
-                setIsOpen(true);
-              }}
+              onClick={() => openLightbox(index)}
             >
               <Image
                 src={item}
@@ -41,16 +36,11 @@ export const SwiperGallery = () => {
           ))}
         </Swiper>
       </Container>
-      <Lightbox
-        open={isOpen}
-        close={() => setIsOpen(false)}
+      <LightboxGallery
+        isOpen={isOpen}
+        onClose={closeLightbox}
         index={photoIndex}
-        slides={swiperGalleryData.map(
-          (item: SwiperGalleryImage, index: number) => ({
-            src: typeof item === "string" ? item : item.src,
-            alt: `Zdjęcie ${index + 1}`,
-          }),
-        )}
+        slides={swiperGalleryData}
       />
     </section>
   );
