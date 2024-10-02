@@ -19,7 +19,7 @@ const SalonOwner: React.FC = () => {
           }
         />
         <div className="tablet:flex tablet:flex-row tablet:gap-10 desktop:flex-row-reverse desktop:justify-between">
-          <div className="mb-10 flex h-[248px] w-[342px] justify-center tablet:my-auto desktop:h-[391px] desktop:w-[540px]">
+          <div className="mb-10 flex h-[248px] w-[342px] justify-center tablet:my-auto desktop:h-[391px] desktop:w-[540px] desktop:-translate-y-[60px]">
             <Image
               src={owner as StaticImageData}
               alt="Katarzyna Bober, właścicielka salonu groomerskiego Spoon Dog"
@@ -27,7 +27,7 @@ const SalonOwner: React.FC = () => {
               sizes="(max-width: 1439px) 342px, (min-width: 1440px) 540px"
             />
           </div>
-          <div className="text-center tablet:w-[342px] desktop:h-[430px] desktop:w-[486px]">
+          <div className="text-center tablet:w-[342px] desktop:w-[486px]">
             <p className="mb-[26px] self-stretch text-left text-14 text-sm leading-6 desktop:mb-8 desktop:text-16">
               Katarzyna Bober, technik weterynarii i właścicielka salonu
               groomerskiego Spoon Dog od 2011 roku, zdobyła swoje doświadczenie
