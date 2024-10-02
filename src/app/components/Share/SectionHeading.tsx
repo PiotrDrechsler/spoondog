@@ -17,7 +17,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
         </p>
       )}
       {/* h2 tag - important text for SEO! */}
-      <h2 className="mb-[8px] text-26 font-bold leading-[1.2] tracking-tight desktop:text-36">
+      <h2 className="mb-[8px] text-26 font-bold leading-[1.2] desktop:text-36">
         {sectionMainHeading}
       </h2>
       {/* h3 tag - important text for SEO! */}
