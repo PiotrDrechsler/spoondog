@@ -21,13 +21,11 @@ export const OpinionsSection = () => {
           </div>
         </div>
         {/* Card List Section with horizontal scrolling */}
-        <div className="my-[8px]">
-          <Swiper arrowVisibility="largeScreen" loop>
-            {opinionsData.map(({ name, opinion }, index) => (
-              <OpinionsCardItem key={index} name={name} opinion={opinion} />
-            ))}
-          </Swiper>
-        </div>
+        <Swiper arrowVisibility="largeScreen" noPaddingBottom loop>
+          {opinionsData.map(({ name, opinion }, index) => (
+            <OpinionsCardItem key={index} name={name} opinion={opinion} />
+          ))}
+        </Swiper>
       </Container>
     </section>
   );

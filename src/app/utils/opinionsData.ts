@@ -24,12 +24,12 @@ export const opinionsData = [
   {
     name: "Mati G.",
     opinion:
-      "Najlepsze miejsce dla mojego FAFIKA ;) Zawsze zadowolony wychodzi z tamtad... Pozdrawiamy i polecamy gorąco!!",
+      "Najlepsze miejsce dla mojego FAFIKA ;) Zawsze zadowolony wychodzi z tamtad. Pozdrawiamy i polecamy gorąco!!",
   },
   {
     name: "Damian J.",
     opinion:
-      "Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z polecenia",
+      "Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z polecenia Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z poleceni Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z poleceni Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z poleceni Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z poleceni Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z poleceni",
   },
   {
     name: "Izabela W.",
