@@ -20,7 +20,10 @@ export const OpinionsSection = () => {
         </div>
         {/* Card List Section */}
         <div className="my-[8px]">
-          <OpinionsCardItem />
+          <OpinionsCardItem
+            name="Izabella Walków"
+            opinion="Pani bardzo miła z dobrym podejściem do pupili. Zawsze wychodzimy zadowoleni. Polecam"
+          />
         </div>
       </Container>
     </section>
