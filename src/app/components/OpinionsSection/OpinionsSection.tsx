@@ -5,7 +5,7 @@ import { OpinionsCardItem } from "./OpinionsCardItem";
 
 export const OpinionsSection = () => {
   return (
-    <section id="opinions" className="pb-[48px] pt-[70px] desktop:pt-[88px]">
+    <section id="opinions">
       <Container>
         <div className="relative">
           <SectionHeading
