@@ -1,6 +1,7 @@
 import Container from "../Share/Container";
 import GoogleReviewCard from "../Share/GoogleReviewCard";
 import { SectionHeading } from "../Share/SectionHeading";
+import { Swiper } from "../Share/Swiper/Swiper";
 import { OpinionsCardItem } from "./OpinionsCardItem";
 import { opinionsData } from "@/app/utils/opinionsData";
 
@@ -20,10 +21,12 @@ export const OpinionsSection = () => {
           </div>
         </div>
         {/* Card List Section with horizontal scrolling */}
-        <div className="my-[8px] flex gap-[16px] overflow-x-auto whitespace-nowrap py-4">
-          {opinionsData.map(({ name, opinion }, index) => (
-            <OpinionsCardItem key={index} name={name} opinion={opinion} />
-          ))}
+        <div className="my-[8px]">
+          <Swiper arrowVisibility="largeScreen" loop>
+            {opinionsData.map(({ name, opinion }, index) => (
+              <OpinionsCardItem key={index} name={name} opinion={opinion} />
+            ))}
+          </Swiper>
         </div>
       </Container>
     </section>

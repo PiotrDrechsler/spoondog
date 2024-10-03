@@ -1,13 +1,13 @@
 export const opinionsData = [
   {
-    name: "Pawel S.",
-    opinion:
-      "Świetne miejsce / bardzo dobre ceny / fachowa i miła obsluga. Piesek szczęśliwy lżejszy o zimowe futro",
-  },
-  {
     name: "Krzysztof D.",
     opinion:
       "Piesek ostrzyzony, wykapany, pachnacy i to wszystko nie za miliony monet! 🤩👍 Poprawki zrobione na moje zyczenie bezproblemowo. Kazdy przeciez ma swoja wizje. Na pewno wrocimy! ❤️❤️",
+  },
+  {
+    name: "Pawel S.",
+    opinion:
+      "Świetne miejsce / bardzo dobre ceny / fachowa i miła obsluga. Piesek szczęśliwy lżejszy o zimowe futro",
   },
   {
     name: "Andrzej H.",
