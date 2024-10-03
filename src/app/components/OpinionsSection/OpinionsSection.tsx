@@ -1,6 +1,7 @@
 import Container from "../Share/Container";
 import GoogleReviewCard from "../Share/GoogleReviewCard";
 import { SectionHeading } from "../Share/SectionHeading";
+import { OpinionsCardItem } from "./OpinionsCardItem";
 
 export const OpinionsSection = () => {
   return (
@@ -16,6 +17,10 @@ export const OpinionsSection = () => {
           <div className="absolute right-0 top-10">
             <GoogleReviewCard />
           </div>
+        </div>
+        {/* Card List Section */}
+        <div className="my-[8px]">
+          <OpinionsCardItem />
         </div>
       </Container>
     </section>

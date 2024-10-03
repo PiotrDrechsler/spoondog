@@ -63,6 +63,7 @@ const config: Config = {
         "google-shadow":
           "11.456px 8.019px 22.912px rgba(0, 0, 0, 0.08), -2.291px -1.146px 9.165px rgba(0, 0, 0, 0.08)",
         "reg-shadow": "2px 4px 10px 0px rgba(222, 223, 230, 0.70)",
+        "card-shadow": "0px 4px 10px 0px rgba(222, 223, 230, 0.70)",
       },
       backgroundImage: {
         "gradient-btn": "linear-gradient(180deg, #FCD503 14%, #FCB603 100%)",
