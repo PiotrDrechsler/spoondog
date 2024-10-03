@@ -1,12 +1,12 @@
 import Image, { StaticImageData } from 'next/image';
-import about from "@images/about/about1.png";
 import AboutHeading from '../components/OwnerPage/AboutHeading';
 import SubHeading from '../components/OwnerPage/SubHeading';
 import Section from '../components/OwnerPage/Section';
-import workMethodsContent from '../utils/workMethodsContent';
-import { educationAndExperience, certificatesAndAchievements } from '../utils/aboutContent';
 import Container from '../components/Share/Container';
 import Button from '../components/Share/Button';
+import { educationAndExperience, certificatesAndAchievements } from '../utils/aboutContent';
+import workMethodsContent from '../utils/workMethodsContent';
+import about from "@images/about/about1.png";
 
 const About = () => {
   return (
@@ -71,7 +71,7 @@ const About = () => {
                         tablet:mt-[40px] 
                         mx-auto">
             <Button
-              href="/hygiene-service"
+              href="/hygiene-services"
               content="Zobacz nasze usługi"
               aria-label="Przejdź do strony z usługami"
             />
