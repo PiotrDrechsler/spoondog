@@ -2,6 +2,7 @@ import Container from "../Share/Container";
 import GoogleReviewCard from "../Share/GoogleReviewCard";
 import { SectionHeading } from "../Share/SectionHeading";
 import { OpinionsCardItem } from "./OpinionsCardItem";
+import { opinionsData } from "@/app/utils/opinionsData";
 
 export const OpinionsSection = () => {
   return (
@@ -18,12 +19,11 @@ export const OpinionsSection = () => {
             <GoogleReviewCard />
           </div>
         </div>
-        {/* Card List Section */}
-        <div className="my-[8px]">
-          <OpinionsCardItem
-            name="Izabella Walków"
-            opinion="Pani bardzo miła z dobrym podejściem do pupili. Zawsze wychodzimy zadowoleni. Polecam"
-          />
+        {/* Card List Section with horizontal scrolling */}
+        <div className="my-[8px] flex gap-[16px] overflow-x-auto whitespace-nowrap py-4">
+          {opinionsData.map(({ name, opinion }, index) => (
+            <OpinionsCardItem key={index} name={name} opinion={opinion} />
+          ))}
         </div>
       </Container>
     </section>
