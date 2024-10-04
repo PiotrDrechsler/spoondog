@@ -25,8 +25,8 @@ export const OpinionsSection = () => {
           arrowVisibility="largeScreen"
           noPaddingBottom
           breakpoints={{
-            835: { slidesPerView: 3, spaceBetween: 16 },
-            1440: { slidesPerView: 4, spaceBetween: 24 },
+            835: { slidesPerView: 2.7, spaceBetween: 16 },
+            1440: { slidesPerView: 3.7, spaceBetween: 24 },
           }}
           loop
         >
