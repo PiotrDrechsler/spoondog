@@ -24,7 +24,7 @@ export const opinionsData = [
   {
     name: "Damian J.",
     opinion:
-      "Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z polecenia",
+      "Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z polecenia mój pies zwiarował i gada",
   },
   {
     name: "Izabela W.",
