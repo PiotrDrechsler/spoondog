@@ -9,7 +9,7 @@ export const OpinionsSection = () => {
   return (
     <section id="opinions">
       <Container>
-        <div className="relative tablet:mb-[24px]">
+        <div className="relative tablet:mb-[24px] desktop:mb-[168px]">
           <SectionHeading
             sectionTitle="Strona główna / Opinie"
             sectionMainHeading="Dołącz do grona zadowolonych klientów!"
@@ -26,6 +26,7 @@ export const OpinionsSection = () => {
           noPaddingBottom
           breakpoints={{
             835: { slidesPerView: 3, spaceBetween: 16 },
+            1440: { slidesPerView: 4, spaceBetween: 24 },
           }}
           loop
         >
