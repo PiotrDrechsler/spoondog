@@ -1,10 +1,5 @@
 export const opinionsData = [
   {
-    name: "Krzysztof D.",
-    opinion:
-      "Piesek ostrzyzony, wykapany, pachnacy i to wszystko nie za miliony monet! 🤩👍 Poprawki zrobione na moje zyczenie bezproblemowo. Kazdy przeciez ma swoja wizje. Na pewno wrocimy! ❤️❤️",
-  },
-  {
     name: "Pawel S.",
     opinion:
       "Świetne miejsce / bardzo dobre ceny / fachowa i miła obsluga. Piesek szczęśliwy lżejszy o zimowe futro",
@@ -29,7 +24,7 @@ export const opinionsData = [
   {
     name: "Damian J.",
     opinion:
-      "Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z polecenia Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z poleceni Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z poleceni Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z poleceni Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z poleceni Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z poleceni",
+      "Pełna profeska, pies zadowolony, to my też. Napewno będziemy wracać, bo była to nasza 1 wizyta. A była z polecenia",
   },
   {
     name: "Izabela W.",
