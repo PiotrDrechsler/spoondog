@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       screens: {
         desktop: "1440px",
-        tablet: "600px",
+        tablet: "835px",
       },
       fontSize: {
         "12": "12px",
