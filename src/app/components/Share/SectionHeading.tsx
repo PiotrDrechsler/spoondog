@@ -1,7 +1,7 @@
 interface SectionHeadingProps {
   sectionTitle?: string;
-  sectionMainHeading: React.ReactNode;
-  sectionInfo: React.ReactNode;
+  sectionMainHeading: React.ReactNode; // Sometimes when you need to use tags like <strong> for better SEO for 1 word, ReactNode is a better solution
+  sectionInfo: React.ReactNode; // Sometimes when you need to use tags like <strong> for better SEO for 1 word, ReactNode is a better solution
   variant?: "opinions-section" | "default-section";
 }
 
