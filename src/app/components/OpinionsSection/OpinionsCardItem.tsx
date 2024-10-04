@@ -27,9 +27,9 @@ export const OpinionsCardItem: React.FC<OpinionsCardItemProps> = ({
   }
 
   return (
-    <div className="w-[220px]! my-[8px] h-[206px] rounded-3xl border bg-cream px-[14px] py-[20px] leading-[1.5] shadow-card-shadow desktop:h-[220px] desktop:px-[20px]">
+    <div className="mx-[8px] my-[10px] h-[206px] rounded-3xl border bg-cream px-[14px] py-[20px] leading-[1.5] shadow-card-shadow desktop:h-[220px] desktop:px-[20px]">
       <p className="mb-[10px] border-b font-bold desktop:text-18">{name}</p>
-      <div className="line-clamp-4 max-w-full overflow-hidden duration-7000 ease-linear">
+      <div className="line-clamp-4 max-w-full overflow-hidden">
         <p className="whitespace-normal text-14 desktop:text-16">
           &quot;{opinion}&quot;
         </p>
