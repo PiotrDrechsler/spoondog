@@ -9,7 +9,7 @@ export const OpinionsSection = () => {
   return (
     <section id="opinions">
       <Container>
-        <div className="relative">
+        <div className="relative tablet:mb-[24px]">
           <SectionHeading
             sectionTitle="Strona główna / Opinie"
             sectionMainHeading="Dołącz do grona zadowolonych klientów!"
@@ -21,7 +21,14 @@ export const OpinionsSection = () => {
           </div>
         </div>
         {/* Card List Section with horizontal scrolling */}
-        <Swiper arrowVisibility="largeScreen" noPaddingBottom loop>
+        <Swiper
+          arrowVisibility="largeScreen"
+          noPaddingBottom
+          breakpoints={{
+            835: { slidesPerView: 3, spaceBetween: 16 },
+          }}
+          loop
+        >
           {opinionsData.map(({ name, opinion }, index) => (
             <OpinionsCardItem key={index} name={name} opinion={opinion} />
           ))}
