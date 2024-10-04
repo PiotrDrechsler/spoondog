@@ -1,3 +1,10 @@
+# Table of Contents
+
+1. **[SectionHeading Component](#sectionheading-component)**
+2. **[OpinionsSection Component](#opinionssection-component)**
+3. **[OpinionsCardItem Component](#opinionscarditem-component)**
+4. **[GoogleReviewCard Component](#googlereviewcard-component)**
+
 ## `SectionHeading` Component
 
 The `SectionHeading` component is used to display section headings on our page. Its main purpose is to provide a semantic structure for headings, which improves SEO and enhances content readability.
