@@ -47,10 +47,7 @@ const config: Config = {
         greyBorders: "#EAEAE7",
         backdrop: "rgba(0, 0, 0, 0.5)",
       },
-      transitionDuration: {
-        "7000": "7000ms",
-      },
-      borderRadius: {
+      rderRadius: {
         "footer-radius": "40px 40px 0px 0px",
         radius24: "24px",
         "header-radius": "0px 0px 12px 12px",
