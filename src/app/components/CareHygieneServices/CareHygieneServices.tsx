@@ -40,13 +40,13 @@ export const CareHygieneServices: React.FC<CareHygieneServicesProps> = ({
           <div
             key={index}
             id={service.id}
-            className="py-10 desktop:mt-[100px] desktop:py-[40px]"
+            className="py-10 desktop:mt-[100px] tablet:mb-10 tablet:last-of-type:mb-[30px] desktop:py-[40px]"
           >
             <h4 className="mb-[4px] text-20 font-medium leading-[1.2] desktop:text-24">
               {service.title}
             </h4>
             <div className="h-[1px] w-full bg-yellow desktop:mb-[0px]"></div>
-            <div className="mt-[52px] flex flex-col items-center desktop:mt-[48px] desktop:flex-row-reverse desktop:justify-between">
+            <div className="mt-[52px] flex flex-col items-center tablet:mt-0 tablet:gap-6 desktop:mt-[48px] tablet:flex-row-reverse desktop:justify-between">
               <div className="relative h-[229px] w-full max-w-[466px] overflow-hidden rounded-radius24 desktop:h-[321px]">
                 {/* eslint-disable @next/next/no-img-element */}
                 <img
@@ -73,7 +73,7 @@ export const CareHygieneServices: React.FC<CareHygieneServicesProps> = ({
                 </div>
               </div>
             </div>
-            <div className="flex justify-center">
+            <div className="flex justify-center tablet:justify-start">
               <PhoneButton content="Umów wizytę" />
             </div>
           </div>
