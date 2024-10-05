@@ -1,10 +1,10 @@
 "use client";
 
 import Container from "../Share/Container";
+import { CareHygieneServicesTitle } from "./CareHygieneServicesTitle";
 import { useEffect, useState } from "react";
 import { PhoneButton } from "../Share/PhoneButton";
 import { CareHygieneService } from "@/app/utils/CareHygieneDataInterface";
-import { SectionHeading } from "../Share/SectionHeading";
 
 interface CareHygieneServicesProps {
   data: CareHygieneService[];
@@ -31,14 +31,11 @@ export const CareHygieneServices: React.FC<CareHygieneServicesProps> = ({
   return (
     <section className="pb-[132px] pt-[100px] desktop:pt-[120px]">
       <Container>
-        <SectionHeading
-        sectionTitle=""
-        sectionMainHeading = "Poznaj nasze usługi zabiegów higienizacyjnych"
-        sectionInfo={
-          <>
-           <strong>Kąpiel</strong> / Higiena uszu / Przycięcie pazurków / Usuwanie kamienia nazębnego metodą ultradźwięków
-          </>
-        }/>
+        <CareHygieneServicesTitle
+          title={title}
+          subtitle={subtitle}
+          subtitleBold={subtitleBold}
+        />
         {data.map((service, index) => (
           <div
             key={index}
