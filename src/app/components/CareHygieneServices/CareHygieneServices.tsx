@@ -29,7 +29,7 @@ export const CareHygieneServices: React.FC<CareHygieneServicesProps> = ({
   }, []);
 
   return (
-    <section className="pb-[132px] pt-[100px] desktop:pt-[120px]">
+    <section className="pb-[5px] pt-[60px] desktop:pt-[120px]">
       <Container>
         <CareHygieneServicesTitle
           title={title}
@@ -40,7 +40,7 @@ export const CareHygieneServices: React.FC<CareHygieneServicesProps> = ({
           <div
             key={index}
             id={service.id}
-            className="pt-[132px] desktop:mt-[100px] desktop:py-[40px]"
+            className="py-10 desktop:mt-[100px] desktop:py-[40px]"
           >
             <h4 className="mb-[4px] text-20 font-medium leading-[1.2] desktop:text-24">
               {service.title}
@@ -73,7 +73,9 @@ export const CareHygieneServices: React.FC<CareHygieneServicesProps> = ({
                 </div>
               </div>
             </div>
-            <PhoneButton content="Umów wizytę" />
+            <div className="flex justify-center">
+              <PhoneButton content="Umów wizytę" />
+            </div>
           </div>
         ))}
       </Container>
