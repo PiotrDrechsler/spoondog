@@ -10,7 +10,7 @@ export const CareHygieneServicesTitle: React.FC<HygieneServicesTitleProps> = ({
   subtitleBold,
 }) => {
   return (
-    <div className="my-10 py-5">
+    <div className="my-10 py-5 desktop:my-0 desktop:pt-[80px] desktop:pb-[140px]">
       <h2 className="pb-[16px] text-24 font-medium leading-[1.3] tracking-[-0.02em] desktop:mb-[40px] desktop:text-44">
         {title}
       </h2>
