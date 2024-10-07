@@ -6,6 +6,7 @@ import { Hero } from "./components/Hero/Hero";
 import  SalonOwner  from "./components/SalonOwner/SalonOwner";
 import { ClickOnMe } from "./components/ClickOnMe/ClickOnMe";
 import { SwiperGallery } from "./components/SwiperGallery/SwiperGallery";
+import { OpinionsSection } from "./components/OpinionsSection/OpinionsSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <ClickOnMe/>
       <SwiperGallery />
+      <OpinionsSection />
       <Contact />
       <Faq />
     </>
