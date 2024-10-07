@@ -13,7 +13,7 @@ interface SwiperProps {
   spaceBetween?: number;
   breakpoints?: { [width: number]: any };
   loop?: boolean;
-  noPaddingBottom?: boolean;
+  removePaddingBottom?: boolean;
 }
 
 export const Swiper = ({
@@ -23,12 +23,12 @@ export const Swiper = ({
   spaceBetween = 10,
   breakpoints,
   loop,
-  noPaddingBottom = false,
+  removePaddingBottom = false,
 }: SwiperProps) => {
   return (
     <div
       className={`relative ${
-        noPaddingBottom ? "pb-0 desktop:pb-0" : "pb-9 desktop:pb-12"
+        removePaddingBottom ? "pb-0 desktop:pb-0" : "pb-9 desktop:pb-12"
       }`}
     >
       <ReactSwiper

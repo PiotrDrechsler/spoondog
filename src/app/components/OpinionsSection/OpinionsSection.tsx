@@ -23,7 +23,7 @@ export const OpinionsSection = () => {
         {/* Card List Section with horizontal scrolling */}
         <Swiper
           arrowVisibility="largeScreen"
-          noPaddingBottom
+          removePaddingBottom
           breakpoints={{
             835: { slidesPerView: 2.7, spaceBetween: 16 },
             1440: { slidesPerView: 3.7, spaceBetween: 24 },
