@@ -16,7 +16,8 @@
     "react-dom": "^18",
     "swiper": "^11.1.14",
     "tailwind-merge": "^2.5.2",
-    "yet-another-react-lightbox": "^3.21.6"
+    "yet-another-react-lightbox": "^3.21.6",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",
