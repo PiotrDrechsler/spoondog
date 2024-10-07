@@ -4,6 +4,7 @@ import React from "react";
 import { Swiper as ReactSwiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination } from "swiper/modules";
 import { SwiperButton } from "./SwiperButton";
+import { cn } from "@/app/utils/helpers";
 import "./Swiper.css";
 
 interface SwiperProps {
@@ -27,9 +28,10 @@ export const Swiper = ({
 }: SwiperProps) => {
   return (
     <div
-      className={`relative ${
-        removePaddingBottom ? "pb-0 desktop:pb-0" : "pb-9 desktop:pb-12"
-      }`}
+      className={cn(
+        "relative",
+        removePaddingBottom ? "pb-0 desktop:pb-0" : "pb-9 desktop:pb-12",
+      )}
     >
       <ReactSwiper
         modules={[Navigation, Pagination, A11y]}

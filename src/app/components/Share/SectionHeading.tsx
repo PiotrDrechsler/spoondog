@@ -1,3 +1,5 @@
+import { cn } from "@/app/utils/helpers";
+
 interface SectionHeadingProps {
   sectionTitle?: string;
   sectionMainHeading: React.ReactNode; // Sometimes when you need to use tags like <strong> for better SEO for 1 word, ReactNode is a better solution
@@ -20,11 +22,10 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
       )}
       {/* h2 tag - important text for SEO! */}
       <h2
-        className={`mb-[8px] text-26 font-bold leading-[1.2] desktop:text-36 ${
-          variant === "opinions-section"
-            ? "max-w-[230px] tablet:max-w-full"
-            : ""
-        }`}
+        className={cn(
+          "mb-[8px] text-26 font-bold leading-[1.2] desktop:text-36",
+          variant === "opinions-section" && "max-w-[230px] tablet:max-w-full",
+        )}
       >
         {sectionMainHeading}
       </h2>

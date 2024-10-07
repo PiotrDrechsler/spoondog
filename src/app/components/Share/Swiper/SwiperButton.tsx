@@ -24,7 +24,10 @@ export const SwiperButton = ({ direction, visibility }: SwiperButtonProps) => {
       }
     >
       <IconNext
-        className={`size-28 fill-yellow ${direction === "prev" ? "rotate-180" : ""}`}
+        className={cn(
+          "size-28 fill-yellow",
+          direction === "prev" && "rotate-180",
+        )}
       />
     </button>
   );
