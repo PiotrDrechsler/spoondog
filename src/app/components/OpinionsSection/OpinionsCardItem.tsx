@@ -20,10 +20,13 @@ export const OpinionsCardItem: React.FC<OpinionsCardItemProps> = ({
   const parsedOpinion = opinionSchema.safeParse({ name, opinion });
 
   // If validation fails, we can display in console.error the information or shorten the text
+  const displayOpinion = parsedOpinion.success
+    ? opinion
+    : opinion.slice(0, 120) + "...";
+
   if (!parsedOpinion.success) {
     console.error("The opinion exceeds the number of characters allowed");
-    opinion = opinion.slice(0, 120) + "...";
-    console.error("Change lenght of opinion for:", opinion);
+    console.error("Truncated opinion:", displayOpinion);
   }
 
   return (
