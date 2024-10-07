@@ -8,6 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        "active-boxes": "text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"
+      },
+      keyframes: {
+        "text-focus-in": {
+          '0%': {
+            "-webkit-filter": 'blur(10px)',
+            filter: 'blur(10px)',
+            opacity: '0',
+          },
+          '100%': {
+            "-webkit-filter": 'blur(0px)',
+            filter: 'blur(0px)',
+            opacity: '1',
+          },
+        },
+      },
       screens: {
         tablet: "835px",
         desktop: "1440px",
@@ -62,6 +79,7 @@ const config: Config = {
         "header-shadow": "0px 4px 10px 0px #F0F1F8",
         "google-shadow":
           "11.456px 8.019px 22.912px rgba(0, 0, 0, 0.08), -2.291px -1.146px 9.165px rgba(0, 0, 0, 0.08)",
+        "clickonmeshadow": "0px 4px 10px rgba(222, 223, 230, 0.7)",
         "reg-shadow": "2px 4px 10px 0px rgba(222, 223, 230, 0.70)",
         "card-shadow": "0px 4px 10px 0px rgba(222, 223, 230, 0.70)",
       },
