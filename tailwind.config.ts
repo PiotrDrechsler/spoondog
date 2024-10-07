@@ -8,6 +8,23 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        "active-boxes": "text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"
+      },
+      keyframes: {
+        "text-focus-in": {
+          '0%': {
+            "-webkit-filter": 'blur(10px)',
+            filter: 'blur(10px)',
+            opacity: '0',
+          },
+          '100%': {
+            "-webkit-filter": 'blur(0px)',
+            filter: 'blur(0px)',
+            opacity: '1',
+          },
+        },
+      },
       screens: {
         tablet: "835px",
         desktop: "1440px",
@@ -59,6 +76,7 @@ const config: Config = {
         "hero-shadow": "0px 4px 10px 0px rgba(207, 207, 207, 0.7)",
         "footer-shadow": "0px 4px 10px 0px #000",
         "header-shadow": "0px 4px 10px 0px #F0F1F8",
+        "clickonmeshadow": "0px 4px 10px rgba(222, 223, 230, 0.7)",
         "reg-shadow": "2px 4px 10px 0px rgba(222, 223, 230, 0.70)",
       },
       backgroundImage: {
