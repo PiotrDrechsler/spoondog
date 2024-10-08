@@ -20,9 +20,4 @@ export const footerLinksData = [
     label: "Fundacja Fioletowy Pies",
     target: "_blank",
   },
-  {
-    href: "https://www.zerwijmylancuchy.pl/",
-    label: "Zerwijmy Łańcuchy",
-    target: "_blank",
-  },
 ];
