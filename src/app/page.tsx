@@ -8,7 +8,6 @@ import { ClickOnMe } from "./components/ClickOnMe/ClickOnMe";
 import { SwiperGallery } from "./components/SwiperGallery/SwiperGallery";
 import { OpinionsSection } from "./components/OpinionsSection/OpinionsSection";
 
-
 export default function Home() {
   return (
     <>

@@ -2,8 +2,6 @@ import { useSwiper } from "swiper/react";
 import { cn } from "@/app/utils/helpers";
 import { IconNext } from "@/app/icons/IconNext";
 
-
-
 interface SwiperButtonProps {
   direction: "next" | "prev";
   visibility?: "always" | "largeScreen";
