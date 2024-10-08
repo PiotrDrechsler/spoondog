@@ -1,11 +1,11 @@
-import Image, { type StaticImageData } from "next/image";
+import Image from "next/image";
 import { IconLoupe } from "@/app/icons/IconLoupe";
+import { Clickable, ImageSource } from "@/app/utils/Types";
 
-interface GalleryGridItemProps {
-  imageUrl: string | StaticImageData;
+interface GalleryGridItemProps extends Clickable {
+  imageUrl: ImageSource;
   altText: string;
   priority: boolean;
-  onClick: () => void;
 }
 
 export const GalleryGridItem = ({

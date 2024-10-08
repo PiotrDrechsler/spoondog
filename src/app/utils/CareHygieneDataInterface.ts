@@ -1,6 +1,6 @@
-export interface CareHygieneService {
-  id: string;
-  title: string;
+import { IdProps, TitleProps } from "./Types";
+
+export interface CareHygieneService extends IdProps, TitleProps {
   smallTitle: string;
   description1: string;
   description2?: string;

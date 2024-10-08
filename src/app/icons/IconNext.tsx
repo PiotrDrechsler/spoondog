@@ -1,8 +1,6 @@
-interface IconLProps {
-  className?: string;
-}
+import { IconProps } from "../utils/Types";
 
-export const IconNext = ({ className }: IconLProps) => (
+export const IconNext = ({ className }: IconProps) => (
   <svg
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"

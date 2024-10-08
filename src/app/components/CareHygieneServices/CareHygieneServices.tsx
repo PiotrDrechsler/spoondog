@@ -5,12 +5,10 @@ import { CareHygieneServicesTitle } from "./CareHygieneServicesTitle";
 import { useEffect, useState } from "react";
 import { PhoneButton } from "../Share/PhoneButton";
 import { CareHygieneService } from "@/app/utils/CareHygieneDataInterface";
+import { ServiceTitleProps } from "@/app/utils/Types";
 
-interface CareHygieneServicesProps {
+interface CareHygieneServicesProps extends ServiceTitleProps {
   data: CareHygieneService[];
-  title: string;
-  subtitle: string;
-  subtitleBold: string;
 }
 
 export const CareHygieneServices: React.FC<CareHygieneServicesProps> = ({

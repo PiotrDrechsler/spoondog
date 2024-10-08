@@ -1,18 +1,17 @@
-import React from "react";
+import { IdProps } from "@/app/utils/Types";
 
-interface ClickOnMeTitleProps {
-  id: string;
+interface ClickOnMeTitleProps extends IdProps {
   text: string;
 }
 
 export const ClickOnMeTitle: React.FC<ClickOnMeTitleProps> = ({ text }) => {
-    return (
-      <div className="mb-4 flex justify-center">
-      <div className="desktop:mb-[60px] mb-[26px]">
-        <h2 className="text-26 desktop:mb-[8px] desktop:text-36 mb-[10px] font-bold leading-[1.2] tracking-[-0.02em]">
+  return (
+    <div className="mb-4 flex justify-center">
+      <div className="mb-[26px] desktop:mb-[60px]">
+        <h2 className="mb-[10px] text-26 font-bold leading-[1.2] tracking-[-0.02em] desktop:mb-[8px] desktop:text-36">
           {text}
         </h2>
       </div>
-      </div>
-    );
-  };
+    </div>
+  );
+};

@@ -1,7 +1,7 @@
 import Image from "next/image"
+import { TitleProps } from "@/app/utils/Types"
 
-interface HeroSingleIconProps {
-    title: string,
+interface HeroSingleIconProps extends TitleProps {
     imageSrc: string,
 }
 

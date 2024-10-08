@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { IconArrowRight } from "@/app/icons/IconArrowRight";
+import { BaseButtonProps } from "@/app/utils/Types";
 
-interface ButtonProps {
+interface ButtonProps extends BaseButtonProps{
   href: string;
-  content: string;
 }
 
 const Button: React.FC<ButtonProps> = ({ href, content }) => {

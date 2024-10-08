@@ -1,10 +1,6 @@
-interface HygieneServicesTitleProps {
-  title: string;
-  subtitle: string;
-  subtitleBold: string;
-}
+import { ServiceTitleProps } from "@/app/utils/Types";
 
-export const CareHygieneServicesTitle: React.FC<HygieneServicesTitleProps> = ({
+export const CareHygieneServicesTitle: React.FC<ServiceTitleProps> = ({
   title,
   subtitle,
   subtitleBold,

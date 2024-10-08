@@ -1,8 +1,8 @@
+import { Clickable } from "@/app/utils/Types";
 import { HeaderSocialmedia } from "./HeaderSocialmedia";
 import { LogoHeaderMobile } from "@/app/icons/LogoHeaderMobile";
 
-interface HeaderMobileProps {
-  onClick: () => void;
+interface HeaderMobileProps extends Clickable {
   iconOpen: boolean;
   svgOpen: JSX.Element;
   svgClose: JSX.Element;
