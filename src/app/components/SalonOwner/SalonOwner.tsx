@@ -17,6 +17,7 @@ const SalonOwner: React.FC = () => {
               Katarzyna Bober - <strong>Technik weterynarii</strong>
             </>
           }
+          className="pb-6"
         />
         <div className="tablet:flex tablet:flex-row tablet:gap-10 desktop:flex-row-reverse desktop:justify-between">
           <div className="mb-10 flex h-[248px] w-[342px] justify-center tablet:my-auto desktop:h-[391px] desktop:w-[540px] desktop:-translate-y-[60px]">
