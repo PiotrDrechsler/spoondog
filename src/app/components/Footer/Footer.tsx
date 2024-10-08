@@ -21,7 +21,7 @@ export const Footer = () => {
 
   return (
     <footer className="relative rounded-footer-radius">
-      <div className="absolute bottom-[60px] left-1/2 -translate-x-1/2 transform desktop:hidden">
+      <div className="absolute bottom-[60px] left-1/2 -translate-x-1/2 transform tablet:hidden">
         <PawMobile />
       </div>
       <div className="absolute right-0 top-0 hidden desktop:block">
@@ -32,11 +32,11 @@ export const Footer = () => {
       </div>
       <Container>
         <div className="relative z-10">
-          <div className="flex flex-col pb-[30px] pt-[75px] desktop:flex-row desktop:pb-[26px] desktop:pt-[80px]">
+          <div className="flex flex-col pb-[30px] pt-[75px] tablet:pt-[65px] desktop:flex-row desktop:pb-[26px] desktop:pt-[80px]">
             <div className="mx-auto mb-[51px] desktop:mx-0 desktop:mr-[123px]">
               <LogoFooter />
             </div>
-            <div className="flex w-full flex-col gap-[30px] desktop:flex-row desktop:gap-[40px]">
+            <div className="flex w-full flex-col gap-[30px] tablet:flex-row desktop:gap-[40px]">
               <FooterNavigation />
               <FooterContacts />
               <FooterLinks />

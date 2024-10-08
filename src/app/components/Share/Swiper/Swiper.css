@@ -2,6 +2,10 @@
 @import "swiper/css/navigation";
 @import "swiper/css/pagination";
 
+.swiper {
+  position: static;
+}
+
 .swiper-pagination {
   position: absolute;
   bottom: 0;
