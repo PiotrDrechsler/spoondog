@@ -55,12 +55,12 @@ export const Header = () => {
         )}
         {!isDesktop && (
           <div
-          onClick={handleToggleMenu}
-          className={cn(
-            'z-100 absolute left-0 top-0 h-screen w-screen bg-backdrop transition duration-300 ease-in-out',
-            { 'translate-x-[0%]': isMenuOpen, 'translate-x-[100%]': !isMenuOpen }
-          )}
-        >
+            onClick={handleToggleMenu}
+            className={cn(
+              "z-100 absolute left-0 top-0 h-screen w-screen bg-backdrop transition duration-300 ease-in-out",
+              isMenuOpen ? "translate-x-0" : "translate-x-full",
+            )}
+          >
             <div className="w-full rounded-menu-radius bg-white pb-[20px]">
               <Container>
                 <HeaderMobile

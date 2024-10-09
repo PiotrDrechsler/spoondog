@@ -1,5 +1,3 @@
-"use client";
-
 import { servicesData } from "@/app/utils/servicesData";
 import { cn } from "@/app/utils/helpers";
 import Button from "../Share/Button";
@@ -14,11 +12,8 @@ export const ServicesServices = () => {
         >
           <div
             className={cn(
-              "h-[180px] w-[180px] bg-cover desktop:h-[223px] desktop:w-[223px]",
-              {
-                "bg-services-dog1": index === 0,
-                "bg-services-dog2": index !== 0,
-              },
+              "size-[180px] bg-cover desktop:size-[223px]",
+              index === 0 ? "bg-services-dog1" : "bg-services-dog2",
             )}
           ></div>
           <div className="w-full desktop:max-w-[344px]">
