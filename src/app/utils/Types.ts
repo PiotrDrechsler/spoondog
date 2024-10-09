@@ -15,10 +15,6 @@ export interface ServiceTitleProps extends TitleProps {
 export interface BaseButtonProps {
   content: string;
 }
-export interface Position {
-  left: string;
-  top: string;
-}
 export interface Clickable {
   onClick: () => void;
 }
