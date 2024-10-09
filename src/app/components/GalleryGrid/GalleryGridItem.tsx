@@ -34,7 +34,6 @@ export const GalleryGridItem = ({
           Zobacz zdjęcie
         </span>
       </div>
-      x
     </li>
   );
 };
