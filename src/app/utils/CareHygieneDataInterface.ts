@@ -1,6 +1,7 @@
-import { IdProps, TitleProps } from "./Types";
+import { TitleProps } from "./Types";
 
-export interface CareHygieneService extends IdProps, TitleProps {
+export interface CareHygieneService extends TitleProps {
+  id: string;
   smallTitle: string;
   description1: string;
   description2?: string;

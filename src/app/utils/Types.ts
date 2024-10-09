@@ -19,5 +19,5 @@ export interface Clickable {
   onClick: () => void;
 }
 export interface IdProps {
-  id: string | number;
+  id: number;
 }
