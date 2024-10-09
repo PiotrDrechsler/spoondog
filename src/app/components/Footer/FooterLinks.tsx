@@ -8,28 +8,22 @@ export const FooterLinks = () => {
         Linki
       </h4>
       <ul className="flex flex-col gap-[8px] desktop:gap-[16px]">
-        {footerLinksData.map((item, index) => (
+      {footerLinksData.map((item, index) => {
+        const DynamicTag = item.href.startsWith("/") ? Link : "a";
+        return (
           <li key={index} className={index === 0 ? "" : "underline"}>
-            {item.href.startsWith("/") ? (
-              <Link
-                href={item.href}
-                target={item.target}
-                className="text-14 leading-[21px] transition duration-300 ease-in-out hover:text-violet focus:text-violet"
-              >
-                {item.label}
-              </Link>
-            ) : (
-              <a
-                href={item.href}
-                target={item.target}
-                className="text-14 leading-[21px] transition duration-300 ease-in-out hover:text-violet focus:text-violet"
-              >
-                {item.label}
-              </a>
-            )}
+            <DynamicTag
+              href={item.href}
+              target={item.target}
+              className="text-14 leading-[21px] transition duration-300 ease-in-out hover:text-violet focus:text-violet"
+            >
+              {item.label}
+            </DynamicTag>
           </li>
-        ))}
-      </ul>
+        );
+      })}
+    </ul>
+    
     </div>
   );
 };
