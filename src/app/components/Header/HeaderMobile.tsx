@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Clickable } from "@/app/utils/Types";
 import { HeaderSocialmedia } from "./HeaderSocialmedia";
 import { LogoHeaderMobile } from "@/app/icons/LogoHeaderMobile";
@@ -20,9 +21,9 @@ export const HeaderMobile: React.FC<HeaderMobileProps> = ({
         {iconOpen ? svgOpen : svgClose}
         <span className="text-12 font-bold leading-[1.5]">Menu</span>
       </button>
-      <a href="/">
+      <Link href="/">
         <LogoHeaderMobile />
-      </a>
+      </Link>
       <HeaderSocialmedia />
     </div>
   );

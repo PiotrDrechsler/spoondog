@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LogoFooter } from "@/app/icons/LogoFooter";
 import { PhoneButton } from "../Share/PhoneButton";
 
@@ -6,9 +7,12 @@ export const HeroInfo = () => {
     <>
       <div className="mx-[18px] mt-[402px] h-[308px] w-auto desktop:mx-0 desktop:mt-[80px] desktop:w-[476px]">
         <div className="align-items flex flex-col justify-start">
-          <a href="/" className="hidden w-auto desktop:mb-[64px] desktop:block">
+          <Link
+            href="/"
+            className="hidden w-auto desktop:mb-[64px] desktop:block"
+          >
             <LogoFooter />
-          </a>
+          </Link>
           <h1 className="text-26 font-bold leading-[1.1] tracking-[-0.02em] desktop:mb-[24px] desktop:text-50">
             Zadbaj o komfort swojego pupila
           </h1>

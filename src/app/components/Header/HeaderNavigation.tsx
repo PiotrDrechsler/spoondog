@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import {
   navigationHeaderData,
   aboutSubMenu,
@@ -42,7 +43,7 @@ export const HeaderNavigation = ({
             key={index}
             className={cn(
               "group text-14 font-medium leading-[1.5] desktop:text-16",
-              { "desktop:relative": index === 1 },
+              index === 1 && "desktop:relative",
             )}
           >
             <div
@@ -55,18 +56,19 @@ export const HeaderNavigation = ({
                 }
               }}
             >
-              <a
+              <Link
                 href={item.href}
                 className="transition duration-300 ease-in-out focus:text-violet group-hover:text-violet"
                 onClick={handleSubMenuLinkClick}
               >
                 {item.label}
-              </a>
+              </Link>
               {index === 1 && (
                 <div
-                  className={`transform transition-transform duration-300 ease-in-out ${
-                    openIndex === index ? "rotate-180" : ""
-                  }`}
+                  className={cn(
+                    "transform transition-transform duration-300 ease-in-out",
+                    openIndex === index && "rotate-180",
+                  )}
                 >
                   <IconArrowAbout className="transform fill-dark transition-transform duration-300 ease-in-out group-hover:fill-violet" />
                 </div>
@@ -79,13 +81,13 @@ export const HeaderNavigation = ({
                     key={subIndex}
                     className="mb-2 whitespace-nowrap pb-[8px] font-normal"
                   >
-                    <a
+                    <Link
                       href={subItem.href}
                       className="transition duration-300 ease-in-out hover:text-violet focus:text-violet"
                       onClick={handleSubMenuLinkClick}
                     >
                       {subItem.label}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
