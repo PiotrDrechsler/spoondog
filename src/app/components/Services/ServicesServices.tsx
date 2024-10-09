@@ -1,6 +1,7 @@
 "use client";
 
 import { servicesData } from "@/app/utils/servicesData";
+import { cn } from "@/app/utils/helpers";
 import Button from "../Share/Button";
 
 export const ServicesServices = () => {
@@ -12,7 +13,13 @@ export const ServicesServices = () => {
           className="flex w-full flex-col items-center gap-[16px] rounded-radius24 border-[1px] border-greyBorders bg-cream px-[16px] py-[28px] shadow-boxes-shadow desktop:flex-row"
         >
           <div
-            className={`h-[180px] w-[180px] bg-cover desktop:h-[223px] desktop:w-[223px] ${index === 0 ? "bg-services-dog1" : "bg-services-dog2"}`}
+            className={cn(
+              "h-[180px] w-[180px] bg-cover desktop:h-[223px] desktop:w-[223px]",
+              {
+                "bg-services-dog1": index === 0,
+                "bg-services-dog2": index !== 0,
+              },
+            )}
           ></div>
           <div className="w-full desktop:max-w-[344px]">
             <h3 className="mb-[4px] text-18 font-bold leading-[1.5] desktop:mb-[8px] desktop:text-[20px] desktop:font-medium">
@@ -25,7 +32,7 @@ export const ServicesServices = () => {
               <span className="mx-2">•</span>
               <span>{service.label3}</span>
             </p>
-            <p className="my-[16px] text-14 leading-[1.3] mb-[24px] desktop:mb-[34px] desktop:mt-[24px]">
+            <p className="my-[16px] mb-[24px] text-14 leading-[1.3] desktop:mb-[34px] desktop:mt-[24px]">
               {service.description}
             </p>
 

@@ -1,7 +1,7 @@
 import Image from "next/image";
-import React from "react";
 import { StaticImageData } from "next/image";
 import { TitleProps } from "@/app/utils/Types";
+import { cn } from "@/app/utils/helpers";
 
 interface NewOfferImgProps extends TitleProps {
   imageSrc: StaticImageData;
@@ -16,7 +16,7 @@ export const NewOfferImg: React.FC<NewOfferImgProps> = ({
   positionStyle,
 }) => {
   return (
-    <div className={`absolute ${positionClass}`} style={positionStyle}>
+    <div className={cn("absolute", positionClass)} style={positionStyle}>
       <div className="relative h-[191px] w-[115px] desktop:h-[384px] desktop:w-[240px]">
         <div className="mb-[10px]">
           <p className="text-[20px] font-bold leading-[1.2] desktop:text-[28px]">

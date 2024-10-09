@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { PhoneButton } from "../Share/PhoneButton";
 import { CareHygieneService } from "@/app/utils/CareHygieneDataInterface";
 import { ServiceTitleProps } from "@/app/utils/Types";
+import { cn } from "@/app/utils/helpers";
 
 interface CareHygieneServicesProps extends ServiceTitleProps {
   data: CareHygieneService[];
@@ -38,7 +39,7 @@ export const CareHygieneServices: React.FC<CareHygieneServicesProps> = ({
           <div
             key={index}
             id={service.id}
-            className="py-10 tablet:mb-10 tablet:last-of-type:mb-[30px] desktop:py-[40px] desktop:mb-[100px] desktop:last-of-type:mb-[100px]"
+            className="py-10 tablet:mb-10 tablet:last-of-type:mb-[30px] desktop:mb-[100px] desktop:py-[40px] desktop:last-of-type:mb-[100px]"
           >
             <h4 className="mb-[4px] text-20 font-medium leading-[1.2] desktop:text-24">
               {service.title}
@@ -50,12 +51,24 @@ export const CareHygieneServices: React.FC<CareHygieneServicesProps> = ({
                 <img
                   src={service.src1}
                   alt={service.alt}
-                  className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out ${activePicture ? "opacity-100" : "opacity-0"}`}
+                  className={cn(
+                    "absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out",
+                    {
+                      "opacity-100": activePicture,
+                      "opacity-0": !activePicture,
+                    },
+                  )}
                 />
                 <img
                   src={service.src2}
                   alt={service.alt}
-                  className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out ${activePicture ? "opacity-0" : "opacity-100"}`}
+                  className={cn(
+                    "absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out",
+                    {
+                      "opacity-0": activePicture,
+                      "opacity-100": !activePicture,
+                    },
+                  )}
                 />
                 {/* eslint-enable @next/next/no-img-element */}
               </div>

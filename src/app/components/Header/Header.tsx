@@ -7,6 +7,7 @@ import { HeaderDesktop } from "./HeaderDesktop";
 import { IconOpenMobileMenu } from "@/app/icons/IconOpenMobileMenu";
 import { IconCloseMobileMenu } from "@/app/icons/IconCloseMobileMenu";
 import { PhoneButton } from "../Share/PhoneButton";
+import { cn } from "@/app/utils/helpers";
 
 export const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -54,9 +55,12 @@ export const Header = () => {
         )}
         {!isDesktop && (
           <div
-            onClick={handleToggleMenu}
-            className={`z-100 ${isMenuOpen ? "translate-x-[0%]" : "translate-x-[100%]"} absolute left-0 top-0 h-screen w-screen bg-backdrop transition duration-300 ease-in-out`}
-          >
+          onClick={handleToggleMenu}
+          className={cn(
+            'z-100 absolute left-0 top-0 h-screen w-screen bg-backdrop transition duration-300 ease-in-out',
+            { 'translate-x-[0%]': isMenuOpen, 'translate-x-[100%]': !isMenuOpen }
+          )}
+        >
             <div className="w-full rounded-menu-radius bg-white pb-[20px]">
               <Container>
                 <HeaderMobile
