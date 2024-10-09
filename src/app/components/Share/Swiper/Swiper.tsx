@@ -4,6 +4,7 @@ import React from "react";
 import { Swiper as ReactSwiper, SwiperSlide } from "swiper/react";
 import { A11y, Navigation, Pagination } from "swiper/modules";
 import { SwiperButton } from "./SwiperButton";
+import { cn } from "@/app/utils/helpers";
 import "./Swiper.css";
 
 interface SwiperProps {
@@ -13,6 +14,7 @@ interface SwiperProps {
   spaceBetween?: number;
   breakpoints?: { [width: number]: any };
   loop?: boolean;
+  removePaddingBottom?: boolean;
 }
 
 export const Swiper = ({
@@ -22,9 +24,15 @@ export const Swiper = ({
   spaceBetween = 10,
   breakpoints,
   loop,
+  removePaddingBottom = false,
 }: SwiperProps) => {
   return (
-    <div className="relative pb-9 desktop:pb-12">
+    <div
+      className={cn(
+        "relative",
+        removePaddingBottom ? "pb-0 desktop:pb-0" : "pb-9 desktop:pb-12",
+      )}
+    >
       <ReactSwiper
         modules={[Navigation, Pagination, A11y]}
         slidesPerView={slidesPerView}

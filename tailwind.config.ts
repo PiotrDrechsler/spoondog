@@ -8,9 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      animation: {
+        "active-boxes": "text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"
+      },
+      keyframes: {
+        "text-focus-in": {
+          '0%': {
+            "-webkit-filter": 'blur(10px)',
+            filter: 'blur(10px)',
+            opacity: '0',
+          },
+          '100%': {
+            "-webkit-filter": 'blur(0px)',
+            filter: 'blur(0px)',
+            opacity: '1',
+          },
+        },
+      },
       screens: {
-        desktop: "1440px",
         tablet: "835px",
+        desktop: "1440px",
       },
       fontSize: {
         "12": "12px",
@@ -32,6 +49,7 @@ const config: Config = {
       },
       fontFamily: {
         dmSans: ["DM Sans", "sans-serif"],
+        jakarta: ["Plus Jakarta Sans", "sans-serif"],
       },
       colors: {
         white: "#ffffff",
@@ -60,6 +78,11 @@ const config: Config = {
         "footer-shadow": "0px 4px 10px 0px #000",
         "header-shadow": "0px 4px 10px 0px #F0F1F8",
         "prices-shadow": "0px 4px 10px 0px rgba(234, 234, 231, 1)",
+        "google-shadow":
+          "11.456px 8.019px 22.912px rgba(0, 0, 0, 0.08), -2.291px -1.146px 9.165px rgba(0, 0, 0, 0.08)",
+        "clickonmeshadow": "0px 4px 10px rgba(222, 223, 230, 0.7)",
+        "reg-shadow": "2px 4px 10px 0px rgba(222, 223, 230, 0.70)",
+        "card-shadow": "0px 4px 10px 0px rgba(222, 223, 230, 0.70)",
       },
       backgroundImage: {
         "gradient-btn": "linear-gradient(180deg, #FCD503 14%, #FCB603 100%)",

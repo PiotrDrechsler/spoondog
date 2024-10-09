@@ -5,7 +5,7 @@ import Button from "../Share/Button";
 
 export const ServicesServices = () => {
   return (
-    <div className="flex flex-col gap-[20px] desktop:flex-row desktop:gap-[50px]">
+    <div className="flex flex-col gap-[20px] tablet:flex-row desktop:gap-[50px]">
       {servicesData.map((service, index) => (
         <div
           key={index}
@@ -25,14 +25,14 @@ export const ServicesServices = () => {
               <span className="mx-2">•</span>
               <span>{service.label3}</span>
             </p>
-            <p className="my-[16px] text-14 leading-[1.3] desktop:mb-[34px] desktop:mt-[24px]">
+            <p className="my-[16px] text-14 leading-[1.3] mb-[24px] desktop:mb-[34px] desktop:mt-[24px]">
               {service.description}
             </p>
 
             <div className="flex flex-col gap-[12px] desktop:flex-row desktop:items-center">
-              <p className="whitespace-nowrap text-18 font-bold leading-[1.5] desktop:text-[24px]">
+              {/* <p className="whitespace-nowrap text-18 font-bold leading-[1.5] desktop:text-[24px]">
                 {service.price}
-              </p>
+              </p> */}
               <div className="h-[46px] w-full max-w-[210px] desktop:max-w-[240px]">
                 <Button href={service.href} content="Dowiedz się więcej" />
               </div>
