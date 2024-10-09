@@ -1,6 +1,5 @@
-import { IdProps } from "@/app/utils/Types";
-
-interface ClickOnMeTitleProps extends IdProps {
+interface ClickOnMeTitleProps {
+  id: string;
   text: string;
 }
 

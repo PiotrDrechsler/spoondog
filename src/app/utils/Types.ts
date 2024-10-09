@@ -18,6 +18,3 @@ export interface BaseButtonProps {
 export interface Clickable {
   onClick: () => void;
 }
-export interface IdProps {
-  id: number;
-}

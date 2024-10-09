@@ -1,11 +1,12 @@
-import { TitleProps, IdProps } from "@/app/utils/Types";
+import { TitleProps } from "@/app/utils/Types";
 
 interface Position {
   left: string;
   top: string;
 }
 
-interface ClickOnMeActiveBoxes extends TitleProps, IdProps {
+interface ClickOnMeActiveBoxes extends TitleProps  {
+    id: number;
   description: string;
   position: Position;
   positionLine: Position;
