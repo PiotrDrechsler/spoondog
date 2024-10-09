@@ -5,8 +5,8 @@ interface Position {
   top: string;
 }
 
-interface ClickOnMeActiveBoxes extends TitleProps  {
-    id: number;
+interface ClickOnMeActiveBoxes extends TitleProps {
+  id: number;
   description: string;
   position: Position;
   positionLine: Position;

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { IconArrowRight } from "@/app/icons/IconArrowRight";
 import { BaseButtonProps } from "@/app/utils/Types";
 
-interface ButtonProps extends BaseButtonProps{
+interface ButtonProps extends BaseButtonProps {
   href: string;
 }
 
