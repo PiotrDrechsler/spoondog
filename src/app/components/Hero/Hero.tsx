@@ -11,7 +11,7 @@ export const Hero = () => {
         <HeroImg />
       </div>
       <Container>
-        <div className="h-[900px] w-full tablet:h-auto desktop:h-[873px] ">
+        <div className="h-[900px] w-full tablet:h-auto desktop:h-[873px]">
           <div className="flex flex-column place-content-between tablet:flex-start">
             <div className="flex tablet:h-auto desktop:h-[850px] flex-col place-content-between">
               <HeroInfo />
