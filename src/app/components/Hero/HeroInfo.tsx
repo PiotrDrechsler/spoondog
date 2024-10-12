@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const HeroInfo = () => {
   return (
-    <div className="mx-[18px] mt-[402px] h-[308px] w-auto tablet:mt-[322px] tablet:h-[200px] tablet:w-[230px] desktop:mx-0 desktop:mt-[10vh] desktop:w-[476px] xxl:w-[700px]">
+    <div className="mx-[18px] mt-[402px] h-[308px] w-auto tablet:mt-[322px] tablet:h-[200px] tablet:w-[230px] desktop:mx-0 desktop:mt-[10vh] desktop:w-[476px] xxl:w-[695px]">
       <div className="align-items flex flex-col justify-start">
         <Link href="/" className="hidden w-auto desktop:mb-[64px] desktop:block">
           <LogoFooter />
