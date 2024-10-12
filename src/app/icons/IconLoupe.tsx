@@ -1,8 +1,6 @@
-interface IconLoupeProps {
-  className?: string;
-}
+import { IconProps } from "../utils/Types";
 
-export const IconLoupe = ({ className }: IconLoupeProps) => (
+export const IconLoupe = ({ className }: IconProps) => (
   <svg
     className={className}
     width="66"

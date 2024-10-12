@@ -1,6 +1,4 @@
-interface IconProps {
-  className?: string;
-}
+import { IconProps } from "../utils/Types";
 
 export const IconGoogle = ({ className }: IconProps) => {
   return (
