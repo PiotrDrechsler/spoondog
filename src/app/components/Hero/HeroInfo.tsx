@@ -5,7 +5,7 @@ import { PhoneButton } from "../Share/PhoneButton";
 export const HeroInfo = () => {
   return (
     <>
-      <div className="mx-[18px] mt-[402px] h-[308px] w-auto desktop:mx-0 desktop:mt-[80px] desktop:w-[476px]">
+      <div className="mx-[18px] mt-[52vh] tablet:mt-[20vh] h-[308px] w-auto desktop:mx-0 desktop:mt-[10vh] tablet:w-[40vw] desktop:w-[476px]">
         <div className="align-items flex flex-col justify-start">
           <Link
             href="/"

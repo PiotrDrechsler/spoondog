@@ -6,19 +6,15 @@ import { HeroInfo } from "./HeroInfo";
 export const Hero = () => {
   return (
     <section id="hero">
+      <div className="block">
+        <HeroImg />
+      </div>
       <Container>
-        <div className="h-full w-full desktop:h-[850px]">
-          <div className="flex shrink flex-col desktop:flex-row desktop:place-content-between">
-            <div className="block desktop:hidden">
-              <HeroImg />
-            </div>
-            <div className="desktop:flex desktop:h-[850px] desktop:flex-col desktop:place-content-between">
+        <div className="h-full w-full tablet:h-auto desktop:h-[920px] ">
+          <div className="flex shrink flex-row place-content-between tablet:flex-start">
+            <div className="flex tablet:h-auto desktop:h-[850px] flex-col place-content-between">
               <HeroInfo />
               <HeroIcons />
-            </div>
-
-            <div className="hidden desktop:block">
-              <HeroImg />
             </div>
           </div>
         </div>
