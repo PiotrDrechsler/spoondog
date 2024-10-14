@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "../Share/Container";
 import { HeaderNavigation } from "./HeaderNavigation";
 import { HeaderSocialmedia } from "./HeaderSocialmedia";
@@ -8,9 +9,9 @@ export const HeaderDesktop = () => {
   return (
     <Container>
       <div className="flex items-center justify-between py-[8px]">
-        <a href="/">
+        <Link href="/">
           <LogoHeaderDesktop />
-        </a>
+        </Link>
         <div className="flex items-center gap-[64px]">
           <HeaderNavigation />
           <HeaderSocialmedia />

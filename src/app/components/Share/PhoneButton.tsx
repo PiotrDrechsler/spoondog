@@ -1,10 +1,7 @@
 import { IconPhoneHeader } from "@/app/icons/IconPhoneHeader";
+import { BaseButtonProps } from "@/app/utils/Types";
 
-interface PhoneButtonProps {
-  content: string;
-}
-
-export const PhoneButton: React.FC<PhoneButtonProps> = ({ content }) => {
+export const PhoneButton: React.FC<BaseButtonProps> = ({ content }) => {
   return (
     <a
       href="tel:+48692394385"

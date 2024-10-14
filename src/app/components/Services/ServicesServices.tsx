@@ -1,18 +1,20 @@
-"use client";
-
 import { servicesData } from "@/app/utils/servicesData";
+import { cn } from "@/app/utils/helpers";
 import Button from "../Share/Button";
 
 export const ServicesServices = () => {
   return (
-    <div className="flex flex-col gap-[20px] desktop:flex-row desktop:gap-[50px]">
+    <div className="flex flex-col gap-[20px] tablet:flex-row desktop:gap-[50px]">
       {servicesData.map((service, index) => (
         <div
           key={index}
           className="flex w-full flex-col items-center gap-[16px] rounded-radius24 border-[1px] border-greyBorders bg-cream px-[16px] py-[28px] shadow-boxes-shadow desktop:flex-row"
         >
           <div
-            className={`h-[180px] w-[180px] bg-cover desktop:h-[223px] desktop:w-[223px] ${index === 0 ? "bg-services-dog1" : "bg-services-dog2"}`}
+            className={cn(
+              "size-[180px] bg-cover desktop:size-[223px]",
+              index === 0 ? "bg-services-dog1" : "bg-services-dog2",
+            )}
           ></div>
           <div className="w-full desktop:max-w-[344px]">
             <h3 className="mb-[4px] text-18 font-bold leading-[1.5] desktop:mb-[8px] desktop:text-[20px] desktop:font-medium">
@@ -25,14 +27,14 @@ export const ServicesServices = () => {
               <span className="mx-2">•</span>
               <span>{service.label3}</span>
             </p>
-            <p className="my-[16px] text-14 leading-[1.3] desktop:mb-[34px] desktop:mt-[24px]">
+            <p className="my-[16px] mb-[24px] text-14 leading-[1.3] desktop:mb-[34px] desktop:mt-[24px]">
               {service.description}
             </p>
 
             <div className="flex flex-col gap-[12px] desktop:flex-row desktop:items-center">
-              <p className="whitespace-nowrap text-18 font-bold leading-[1.5] desktop:text-[24px]">
+              {/* <p className="whitespace-nowrap text-18 font-bold leading-[1.5] desktop:text-[24px]">
                 {service.price}
-              </p>
+              </p> */}
               <div className="h-[46px] w-full max-w-[210px] desktop:max-w-[240px]">
                 <Button href={service.href} content="Dowiedz się więcej" />
               </div>
