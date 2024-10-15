@@ -11,13 +11,10 @@ export const Hero = () => {
         <HeroImg />
       </div>
       <Container>
-        <div className="h-[900px] w-full tablet:h-auto desktop:h-[873px]">
-          <div className="flex flex-column place-content-between tablet:flex-start">
-            <div className="flex tablet:h-auto desktop:h-[850px] flex-col place-content-between">
+        <div className="h-auto w-full tablet:h-auto desktop:h-[873px] desktop:mt-[140px] xl:h-full">
+          <div className="flex flex-column">
+            <div className="tablet:h-auto desktop:h-[873px] flex-col">
               <HeroInfo />
-              <div className="block tablet:hidden desktop:block">
-              <HeroIcons />
-              </div>
             </div>
           </div>
           <div className="hidden tablet:block desktop:hidden">

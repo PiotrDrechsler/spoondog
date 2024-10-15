@@ -1,30 +1,31 @@
 import { LogoFooter } from "@/app/icons/LogoFooter";
 import { HeroButtonBox } from "../Hero/HeroButtonBox";
 import Link from "next/link";
+import { HeroIcons } from "./HeroIcons";
 
 export const HeroInfo = () => {
   return (
-    <div className="mx-[18px] mt-[402px] h-[308px] w-auto tablet:mt-[322px] tablet:h-[200px] tablet:w-[230px] desktop:mx-0 desktop:mt-[10vh] desktop:w-[476px] xxl:w-[695px]">
+    <div className="mx-[18px] mt-[402px] h-[507px] w-fill tablet:mt-[322px] tablet:h-[200px] tablet:w-[230px] desktop:mt-[10px] desktop:w-[476px] xl:w-[476px]">
       <div className="align-items flex flex-col justify-start">
-        <Link href="/" className="hidden w-auto desktop:mb-[64px] desktop:block">
+        <Link
+          href="/"
+          className="hidden w-auto desktop:mb-[64px] desktop:block"
+        >
           <LogoFooter />
         </Link>
         <h1 className="text-26 font-bold leading-[1.1] tracking-[-0.02em] tablet:mb-[16px] desktop:mb-[24px] desktop:text-50 xxl:mb-[60px]">
           Zadbaj o komfort swojego pupila
         </h1>
-        <p className="desktop:tracking-0 my-[16px] hidden text-[16px] font-normal tracking-[-0.02em] tablet:block desktop:hidden desktop:text-[22px] desktop:leading-[1.5]">
-          Salon pielęgnacyjny dla zwierząt w Tułowicach
-        </p>
-        <p className="my-[16px] block tablet:hidden desktop:block desktop:text-[20px] desktop:leading-[1.5] xxl:text-[22px] xxl:my-[20px]">
+        <p className="mt-[16px] block desktop:text-[20px] desktop:leading-[1.5] xl:text-[20px]">
           Jeżeli chcesz aby Twój pies polubił zabiegi pielęgnacyjne to zapraszam
-          do mojego salonu.
+          do mojego salonu. <span className="font-medium desktop:text-[20px] desktop:leading-[1.5] xl:text-[20px]">Przyjdź i przekonaj się jak działa magia gestów i porozumienia.</span>
         </p>
-        <span className="block tablet:hidden desktop:block desktop:text-[20px] desktop:font-medium desktop:leading-[1.5] xxl:text-[24px] xxl:font-medium ">
-          Przyjdź i przekonaj się jak działa magia gestów i porozumienia.
-        </span>
       </div>
-      <div className="mt-[20px] flex flex-col items-center justify-center gap-[26px] tablet:hidden desktop:mt-[20px] desktop:block desktop:items-start desktop:justify-end xxl:mt-[80px]">
+      <div className="mt-[20px] flex flex-col items-center justify-center gap-[60px] tablet:hidden desktop:mt-[32px] desktop:block desktop:items-start desktop:justify-end">
         <HeroButtonBox />
+        <div className="block tablet:hidden desktop:mt-[156px] desktop:block">
+          <HeroIcons />
+        </div>
       </div>
     </div>
   );
