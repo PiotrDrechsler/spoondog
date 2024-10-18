@@ -26,7 +26,7 @@ export const Prices = () => {
   };
 
   return (
-    <section id="prices">
+    <section id="prices" className="overflow-hidden">
       <Container>
         <div className="h-auto">
           <div className="tablet:h-auto desktop:h-auto">

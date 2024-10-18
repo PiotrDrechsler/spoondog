@@ -3,9 +3,10 @@ import heroDog from "@images/heroDog.png";
 
 export const HeroImg = () => {
   return (
-    <div className="relative right-0 top-[80px] h-full max-h-[700px] w-full">
-    <div className="absolute right-0 w-[60vw] h-[60vw] rounded-hero-radius bg-hero-bg shadow-hero-shadow tablet:w-[45vw] tablet:h-[45vw] desktop:w-[50vw] desktop:h-[50vw] desktop:max-h-[800px] desktop:max-w-[800px]">
-      <div className="absolute right-0 bottom-0 h-[55vw] w-[55vw] -rotate-90 tablet:h-[40vw] tablet:w-[40vw] desktop:h-[45vw] desktop:w-[45vw] desktop:max-h-[750px] desktop:max-w-[750px]">
+    <div className="relative top-[80px] right-0 desktop:top-[10px] h-full max-h-[700px]">
+    <div className="absolute right-0 h-[288px] w-[306px] rounded-hero-radius bg-hero-bg shadow-hero-shadow tablet:h-[450px] tablet:w-[450px] desktop:h-[730px] desktop:w-[700px] xl:h-[900px] xl:w-[900px] xl:right-[80px] xl:rounded-hero-radius-big">
+      <div className="absolute bottom-0 right-0 h-[280px] w-[280px] -rotate-90 tablet:h-[430px] tablet:w-[430px] desktop:h-[700px] desktop:w-[700px] xl:h-[800px] xl:w-[800px] xl:right-[0px] xl:bottom-[0px] xl:rounded-hero-radius-dog overflow-hidden
+      ">
         <Image
           src={heroDog}
           alt="Dog image"
@@ -17,6 +18,5 @@ export const HeroImg = () => {
       </div>
     </div>
   </div>
-  
   );
 };

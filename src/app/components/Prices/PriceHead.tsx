@@ -22,7 +22,7 @@ export const PricesHead: React.FC<PricesHeadProps> = ({
         priority
       />
       <p className="text-[16px] font-bold leading-[1.2]">{title}</p>
-      <p className="text-[16px] font-normal leading-[1.2]">{subTitle ? subTitle : " "}</p>
+      <p className="text-[16px] leading-[1.2]">{subTitle ? subTitle : " "}</p>
     </div>
   );
 };

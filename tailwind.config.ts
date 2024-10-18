@@ -9,25 +9,28 @@ const config: Config = {
   theme: {
     extend: {
       animation: {
-        "active-boxes": "text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both"
+        "active-boxes":
+          "text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both",
       },
       keyframes: {
         "text-focus-in": {
-          '0%': {
-            "-webkit-filter": 'blur(10px)',
-            filter: 'blur(10px)',
-            opacity: '0',
+          "0%": {
+            "-webkit-filter": "blur(10px)",
+            filter: "blur(10px)",
+            opacity: "0",
           },
-          '100%': {
-            "-webkit-filter": 'blur(0px)',
-            filter: 'blur(0px)',
-            opacity: '1',
+          "100%": {
+            "-webkit-filter": "blur(0px)",
+            filter: "blur(0px)",
+            opacity: "1",
           },
         },
       },
       screens: {
         tablet: "835px",
         desktop: "1440px",
+        xl: "1900px",
+        xxl: "2300px",
       },
       fontSize: {
         "12": "12px",
@@ -70,6 +73,8 @@ const config: Config = {
         "header-radius": "0px 0px 12px 12px",
         "menu-radius": "0px 0px 26px 26px",
         "hero-radius": "400px 0px 0px 400px",
+        "hero-radius-big": "450px ",
+        "hero-radius-dog": "0px  0px 0px 450px ",
       },
       boxShadow: {
         "boxes-shadow": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
@@ -80,7 +85,7 @@ const config: Config = {
         "prices-shadow": "0px 4px 10px 0px rgba(234, 234, 231, 1)",
         "google-shadow":
           "11.456px 8.019px 22.912px rgba(0, 0, 0, 0.08), -2.291px -1.146px 9.165px rgba(0, 0, 0, 0.08)",
-        "clickonmeshadow": "0px 4px 10px rgba(222, 223, 230, 0.7)",
+        clickonmeshadow: "0px 4px 10px rgba(222, 223, 230, 0.7)",
         "reg-shadow": "2px 4px 10px 0px rgba(222, 223, 230, 0.70)",
         "card-shadow": "0px 4px 10px 0px rgba(222, 223, 230, 0.70)",
       },
@@ -90,6 +95,7 @@ const config: Config = {
         "services-dog1": "url('/images/servicesDog1.png')",
         "services-dog2": "url('/images/servicesDog2.png')",
         "button-shadow": "0px 2px 2px 0px #00000040",
+        striped: "rgba(255, 248, 227, 1)",
       },
       backgroundSize: {
         "size-200": "200% 200%",
