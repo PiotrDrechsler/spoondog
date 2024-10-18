@@ -1,14 +1,13 @@
 "use client";
 
-import Image, { type StaticImageData } from "next/image";
+import Image from "next/image";
 import { swiperGalleryData } from "@/app/utils/swiperGalleryData";
 import Container from "../Share/Container";
 import { Swiper } from "../Share/Swiper/Swiper";
 import { SwiperGalleryTitle } from "./SwiperGalleryTitle";
 import { useLightbox } from "@/app/hooks/useLightbox";
 import { LightboxGallery } from "../Share/LightboxGallery";
-
-type SwiperGalleryImage = string | StaticImageData;
+import { ImageSource } from "@/app/utils/Types";
 
 export const SwiperGallery = () => {
   const { isOpen, photoIndex, openLightbox, closeLightbox } = useLightbox();
@@ -18,7 +17,7 @@ export const SwiperGallery = () => {
       <Container>
         <SwiperGalleryTitle />
         <Swiper arrowVisibility="largeScreen" loop>
-          {swiperGalleryData.map((item: SwiperGalleryImage, index: number) => (
+          {swiperGalleryData.map((item: ImageSource, index: number) => (
             <div
               key={index}
               className="relative aspect-square w-full cursor-pointer"

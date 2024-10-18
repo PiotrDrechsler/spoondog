@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { LogoFooter } from "@/app/icons/LogoFooter";
 import { HeroButtonBox } from "../Hero/HeroButtonBox";
 import Link from "next/link";

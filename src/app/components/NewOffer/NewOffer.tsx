@@ -54,6 +54,7 @@ export const NewOffer = () => {
                   content="Dowiedz się więcej"
                 />
               </div>
+
             </div>
           </div>
         </div>
