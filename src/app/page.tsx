@@ -15,6 +15,7 @@ export default function Home() {
       <SalonOwner />
       <NewOffer />
       <Services />
+      <SwiperGallery />
       <ClickOnMe/>
       <SwiperGallery />
       <OpinionsSection />
