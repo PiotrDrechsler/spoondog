@@ -1,5 +1,5 @@
-import { CareHygieneServices } from "../components/CareHygieneServices/CareHygieneServices";
-import { hygieneServicesData } from "../utils/hygieneServicesData";
+import { CareHygieneServices } from "../../components/CareHygieneServices/CareHygieneServices";
+import { hygieneServicesData } from "../../utils/hygieneServicesData";
 
 export default function HygieneServicesPage() {
   return (
