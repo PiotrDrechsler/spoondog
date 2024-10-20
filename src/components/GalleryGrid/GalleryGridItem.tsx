@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { IconLoupe } from "@/app/icons/IconLoupe";
+import { IconLoupe } from "@/icons/IconLoupe";
 import { Clickable, ImageSource } from "@/utils/Types";
 
 interface GalleryGridItemProps extends Clickable {
