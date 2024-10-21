@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { faqData } from "@/utils/faqData";
+import { faqData } from "@/data/faqData";
 import { IconArrowAbout } from "@/icons/IconArrowAbout";
 
 export const FaqTable = () => {

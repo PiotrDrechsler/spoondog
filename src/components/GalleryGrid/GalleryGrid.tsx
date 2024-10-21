@@ -2,7 +2,7 @@
 
 import { type StaticImageData } from "next/image";
 import { useLightbox } from "@/hooks/useLightbox";
-import { galleryGridData } from "@/utils/galleryGridData";
+import { galleryGridData } from "@/data/galleryGridData";
 import Container from "../Share/Container";
 import { LightboxGallery } from "../Share/LightboxGallery";
 import { GalleryGridItem } from "./GalleryGridItem";

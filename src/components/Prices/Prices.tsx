@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Container from "../Share/Container";
 import { PricesTable } from "./PricesTable";
-import { PricesData } from "@/utils/PricesData";
+import { PricesData } from "@/data/PricesData";
 import { IconArrowRight } from "../../icons/IconArrowRight";
 
 export const Prices = () => {

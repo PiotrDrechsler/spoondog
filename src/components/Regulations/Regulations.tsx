@@ -1,5 +1,5 @@
 import Container from "../Share/Container";
-import { regulationsData } from "@/utils/regulationsData";
+import { regulationsData } from "@/data/regulationsData";
 
 export const Regulations = () => {
   return (

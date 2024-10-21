@@ -5,7 +5,7 @@ import Link from "next/link";
 import {
   navigationHeaderData,
   aboutSubMenu,
-} from "@/utils/navigationHeaderData";
+} from "@/data/navigationHeaderData";
 import { IconArrowAbout } from "@/icons/IconArrowAbout";
 import { cn } from "@/utils/helpers";
 

@@ -1,4 +1,4 @@
-import { footerLinksData } from "../../utils/footerLinksData";
+import { footerLinksData } from "../../data/footerLinksData";
 import Link from "next/link";
 
 export const FooterLinks = () => {

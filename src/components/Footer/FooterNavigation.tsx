@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navigationData } from "../../utils/navigationData";
+import { navigationData } from "../../data/navigationData";
 
 export const FooterNavigation = () => {
   return (
