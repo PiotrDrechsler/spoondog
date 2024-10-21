@@ -1,5 +1,5 @@
 import { HeroSingleIcon } from "./HeroSingleIcon";
-import { heroIconsData } from "../../utils/heroIconsData";
+import { heroIconsData } from "../../data/heroIconsData";
 
 export const HeroIcons = () => {
   return (
