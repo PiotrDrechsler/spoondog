@@ -1,4 +1,4 @@
-import { servicesData } from "@/utils/servicesData";
+import { servicesData } from "@/data/servicesData";
 import { cn } from "@/utils/helpers";
 import Button from "../Share/Button";
 

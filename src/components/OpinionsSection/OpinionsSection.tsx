@@ -3,7 +3,7 @@ import GoogleReviewCard from "../Share/GoogleReviewCard";
 import { SectionHeading } from "../Share/SectionHeading";
 import { Swiper } from "../Share/Swiper/Swiper";
 import { OpinionsCardItem } from "./OpinionsCardItem";
-import { opinionsData } from "@/utils/opinionsData";
+import { opinionsData } from "@/data/opinionsData";
 
 export const OpinionsSection = () => {
   return (

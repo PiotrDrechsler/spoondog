@@ -1,4 +1,4 @@
-import { CareHygieneService } from "./CareHygieneDataInterface";
+import { CareHygieneService } from "../utils/CareHygieneDataInterface";
 
 export const careServicesData: CareHygieneService[] = [
   {

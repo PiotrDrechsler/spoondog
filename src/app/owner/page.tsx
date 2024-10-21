@@ -7,8 +7,8 @@ import Button from "../../components/Share/Button";
 import {
   educationAndExperience,
   certificatesAndAchievements,
-} from "../../utils/aboutContent";
-import workMethodsContent from "../../utils/workMethodsContent";
+} from "../../data/aboutContent";
+import workMethodsContent from "../../data/workMethodsContent";
 import about from "@images/about/about1.png";
 
 const About = () => {

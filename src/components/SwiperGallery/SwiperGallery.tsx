@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { swiperGalleryData } from "@/utils/swiperGalleryData";
+import { swiperGalleryData } from "@/data/swiperGalleryData";
 import Container from "../Share/Container";
 import { Swiper } from "../Share/Swiper/Swiper";
 import { SwiperGalleryTitle } from "./SwiperGalleryTitle";
