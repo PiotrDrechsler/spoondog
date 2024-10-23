@@ -5,7 +5,7 @@ export const FooterContacts = () => {
         Kontakt
       </h4>
       <p>Katarzyna Bober</p>
-      <p className="font-normal">ul.Gruszkowa 26</p>
+      <p className="font-normal">ul. Gruszkowa 26</p>
       <p className="font-normal">49-130 Tułowice</p>
       <p>Telefon</p>
       <a
