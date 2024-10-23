@@ -71,15 +71,15 @@ const About = () => {
               W Salonie Pielęgnacji Zwierząt Spoon Dog stosuję, wyłącznie
               oryginalne kosmetyki, akcesoria i narzędzia, stworzone specjalnie
               do pracy ze zwierzętami{" "}
-              <span className="font-medium">firm Oster, Andis i Wahl.</span>{" "}
+              <span className="font-semibold">firm Oster, Andis i Wahl.</span>{" "}
               Służę{" "}
-              <span className="font-medium">
+              <span className="font-semibold">
                 poradami behawioralnymi, żywieniowymi i pielęgnacyjnymi,
               </span>{" "}
               a o zwierzętach potrafię rozmawiać godzinami.{" "}
             </p>
 
-            <p className="mt-[40px] font-medium">
+            <p className="mt-[40px] font-semibold">
               {" "}
               Kilkuletnie doświadczenie sprawia, że możecie Państwo mi w pełni
               zaufać.{" "}
