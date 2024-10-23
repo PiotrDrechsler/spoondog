@@ -31,7 +31,7 @@ export const hygieneServicesData: CareHygieneService[] = [
     title: "Higiena uszu",
     smallTitle: "Na czym polega zabieg higieny uszu?",
     description1:
-      "Konieczne jest usuwanie włosa który rośnie we wewnątrz ucha, nagromadzony włos może być przyczyną zapalenia ucha i innych chorób nieprzyjemnych dla naszego pupila oraz kosztownych w leczeniu dla właściciela (dotyczy ras posiadających włosy).",
+      "Konieczne jest usuwanie włosa, który rośnie we wewnątrz ucha, nagromadzony włos może być przyczyną zapalenia ucha i innych chorób nieprzyjemnych dla naszego pupila oraz kosztownych w leczeniu dla właściciela (dotyczy ras posiadających włosy).",
     description2: "",
     description3: "",
     price: "Cena",
