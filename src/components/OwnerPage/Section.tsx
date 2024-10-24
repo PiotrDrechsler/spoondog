@@ -1,8 +1,6 @@
-import React, { ReactNode } from "react";
-
 interface SectionProps {
   title: string;
-  content: ReactNode;
+  content: React.ReactNode;
 }
 
 const Section: React.FC<SectionProps> = ({ title, content }) => {
