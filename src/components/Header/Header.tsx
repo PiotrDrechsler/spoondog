@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Container from "../Share/Container";
 import { HeaderNavigation } from "./HeaderNavigation";
 import { HeaderMobile } from "./HeaderMobile";
@@ -8,12 +8,19 @@ import { IconOpenMobileMenu } from "@/icons/IconOpenMobileMenu";
 import { IconCloseMobileMenu } from "@/icons/IconCloseMobileMenu";
 import { PhoneButton } from "../Share/PhoneButton";
 import { cn } from "@/utils/helpers";
+import {
+  handleTouchStart,
+  handleTouchMove,
+  handleTouchEnd,
+} from "@/utils/touchHandlers";
 
 export const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [iconOpen, setIconOpen] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [closeAboutSection, setCloseAboutSection] = useState(false);
+  const touchStartX = useRef<number | null>(null);
+  const touchEndX = useRef<number | null>(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -41,7 +48,14 @@ export const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 z-20 w-full rounded-header-radius bg-white shadow-header-shadow">
+    <header
+      className="fixed top-0 z-20 w-full rounded-header-radius bg-white shadow-header-shadow"
+      onTouchStart={(e) => handleTouchStart(e, touchStartX)}
+      onTouchMove={(e) => handleTouchMove(e, touchEndX)}
+      onTouchEnd={() =>
+        handleTouchEnd(touchStartX, touchEndX, isMenuOpen, handleToggleMenu)
+      }
+    >
       <div className="relative">
         {!isDesktop && (
           <Container>
