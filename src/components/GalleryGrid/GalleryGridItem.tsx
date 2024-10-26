@@ -24,7 +24,6 @@ export const GalleryGridItem = ({
         alt={altText}
         fill
         sizes="25vw"
-        placeholder="blur"
         priority={priority}
         className="rounded object-cover desktop:rounded-3xl"
       />
