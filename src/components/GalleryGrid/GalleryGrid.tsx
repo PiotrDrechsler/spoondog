@@ -1,6 +1,5 @@
 "use client";
 
-import { type StaticImageData } from "next/image";
 import { useLightbox } from "@/hooks/useLightbox";
 import { galleryGridData } from "@/data/galleryGridData";
 import Container from "../Share/Container";
@@ -19,7 +18,7 @@ export const GalleryGrid = () => {
       <GalleryGridTitle />
       <Container>
         <ul className="grid grid-cols-4 gap-x-2.5 gap-y-3 desktop:gap-x-5 desktop:gap-y-[60px]">
-          {galleryGridData.map((item: StaticImageData, index: number) => (
+          {galleryGridData.map((item: string, index: number) => (
             <GalleryGridItem
               key={index}
               imageUrl={item}
