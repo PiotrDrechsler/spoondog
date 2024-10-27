@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import AboutHeading from "../../components/OwnerPage/AboutHeading";
 import SubHeading from "../../components/OwnerPage/SubHeading";
 import Section from "../../components/OwnerPage/Section";
@@ -17,13 +18,13 @@ const About = () => {
       <Container>
         <main>
           <nav className="mb-4 mt-[70px] text-[16px]">
-            <a
+            <Link
               href="/"
               className="hidden font-semibold leading-6 underline desktop:block"
               aria-label="Wróć do strony głównej"
             >
               powrót
-            </a>
+            </Link>
           </nav>
 
           <p className="mt-[80px] text-[16px] font-bold leading-6 desktop:md:mt-[29px]">
@@ -70,15 +71,15 @@ const About = () => {
               W Salonie Pielęgnacji Zwierząt Spoon Dog stosuję, wyłącznie
               oryginalne kosmetyki, akcesoria i narzędzia, stworzone specjalnie
               do pracy ze zwierzętami{" "}
-              <span className="font-medium">firm Oster, Andis i Wahl.</span>{" "}
+              <span className="font-semibold">firm Oster, Andis i Wahl.</span>{" "}
               Służę{" "}
-              <span className="font-medium">
+              <span className="font-semibold">
                 poradami behawioralnymi, żywieniowymi i pielęgnacyjnymi,
               </span>{" "}
               a o zwierzętach potrafię rozmawiać godzinami.{" "}
             </p>
 
-            <p className="mt-[40px] font-medium">
+            <p className="mt-[40px] font-semibold">
               {" "}
               Kilkuletnie doświadczenie sprawia, że możecie Państwo mi w pełni
               zaufać.{" "}

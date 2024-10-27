@@ -1,5 +1,4 @@
-import React from "react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import owner from "@images/owner.png";
 import Container from "../Share/Container";
 import Button from "../Share/Button";
@@ -22,7 +21,7 @@ const SalonOwner: React.FC = () => {
         <div className="tablet:flex tablet:flex-row tablet:gap-10 desktop:flex-row-reverse desktop:justify-between">
           <div className="mb-10 flex h-[248px] w-[342px] justify-center tablet:my-auto desktop:h-[391px] desktop:w-[540px] desktop:-translate-y-[60px]">
             <Image
-              src={owner as StaticImageData}
+              src={owner}
               alt="Katarzyna Bober, właścicielka salonu groomerskiego Spoon Dog"
               className="h-full w-full object-cover"
               sizes="(max-width: 1439px) 342px, (min-width: 1440px) 540px"

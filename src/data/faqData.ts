@@ -7,7 +7,7 @@ export const faqData = [
     type: "salon",
     question: "Jak mogę umówić wizytę?",
     reply:
-      "Najlepiej skontaktować się z nami telefonicznie. Można także wysłać SMS-a lub skorzystać z WhatsAppa.",
+      "Najlepiej skontaktować się ze mną telefonicznie. Można także wysłać SMS-a lub skorzystać z WhatsAppa.",
   },
   {
     type: "salon",
@@ -72,9 +72,9 @@ export const faqData = [
   {
     type: "care",
     question:
-      "Jaki rodzaj strzyżenia/ trymowania jest najlepszy dla mojego psa?",
+      "Jaki rodzaj strzyżenia/trymowania jest najlepszy dla mojego psa?",
     reply:
-      "W zależności od rasy. Psy z podszerstkiem tylko wyczesujemy, ewentualnie delikatnie można przyciąć w okolicach tyłku i łapek. Psy szorstkowłose trymujemy. Psiaki bez podszerstka z włosem można ścinać, podcinać, jednak najbardziej wskazane jest zachowanie naturalnej, wyczesanej szaty.",
+      "W zależności od rasy. Psy z podszerstkiem tylko wyczesuję, ewentualnie delikatnie można przyciąć w okolicach tyłu i łapek. Psy szorstkowłose trymuję. Psiaki bez podszerstka z włosem można ścinać, podcinać, jednak najbardziej wskazane jest zachowanie naturalnej, wyczesanej szaty.",
   },
   {
     type: "care",
