@@ -64,6 +64,7 @@ export const Header = () => {
               svgOpen={<IconOpenMobileMenu />}
               svgClose={<IconCloseMobileMenu />}
               onClick={handleToggleMenu}
+              aria-expanded={isMenuOpen}
             />
           </Container>
         )}
@@ -74,6 +75,7 @@ export const Header = () => {
               "z-100 absolute left-0 top-0 h-screen w-screen bg-backdrop transition duration-300 ease-in-out",
               isMenuOpen ? "translate-x-0" : "translate-x-full",
             )}
+            aria-hidden={!isMenuOpen}
           >
             <div className="w-full rounded-menu-radius bg-white pb-[20px]">
               <Container>
@@ -82,6 +84,7 @@ export const Header = () => {
                   svgOpen={<IconOpenMobileMenu />}
                   svgClose={<IconCloseMobileMenu />}
                   onClick={handleToggleMenu}
+                  aria-expanded={isMenuOpen}
                 />
               </Container>
               <div className="my-[20px] h-[1px] w-full bg-greyLines"></div>
