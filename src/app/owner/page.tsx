@@ -4,13 +4,14 @@ import AboutHeading from "../../components/OwnerPage/AboutHeading";
 import SubHeading from "../../components/OwnerPage/SubHeading";
 import Section from "../../components/OwnerPage/Section";
 import Container from "../../components/Share/Container";
-import Button from "../../components/Share/Button";
+import DropdownButton from "../../components/OwnerPage/DropdownButton";
 import {
   educationAndExperience,
   certificatesAndAchievements,
 } from "../../data/aboutContent";
 import workMethodsContent from "../../data/workMethodsContent";
 import about from "@images/about/about1.png";
+
 
 const About = () => {
   return (
@@ -90,10 +91,9 @@ const About = () => {
           </div>
 
           <div className="mx-auto mb-[100px] mt-[80px] block h-[44px] w-[246px] md:mt-[100px] tablet:mt-[40px]">
-            <Button
-              href="/hygiene-services"
-              content="Zobacz nasze usługi"
-              aria-label="Przejdź do strony z usługami"
+            <DropdownButton
+              buttonText="Zobacz nasze usługi"
+              aria-label="Przejdź do usług"
             />
           </div>
         </main>
