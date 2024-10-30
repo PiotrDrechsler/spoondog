@@ -1,10 +1,13 @@
+'use client';
+
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import AboutHeading from "../../components/OwnerPage/AboutHeading";
 import SubHeading from "../../components/OwnerPage/SubHeading";
 import Section from "../../components/OwnerPage/Section";
 import Container from "../../components/Share/Container";
-import DropdownButton from "../../components/OwnerPage/DropdownButton";
+import DropdownButton from "../../components/Share/DropdownButton";
+import { useRouter } from 'next/navigation';
 import {
   educationAndExperience,
   certificatesAndAchievements,
@@ -12,8 +15,18 @@ import {
 import workMethodsContent from "../../data/workMethodsContent";
 import about from "@images/about/about1.png";
 
-
 const About = () => {
+  const router = useRouter();
+
+  const serviceOptions = [
+    { id: 'hygiene', label: 'Usługi higienizacyjne', value: '/hygiene-services' },
+    { id: 'care', label: 'Usługi pielęgnacyjne', value: '/care-services' },
+  ];
+
+  const handleSelect = (path: string) => {
+    router.push(path);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Container>
@@ -93,6 +106,8 @@ const About = () => {
           <div className="mx-auto mb-[100px] mt-[80px] block h-[44px] w-[246px] md:mt-[100px] tablet:mt-[40px]">
             <DropdownButton
               buttonText="Zobacz nasze usługi"
+              options={serviceOptions}
+              onSelect={handleSelect}
               aria-label="Przejdź do usług"
             />
           </div>
