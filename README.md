@@ -4,6 +4,7 @@
 2. **[OpinionsSection Component](#opinionssection-component)**
 3. **[OpinionsCardItem Component](#opinionscarditem-component)**
 4. **[GoogleReviewCard Component](#googlereviewcard-component)**
+5. **[DropdownButton Component](#dropdownbutton-component)**
 
 ## `SectionHeading` Component
 
@@ -21,7 +22,7 @@ The `SectionHeading` component is used to display section headings on our page. 
   Additional information about the section, rendered as an `<h3>` tag. HTML tags like `<strong>` can be used for better semantics and SEO.
 
 - **`variant?: "opinions-section" | "default-section"`**  
-  An optional prop that controls the layout style of the heading. 
+  An optional prop that controls the layout style of the heading.
   - When the value is `"opinions-section"`, the main heading (`<h2>`) will have a maximum width of 230px [for mobile devices], which is useful for specific design needs where the heading should be constrained in width.
   - The default value is `"default-section"`, where no specific width is applied to the main heading.
 
@@ -31,7 +32,11 @@ The `SectionHeading` component is used to display section headings on our page. 
 <SectionHeading
   sectionTitle="My Section"
   sectionMainHeading="Main Heading"
-  sectionInfo={<>Here is <strong>Very Important Information</strong> for SEO</>}
+  sectionInfo={
+    <>
+      Here is <strong>Very Important Information</strong> for SEO
+    </>
+  }
   variant="opinions-section" // Optional variant for layout control
 />
 ```
@@ -95,7 +100,10 @@ The `OpinionsCardItem` component is responsible for displaying individual custom
 ### Example Usage
 
 ```jsx
-<OpinionsCardItem name="John Doe" opinion="This service was excellent! Highly recommend!" />
+<OpinionsCardItem
+  name="John Doe"
+  opinion="This service was excellent! Highly recommend!"
+/>
 ```
 
 ## `GoogleReviewCard` Component
@@ -114,7 +122,55 @@ The `GoogleReviewCard` component displays a card featuring Google branding and i
 <GoogleReviewCard />
 ```
 
+## `DropdownButton` Component
 
+The `DropdownButton` component is a versatile dropdown menu that can be used throughout the application. It provides a customizable button that, when clicked, displays a list of selectable options.
 
+### Props
 
+- **`buttonText: string`**  
+  The text to be displayed on the main button of the dropdown.
 
+- **`options: DropdownOption[]`**  
+  An array of objects representing the dropdown options. Each object should have the following structure:
+  ```typescript
+  {
+    id: string;
+    label: string;
+    value: string;
+  }
+  ```
+  - id: A unique identifier for the option.
+  - label: The text to be displayed for the option.
+  - value: The value associated with the option, typically used for navigation or action.
+
+### Example Usage
+
+```jsx
+
+import { useRouter } from 'next/navigation';
+import DropdownButton from '@/components/Share/DropdownButton';
+
+const MyComponent = () => {
+  const router = useRouter();
+
+  const serviceOptions = [
+    { id: 'hygiene', label: 'Usługi higienizacyjne', value: '/hygiene-services' },
+    { id: 'care', label: 'Usługi pielęgnacyjne', value: '/care-services' },
+  ];
+
+  const handleSelect = (path: string) => {
+    router.push(path);
+  };
+
+  return (
+    <DropdownButton
+      buttonText="Zobacz nasze usługi"
+      options={serviceOptions}
+      onSelect={handleSelect}
+      className="my-custom-class"
+    />
+  );
+};
+
+```
