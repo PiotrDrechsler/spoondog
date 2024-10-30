@@ -5,6 +5,7 @@
 3. **[OpinionsCardItem Component](#opinionscarditem-component)**
 4. **[GoogleReviewCard Component](#googlereviewcard-component)**
 5. **[Swiper and SwiperButton Components](#swiper-and-swiperbutton-components)**
+6. **[LightboxGallery Component](#lightboxgallery-component)**
 
 ## `SectionHeading` Component
 
@@ -208,4 +209,67 @@ The `SwiperButton` component provides navigation controls for the `Swiper` compo
   <img src="slide2.jpg" alt="Slide 2" />
   <img src="slide3.jpg" alt="Slide 3" />
 </Swiper>
+```
+
+## LightboxGallery Component
+
+The `LightboxGallery` component is used to display images in a modal lightbox view, allowing users to navigate through images within a specified list of slides. The component leverages the `yet-another-react-lightbox` library and includes support for setting an initial slide index and tracking the current slide index.
+
+### Props
+
+- **`isOpen: boolean`**  
+  Controls whether the lightbox is open or closed. Pass `true` to display the lightbox, or `false` to hide it.
+
+- **`onClose: () => void`**
+  Callback function that closes the lightbox when called.
+
+- **`index: number`**  
+  The starting index of the slide to be displayed when the lightbox opens. This prop is also used to track the current slide index when the lightbox is open. The default value for `index` is `0`, and in most cases, you can omit it as the lightbox manages its state internally.
+
+- **`slides: ImageSource[]`**
+  An array of image sources to be displayed within the lightbox. Each item in the array should be a URL or `StaticImageData` (from `next/image`), which represents the image source. This prop determines the content of the lightbox gallery.
+
+### Features
+
+- **Image Navigation**: Allows users to navigate through a gallery of images with previous and next buttons.
+- **Dynamic Content Handling**: Accepts an array of image sources in different formats (`string` or `StaticImageData`), making it flexible for various image sources.
+
+### useLightbox Hook
+
+The `useLightbox` hook is a custom hook that manages the state for opening and closing the lightbox, as well as setting the starting slide index. This hook simplifies controlling the `LightboxGallery` component.
+
+### Hook Usage
+
+- **`isOpen: boolean`**  
+  A boolean value that indicates if the lightbox is currently open.
+
+- **`photoIndex: number`**  
+  Represents the index of the current slide in the lightbox. This value is updated when the `openLightbox` function is called.
+
+- **`openLightbox: (index: number) => void`**
+  Function to open the lightbox and set the initial slide index.
+
+- **`closeLightbox: () => void`**
+  Function to close the lightbox.
+
+### Example Usage
+
+```jsx
+const GalleryComponent = () => {
+  const { isOpen, photoIndex, openLightbox, closeLightbox } = useLightbox();
+  const images = ["/images/photo1.jpg", "/images/photo2.jpg"];
+
+  return (
+    <div>
+      <button onClick={() => openLightbox(0)}>Open Gallery</button>
+
+      <LightboxGallery
+        isOpen={isOpen}
+        onClose={closeLightbox}
+        index={photoIndex}
+        slides={images}
+      />
+    </div>
+  );
+};
 ```
