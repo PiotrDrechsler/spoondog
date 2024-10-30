@@ -4,6 +4,7 @@
 2. **[OpinionsSection Component](#opinionssection-component)**
 3. **[OpinionsCardItem Component](#opinionscarditem-component)**
 4. **[GoogleReviewCard Component](#googlereviewcard-component)**
+5. **[Swiper and SwiperButton Components](#swiper-and-swiperbutton-components)**
 
 ## `SectionHeading` Component
 
@@ -21,7 +22,7 @@ The `SectionHeading` component is used to display section headings on our page. 
   Additional information about the section, rendered as an `<h3>` tag. HTML tags like `<strong>` can be used for better semantics and SEO.
 
 - **`variant?: "opinions-section" | "default-section"`**  
-  An optional prop that controls the layout style of the heading. 
+  An optional prop that controls the layout style of the heading.
   - When the value is `"opinions-section"`, the main heading (`<h2>`) will have a maximum width of 230px [for mobile devices], which is useful for specific design needs where the heading should be constrained in width.
   - The default value is `"default-section"`, where no specific width is applied to the main heading.
 
@@ -31,7 +32,11 @@ The `SectionHeading` component is used to display section headings on our page. 
 <SectionHeading
   sectionTitle="My Section"
   sectionMainHeading="Main Heading"
-  sectionInfo={<>Here is <strong>Very Important Information</strong> for SEO</>}
+  sectionInfo={
+    <>
+      Here is <strong>Very Important Information</strong> for SEO
+    </>
+  }
   variant="opinions-section" // Optional variant for layout control
 />
 ```
@@ -95,7 +100,10 @@ The `OpinionsCardItem` component is responsible for displaying individual custom
 ### Example Usage
 
 ```jsx
-<OpinionsCardItem name="John Doe" opinion="This service was excellent! Highly recommend!" />
+<OpinionsCardItem
+  name="John Doe"
+  opinion="This service was excellent! Highly recommend!"
+/>
 ```
 
 ## `GoogleReviewCard` Component
@@ -114,7 +122,90 @@ The `GoogleReviewCard` component displays a card featuring Google branding and i
 <GoogleReviewCard />
 ```
 
+## `Swiper` and `SwiperButton` Components
 
+The `Swiper` component is a wrapper around the Swiper.js library that provides a customizable carousel/slider functionality. It's designed to work seamlessly with the `SwiperButton` component for navigation controls.
 
+### Props
 
+- **`children: React.ReactNode`**  
+  The content to be displayed within the slider. Each child will be automatically wrapped in a `SwiperSlide` component.
 
+- **`arrowVisibility?: "always" | "largeScreen"`**  
+  Controls when the navigation arrows are visible:
+
+  - `"always"`: Navigation arrows are always visible
+  - `"largeScreen"`: Navigation arrows are only visible on desktop screens
+  - If not provided, navigation arrows will not be rendered
+
+- **`slidesPerView?: number | "auto"`**  
+  The number of slides to show at once. Defaults to `1.2`.
+
+  - Can be a number (e.g., `1`, `2`, `3`)
+  - Can be `"auto"` to allow the slides to take their natural width
+
+- **`spaceBetween?: number`**  
+  The space between slides in pixels. Defaults to `10`.
+
+- **`breakpoints?: { [width: number]: any }`**  
+  Responsive breakpoints configuration. Default breakpoints are:
+
+  ```typescript
+  {
+    640: { slidesPerView: 2.2, spaceBetween: 20 },
+    768: { slidesPerView: 3.2, spaceBetween: 30 },
+    1024: { slidesPerView: 4, spaceBetween: 40 }
+  }
+  ```
+
+- **`loop?: boolean`**
+  Whether to enable continuous loop mode.
+
+- **`removePaddingBottom?: boolean`**
+  When `true`, removes the bottom padding (defaults to `false`).
+  - Default padding is `pb-9` for mobile and `pb-12` for desktop
+  - When enabled, sets padding to `pb-0` for all screen sizes
+
+### Features
+
+- **Modular Design:** Integrates with Swiper.js modules including Navigation, Pagination, and A11y
+- **Responsive:** Built-in breakpoints for different screen sizes
+- **Customizable Navigation:** Optional navigation arrows with visibility control
+- **Pagination:** Built-in pagination dots
+- **Flexible Layout:** Configurable slides per view and spacing
+
+### `SwiperButton` Component
+
+The `SwiperButton` component provides navigation controls for the `Swiper` component.
+
+### Props
+
+- **`direction: "next" | "prev"`**
+  Specifies the button's direction:
+
+  - `"next"`: Shows next slide
+  - `"prev"`: Shows previous slide
+
+- **`arrowVisibility?: "always" | "largeScreen"`**  
+  Controls when the button is visible visible:
+
+  - `"always"`: Button is always visible
+  - `"largeScreen"`: Button is only visible on desktop screens
+  - If not provided, button will not be rendered
+
+### Features
+
+- **Positioning:** Automatically positioned on the left or right side of the swiper
+- **Responsive:** Can be configured to show/hide based on screen size
+- **Interactive:** Includes hover state with opacity change
+- **Accessible:** Includes appropriate aria-labels for screen readers
+
+### Example Usage
+
+```jsx
+<Swiper arrowVisibility="largeScreen" slidesPerView={3} loop>
+  <img src="slide1.jpg" alt="Slide 1" />
+  <img src="slide2.jpg" alt="Slide 2" />
+  <img src="slide3.jpg" alt="Slide 3" />
+</Swiper>
+```
