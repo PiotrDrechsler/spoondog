@@ -201,6 +201,7 @@ The `SwiperButton` component provides navigation controls for the `Swiper` compo
 - **Interactive:** Includes hover state with opacity change
 - **Accessible:** Includes appropriate aria-labels for screen readers
 
+
 ### Example Usage
 
 ```jsx
@@ -272,4 +273,4 @@ const GalleryComponent = () => {
     </div>
   );
 };
-```
+

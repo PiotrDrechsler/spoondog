@@ -11,11 +11,11 @@ export const FooterLinks = () => {
         {footerLinksData.map((item, index) => {
           const DynamicTag = item.href.startsWith("/") ? Link : "a";
           return (
-            <li key={index} className={index === 0 ? "" : "underline"}>
+            <li key={index}>
               <DynamicTag
                 href={item.href}
                 target={item.target}
-                className="text-14 leading-[21px] transition duration-300 ease-in-out hover:text-violet focus:text-violet"
+                className="text-14 leading-[21px] transition duration-300 ease-in-out hover:text-violet focus:text-violet underline"
               >
                 {item.label}
               </DynamicTag>

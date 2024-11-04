@@ -1,6 +1,6 @@
 export const regulationsData = [
   "od poniedziałku do piątku od 10:00 do 18:00 - tel. 692 394 385. Jeżeli nie mogę odebrać, oddzwonię, proszę o cierpliwość.",
-  "Na wizyty można się umawiać od poniedziałku do piątku ( 9:00 - 17:00 ).",
+  "Na wizyty można umawiać się również OSOBIŚCIE od poniedziałku do piątku (9-17)",
   "Jeżeli wizyta nie będzie mogła się odbyć, proszę o informację telefoniczną, ja także informuję o zmianach.",
   "Pies do zabiegów pielęgnacyjnych powinien być po spacerze i nie najedzony.",
   "Jeżeli pies wykazuje negatywne zachowanie, właściciel powinien opuścić salon, w celu uspokojenia emocji jakie łączą go z właścicielem.",

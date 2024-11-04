@@ -17,7 +17,8 @@ export const HeaderMobile: React.FC<HeaderMobileProps> = ({
 }) => {
   return (
     <div className="flex items-center justify-between py-[9px]">
-      <button className="flex flex-col items-center" onClick={onClick}>
+      <button className="flex flex-col items-center" onClick={onClick} aria-expanded={!iconOpen}
+        aria-label="Przełącz menu">
         {iconOpen ? svgOpen : svgClose}
         <span className="text-12 font-bold leading-[1.5]">Menu</span>
       </button>

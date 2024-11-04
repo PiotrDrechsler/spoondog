@@ -1,5 +1,4 @@
 export const footerLinksData = [
-  { href: "/regulations", label: "Regulamin", target: "_self" },
   {
     href: "https://schroniskowopolu.pl/",
     label: "Miejskie Schronisko dla Bezdomnych Zwierząt",
