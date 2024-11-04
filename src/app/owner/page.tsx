@@ -1,9 +1,13 @@
+'use client';
+
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 import AboutHeading from "../../components/OwnerPage/AboutHeading";
 import SubHeading from "../../components/OwnerPage/SubHeading";
 import Section from "../../components/OwnerPage/Section";
 import Container from "../../components/Share/Container";
-import Button from "../../components/Share/Button";
+import DropdownButton from "../../components/Share/DropdownButton";
+import { useRouter } from 'next/navigation';
 import {
   educationAndExperience,
   certificatesAndAchievements,
@@ -12,18 +16,29 @@ import workMethodsContent from "../../data/workMethodsContent";
 import about from "@images/about/about1.png";
 
 const About = () => {
+  const router = useRouter();
+
+  const serviceOptions = [
+    { id: 'hygiene', label: 'Usługi higienizacyjne', value: '/hygiene-services' },
+    { id: 'care', label: 'Usługi pielęgnacyjne', value: '/care-services' },
+  ];
+
+  const handleSelect = (path: string) => {
+    router.push(path);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <Container>
         <main>
           <nav className="mb-4 mt-[70px] text-[16px]">
-            <a
+            <Link
               href="/"
               className="hidden font-semibold leading-6 underline desktop:block"
               aria-label="Wróć do strony głównej"
             >
               powrót
-            </a>
+            </Link>
           </nav>
 
           <p className="mt-[80px] text-[16px] font-bold leading-6 desktop:md:mt-[29px]">
@@ -70,15 +85,15 @@ const About = () => {
               W Salonie Pielęgnacji Zwierząt Spoon Dog stosuję, wyłącznie
               oryginalne kosmetyki, akcesoria i narzędzia, stworzone specjalnie
               do pracy ze zwierzętami{" "}
-              <span className="font-medium">firm Oster, Andis i Wahl.</span>{" "}
+              <span className="font-semibold">firm Oster, Andis i Wahl.</span>{" "}
               Służę{" "}
-              <span className="font-medium">
+              <span className="font-semibold">
                 poradami behawioralnymi, żywieniowymi i pielęgnacyjnymi,
               </span>{" "}
               a o zwierzętach potrafię rozmawiać godzinami.{" "}
             </p>
 
-            <p className="mt-[40px] font-medium">
+            <p className="mt-[40px] font-semibold">
               {" "}
               Kilkuletnie doświadczenie sprawia, że możecie Państwo mi w pełni
               zaufać.{" "}
@@ -89,10 +104,11 @@ const About = () => {
           </div>
 
           <div className="mx-auto mb-[100px] mt-[80px] block h-[44px] w-[246px] md:mt-[100px] tablet:mt-[40px]">
-            <Button
-              href="/hygiene-services"
-              content="Zobacz nasze usługi"
-              aria-label="Przejdź do strony z usługami"
+            <DropdownButton
+              buttonText="Zobacz nasze usługi"
+              options={serviceOptions}
+              onSelect={handleSelect}
+              aria-label="Przejdź do usług"
             />
           </div>
         </main>

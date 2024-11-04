@@ -19,7 +19,7 @@ export const ContactContacts = () => {
               Adres
             </p>
           </div>
-          <p className="font-normal">ul.Gruszkowa 26</p>
+          <p className="font-normal">ul. Gruszkowa 26</p>
           <p className="font-normal">49-130 Tułowice</p>
         </div>
         <div>
