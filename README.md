@@ -4,7 +4,8 @@
 2. **[OpinionsSection Component](#opinionssection-component)**
 3. **[OpinionsCardItem Component](#opinionscarditem-component)**
 4. **[GoogleReviewCard Component](#googlereviewcard-component)**
-5. **[DropdownButton Component](#dropdownbutton-component)**
+5. **[Swiper and SwiperButton Components](#swiper-and-swiperbutton-components)**
+6. **[LightboxGallery Component](#lightboxgallery-component)**
 
 ## `SectionHeading` Component
 
@@ -122,55 +123,154 @@ The `GoogleReviewCard` component displays a card featuring Google branding and i
 <GoogleReviewCard />
 ```
 
-## `DropdownButton` Component
+## `Swiper` and `SwiperButton` Components
 
-The `DropdownButton` component is a versatile dropdown menu that can be used throughout the application. It provides a customizable button that, when clicked, displays a list of selectable options.
+The `Swiper` component is a wrapper around the Swiper.js library that provides a customizable carousel/slider functionality. It's designed to work seamlessly with the `SwiperButton` component for navigation controls.
 
 ### Props
 
-- **`buttonText: string`**  
-  The text to be displayed on the main button of the dropdown.
+- **`children: React.ReactNode`**  
+  The content to be displayed within the slider. Each child will be automatically wrapped in a `SwiperSlide` component.
 
-- **`options: DropdownOption[]`**  
-  An array of objects representing the dropdown options. Each object should have the following structure:
+- **`arrowVisibility?: "always" | "largeScreen"`**  
+  Controls when the navigation arrows are visible:
+
+  - `"always"`: Navigation arrows are always visible
+  - `"largeScreen"`: Navigation arrows are only visible on desktop screens
+  - If not provided, navigation arrows will not be rendered
+
+- **`slidesPerView?: number | "auto"`**  
+  The number of slides to show at once. Defaults to `1.2`.
+
+  - Can be a number (e.g., `1`, `2`, `3`)
+  - Can be `"auto"` to allow the slides to take their natural width
+
+- **`spaceBetween?: number`**  
+  The space between slides in pixels. Defaults to `10`.
+
+- **`breakpoints?: { [width: number]: any }`**  
+  Responsive breakpoints configuration. Default breakpoints are:
+
   ```typescript
   {
-    id: string;
-    label: string;
-    value: string;
+    640: { slidesPerView: 2.2, spaceBetween: 20 },
+    768: { slidesPerView: 3.2, spaceBetween: 30 },
+    1024: { slidesPerView: 4, spaceBetween: 40 }
   }
   ```
-  - id: A unique identifier for the option.
-  - label: The text to be displayed for the option.
-  - value: The value associated with the option, typically used for navigation or action.
+
+- **`loop?: boolean`**
+  Whether to enable continuous loop mode.
+
+- **`removePaddingBottom?: boolean`**
+  When `true`, removes the bottom padding (defaults to `false`).
+  - Default padding is `pb-9` for mobile and `pb-12` for desktop
+  - When enabled, sets padding to `pb-0` for all screen sizes
+
+### Features
+
+- **Modular Design:** Integrates with Swiper.js modules including Navigation, Pagination, and A11y
+- **Responsive:** Built-in breakpoints for different screen sizes
+- **Customizable Navigation:** Optional navigation arrows with visibility control
+- **Pagination:** Built-in pagination dots
+- **Flexible Layout:** Configurable slides per view and spacing
+
+### `SwiperButton` Component
+
+The `SwiperButton` component provides navigation controls for the `Swiper` component.
+
+### Props
+
+- **`direction: "next" | "prev"`**
+  Specifies the button's direction:
+
+  - `"next"`: Shows next slide
+  - `"prev"`: Shows previous slide
+
+- **`arrowVisibility?: "always" | "largeScreen"`**  
+  Controls when the button is visible visible:
+
+  - `"always"`: Button is always visible
+  - `"largeScreen"`: Button is only visible on desktop screens
+  - If not provided, button will not be rendered
+
+### Features
+
+- **Positioning:** Automatically positioned on the left or right side of the swiper
+- **Responsive:** Can be configured to show/hide based on screen size
+- **Interactive:** Includes hover state with opacity change
+- **Accessible:** Includes appropriate aria-labels for screen readers
+
 
 ### Example Usage
 
 ```jsx
+<Swiper arrowVisibility="largeScreen" slidesPerView={3} loop>
+  <img src="slide1.jpg" alt="Slide 1" />
+  <img src="slide2.jpg" alt="Slide 2" />
+  <img src="slide3.jpg" alt="Slide 3" />
+</Swiper>
+```
 
-import { useRouter } from 'next/navigation';
-import DropdownButton from '@/components/Share/DropdownButton';
+## LightboxGallery Component
 
-const MyComponent = () => {
-  const router = useRouter();
+The `LightboxGallery` component is used to display images in a modal lightbox view, allowing users to navigate through images within a specified list of slides. The component leverages the `yet-another-react-lightbox` library and includes support for setting an initial slide index and tracking the current slide index.
 
-  const serviceOptions = [
-    { id: 'hygiene', label: 'Usługi higienizacyjne', value: '/hygiene-services' },
-    { id: 'care', label: 'Usługi pielęgnacyjne', value: '/care-services' },
-  ];
+### Props
 
-  const handleSelect = (path: string) => {
-    router.push(path);
-  };
+- **`isOpen: boolean`**  
+  Controls whether the lightbox is open or closed. Pass `true` to display the lightbox, or `false` to hide it.
+
+- **`onClose: () => void`**
+  Callback function that closes the lightbox when called.
+
+- **`index: number`**  
+  The starting index of the slide to be displayed when the lightbox opens. This prop is also used to track the current slide index when the lightbox is open. The default value for `index` is `0`, and in most cases, you can omit it as the lightbox manages its state internally.
+
+- **`slides: ImageSource[]`**
+  An array of image sources to be displayed within the lightbox. Each item in the array should be a URL or `StaticImageData` (from `next/image`), which represents the image source. This prop determines the content of the lightbox gallery.
+
+### Features
+
+- **Image Navigation**: Allows users to navigate through a gallery of images with previous and next buttons.
+- **Dynamic Content Handling**: Accepts an array of image sources in different formats (`string` or `StaticImageData`), making it flexible for various image sources.
+
+### useLightbox Hook
+
+The `useLightbox` hook is a custom hook that manages the state for opening and closing the lightbox, as well as setting the starting slide index. This hook simplifies controlling the `LightboxGallery` component.
+
+### Hook Usage
+
+- **`isOpen: boolean`**  
+  A boolean value that indicates if the lightbox is currently open.
+
+- **`photoIndex: number`**  
+  Represents the index of the current slide in the lightbox. This value is updated when the `openLightbox` function is called.
+
+- **`openLightbox: (index: number) => void`**
+  Function to open the lightbox and set the initial slide index.
+
+- **`closeLightbox: () => void`**
+  Function to close the lightbox.
+
+### Example Usage
+
+```jsx
+const GalleryComponent = () => {
+  const { isOpen, photoIndex, openLightbox, closeLightbox } = useLightbox();
+  const images = ["/images/photo1.jpg", "/images/photo2.jpg"];
 
   return (
-    <DropdownButton
-      buttonText="Zobacz nasze usługi"
-      options={serviceOptions}
-      onSelect={handleSelect}
-      className="my-custom-class"
-    />
+    <div>
+      <button onClick={() => openLightbox(0)}>Open Gallery</button>
+
+      <LightboxGallery
+        isOpen={isOpen}
+        onClose={closeLightbox}
+        index={photoIndex}
+        slides={images}
+      />
+    </div>
   );
 };
 
-```
