@@ -7,6 +7,7 @@ import { Hero } from "../components/Hero/Hero";
 import SalonOwner from "../components/SalonOwner/SalonOwner";
 import { ClickOnMe } from "../components/ClickOnMe/ClickOnMe";
 import { OpinionsSection } from "../components/OpinionsSection/OpinionsSection";
+import PetCardItem from "@/components/Share/PetCardItem";
 
 const SwiperGallery = dynamic(
   () =>
@@ -30,6 +31,11 @@ export default function Home() {
       <OpinionsSection />
       <Contact />
       <Faq />
+      <PetCardItem
+        name="piesek"
+        description="opis"
+        images={["zdjecie1", "zdjecie2", "zdjecie3"]}
+      />
     </>
   );
 }
