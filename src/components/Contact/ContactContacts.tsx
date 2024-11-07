@@ -51,10 +51,10 @@ export const ContactContacts = () => {
             </p>
           </div>
           <a
-            href="mailto:salon@spoondog.eu"
+            href="mailto:panispoondog@gmail.com"
             className="font-normal underline transition duration-300 ease-in-out hover:text-violet focus:text-violet"
           >
-            salon@spoondog.eu
+            panispoondog@gmail.com
           </a>
         </div>
       </div>
