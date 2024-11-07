@@ -34,7 +34,9 @@ export default function Home() {
       <PetCardItem
         name="piesek"
         description="opis"
+        sex="male"
         images={["zdjecie1", "zdjecie2", "zdjecie3"]}
+        href="link"
       />
     </>
   );
