@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { z } from "zod";
+import Button from "./Button";
 
 const petCardItemSchema = z.object({
   name: z.string(),
@@ -15,7 +16,7 @@ export const PetCardItem: React.FC<PetCardItemProps> = ({
   image,
 }) => {
   return (
-    <div className="max-w-[242px] rounded-[32px] border shadow-card-shadow">
+    <div className="flex max-w-[242px] flex-col items-center rounded-[32px] border p-[16px] shadow-card-shadow tablet:max-w-[275px]">
       <div className="relative h-[159px] w-[167px] desktop:h-[180px] desktop:w-[180px]">
         <Image
           src={image || ""}
@@ -24,8 +25,11 @@ export const PetCardItem: React.FC<PetCardItemProps> = ({
           className="rounded-[24px] object-cover"
         />
       </div>
-      <p>{name}</p>
-      <p>{sex}</p>
+      <div className="flex w-full justify-between">
+        <p className="text-18 font-bold tablet:text-20">{name}</p>
+        <p>{sex}</p>
+      </div>
+      <Button content="Poznaj historie" href="/" />
     </div>
   );
 };
