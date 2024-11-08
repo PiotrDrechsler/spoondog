@@ -7,7 +7,7 @@ import { cn } from "@/utils/helpers";
 const petCardItemSchema = z.object({
   name: z.string(),
   gender: z.string(),
-  image: z.string(),
+  image: z.string().url(),
 });
 
 interface PetCardItemProps extends z.infer<typeof petCardItemSchema> {}
@@ -32,7 +32,9 @@ export const PetCardItem: React.FC<PetCardItemProps> = ({
         />
       </div>
       <div className="my-[16px] flex w-full justify-between">
-        <p className="text-18 font-bold tablet:text-20">{name}</p>
+        <p id={`pet-name-${name}`} className="text-18 font-bold tablet:text-20">
+          {name}
+        </p>
         <div
           className={cn(
             gender === "female" ? "fill-[#F576E0]" : "fill-[#80CAFF]",
@@ -40,14 +42,14 @@ export const PetCardItem: React.FC<PetCardItemProps> = ({
           )}
           aria-label={gender === "female" ? "samiczka" : "samiec"}
         >
-          <IconPetGender className="size-[26px]" aria-label="Ikonka płci" />
+          <IconPetGender className="size-[26px]" aria-hidden="true" />
         </div>
       </div>
       <Button
         content="Poznaj historie"
         href="/"
         className="py-3 desktop:py-3"
-        aria-label="Idź do strony z historią tego zwierzaka"
+        aria-label={`Idź do strony z historią zwierzaka ${name}`}
       />
     </div>
   );
