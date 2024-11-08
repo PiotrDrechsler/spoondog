@@ -1,10 +1,14 @@
-interface PetCardItemProps {
-  name: string;
-  description: string;
-  sex: string;
-  image: string;
-  href: string;
-}
+import { z } from "zod";
+
+const petCardItemSchema = z.object({
+  name: z.string(),
+  description: z.string(),
+  sex: z.string(),
+  image: z.string().url(),
+  href: z.string().url(),
+});
+
+interface PetCardItemProps extends z.infer<typeof petCardItemSchema> {}
 
 export const PetCardItem: React.FC<PetCardItemProps> = ({
   name,
