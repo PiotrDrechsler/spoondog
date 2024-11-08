@@ -16,7 +16,7 @@ export const PetCardItem: React.FC<PetCardItemProps> = ({
 }) => {
   return (
     <div className="max-w-[242px] rounded-[32px] border shadow-card-shadow">
-      <div className="relative h-[159px] w-[167px] tablet:h-[190px] tablet:w-[180px]">
+      <div className="relative h-[159px] w-[167px] desktop:h-[180px] desktop:w-[180px]">
         <Image
           src={image || ""}
           alt={name}
