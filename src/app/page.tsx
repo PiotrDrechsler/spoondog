@@ -7,8 +7,6 @@ import { Hero } from "../components/Hero/Hero";
 import SalonOwner from "../components/SalonOwner/SalonOwner";
 import { ClickOnMe } from "../components/ClickOnMe/ClickOnMe";
 import { OpinionsSection } from "../components/OpinionsSection/OpinionsSection";
-import PetCardItem from "@/components/Share/PetCardItem";
-import { petsData } from "@/data/fromLoveData";
 
 const SwiperGallery = dynamic(
   () =>
@@ -32,14 +30,6 @@ export default function Home() {
       <OpinionsSection />
       <Contact />
       <Faq />
-      {petsData.map((pet) => (
-        <PetCardItem
-          key={pet.name}
-          name={pet.name}
-          gender={pet.gender}
-          image={pet.images?.[0]}
-        />
-      ))}
     </>
   );
 }

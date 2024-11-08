@@ -7,7 +7,7 @@ import { cn } from "@/utils/helpers";
 const petCardItemSchema = z.object({
   name: z.string(),
   gender: z.string(),
-  image: z.string().optional(),
+  image: z.string(),
 });
 
 interface PetCardItemProps extends z.infer<typeof petCardItemSchema> {}
