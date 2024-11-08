@@ -21,6 +21,7 @@ const SwiperGallery = dynamic(
 );
 
 export default function Home() {
+  console.log(petsData.map((pet) => pet.images?.[0]));
   return (
     <>
       <Hero />

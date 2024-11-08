@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { z } from "zod";
 
 const petCardItemSchema = z.object({
@@ -14,10 +15,10 @@ export const PetCardItem: React.FC<PetCardItemProps> = ({
   image,
 }) => {
   return (
-    <div>
+    <div className="max-w-[242px] rounded-[32px] border shadow-card-shadow">
+      <Image src={image || ""} alt={name} width={167} height={167} />
       <p>{name}</p>
       <p>{sex}</p>
-      <p>{image}</p>
     </div>
   );
 };
