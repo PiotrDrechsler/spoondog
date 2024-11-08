@@ -42,7 +42,7 @@ export const PetCardItem: React.FC<PetProps> = ({ name, gender, image }) => {
         </div>
       </div>
       <Button
-        content="Poznaj historie"
+        content="Poznaj historię"
         href="/"
         className="py-3 desktop:py-3"
         aria-label={`Idź do strony z historią zwierzaka ${name}`}
