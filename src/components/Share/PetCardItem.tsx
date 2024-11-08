@@ -6,17 +6,13 @@ import { cn } from "@/utils/helpers";
 
 const petCardItemSchema = z.object({
   name: z.string(),
-  gender: z.string(),
+  gender: z.enum(["female", "male"]),
   image: z.string().url(),
 });
 
-interface PetCardItemProps extends z.infer<typeof petCardItemSchema> {}
+export type PetProps = z.infer<typeof petCardItemSchema>;
 
-export const PetCardItem: React.FC<PetCardItemProps> = ({
-  name,
-  gender,
-  image,
-}) => {
+export const PetCardItem: React.FC<PetProps> = ({ name, gender, image }) => {
   return (
     <div
       className="flex max-w-[242px] flex-col items-center rounded-[32px] border px-[16px] py-[24px] leading-[1.5] shadow-card-shadow tablet:max-w-[275px] tablet:py-[32px] desktop:px-[32px] desktop:py-[24px]"

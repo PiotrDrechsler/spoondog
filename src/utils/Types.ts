@@ -18,3 +18,10 @@ export interface BaseButtonProps {
 export interface Clickable {
   onClick: () => void;
 }
+
+export interface PetProps {
+  name: string;
+  description?: string;
+  gender: "male" | "female";
+  images: string[];
+}

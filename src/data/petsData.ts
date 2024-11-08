@@ -1,4 +1,6 @@
-export const petsData = [
+import { PetProps } from "./../utils/Types";
+
+export const petsData: PetProps[] = [
   {
     name: "Diana",
     description:
