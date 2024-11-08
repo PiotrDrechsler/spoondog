@@ -35,7 +35,7 @@ export default function Home() {
         name="piesek"
         description="opis"
         sex="male"
-        images={["zdjecie1", "zdjecie2", "zdjecie3"]}
+        image="zdjecie1"
         href="link"
       />
     </>

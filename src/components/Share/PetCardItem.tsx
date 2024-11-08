@@ -2,7 +2,7 @@ interface PetCardItemProps {
   name: string;
   description: string;
   sex: string;
-  images: Array<string>;
+  image: string;
   href: string;
 }
 
@@ -10,7 +10,7 @@ export const PetCardItem: React.FC<PetCardItemProps> = ({
   name,
   description,
   sex,
-  images,
+  image,
   href,
 }) => {
   return (
@@ -18,7 +18,7 @@ export const PetCardItem: React.FC<PetCardItemProps> = ({
       <p>{name}</p>
       <p>{description}</p>
       <p>{sex}</p>
-      <p>{images}</p>
+      <p>{image}</p>
       <p>{href}</p>
     </div>
   );
