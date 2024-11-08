@@ -6,6 +6,7 @@
 4. **[GoogleReviewCard Component](#googlereviewcard-component)**
 5. **[Swiper and SwiperButton Components](#swiper-and-swiperbutton-components)**
 6. **[LightboxGallery Component](#lightboxgallery-component)**
+7. **[PetCardItem Component](#petcarditem-component)**
 
 ## `SectionHeading` Component
 
@@ -201,7 +202,6 @@ The `SwiperButton` component provides navigation controls for the `Swiper` compo
 - **Interactive:** Includes hover state with opacity change
 - **Accessible:** Includes appropriate aria-labels for screen readers
 
-
 ### Example Usage
 
 ```jsx
@@ -273,4 +273,43 @@ const GalleryComponent = () => {
     </div>
   );
 };
+```
 
+## PetCardItem Component
+
+The `PetCardItem` component displays detailed information about a pet, including its name, gender, and image. It also includes a button to view the pet's story. This component is designed with responsive styles and offers a visually structured card for each pet.
+
+### Props
+
+- **`name: string`**  
+  The name of the pet. It will be prominently displayed on the card as the pet's identifier.
+
+- **`gender: string`**  
+  The gender of the pet, which can be either "female" or "male". Based on the value, an icon with a color specific to the gender is rendered to indicate the pet's gender.
+
+- **`image: string`**  
+  The URL for the pet's image. This image will be displayed within a rounded, framed area, providing a clear and appealing visual representation of the pet.
+
+### Features
+
+- **Responsive Card Design**  
+  The component is styled with Tailwind CSS to ensure it adapts to different screen sizes. The card layout, padding, and font sizes adjust based on device width for an optimized display.
+
+- **Semantic Accessibility**  
+  The card includes `aria-labels` to provide accessible descriptions for screen readers. This includes descriptive text for the pet's name and gender, enhancing usability for visually impaired users.
+
+- **Icon Integration**  
+  The `IconPetGender` component is used to represent the pet's gender visually. The icon color changes based on the gender—pink for female pets and blue for male pets—using a utility class from a helper function (`cn`).
+
+- **Button for Navigation**  
+  A `Button` component labeled "Poznaj historię" ("Learn the story") navigates to the pet's story page. This button is styled for prominence and includes an accessible `aria-label` for screen readers, describing the action with the pet's name for better context.
+
+### Example Usage
+
+```jsx
+<PetCardItem
+  name="Lizi"
+  gender="female"
+  image="/images/fromLove/lizi/lizi01.jpg"
+/>
+```
