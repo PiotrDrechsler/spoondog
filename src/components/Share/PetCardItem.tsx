@@ -2,6 +2,7 @@ import Image from "next/image";
 import { z } from "zod";
 import Button from "./Button";
 import { IconPetGender } from "@/icons/IconPetGender";
+import { cn } from "@/utils/helpers";
 
 const petCardItemSchema = z.object({
   name: z.string(),
@@ -29,14 +30,19 @@ export const PetCardItem: React.FC<PetCardItemProps> = ({
       <div className="my-[16px] flex w-full justify-between">
         <p className="text-18 font-bold tablet:text-20">{name}</p>
         <div
-          className={`${
-            gender === "female" ? "fill-[#F576E0]" : "fill-[#80CAFF]"
-          } stroke-black`}
+          className={cn(
+            gender === "female" ? "fill-[#F576E0]" : "fill-[#80CAFF]",
+            "stroke-dark",
+          )}
         >
           <IconPetGender className="size-[26px]" />
         </div>
       </div>
-      <Button content="Poznaj historie" href="/" />
+      <Button
+        content="Poznaj historie"
+        href="/"
+        className="py-3 desktop:py-3"
+      />
     </div>
   );
 };
