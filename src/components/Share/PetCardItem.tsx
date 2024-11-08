@@ -31,15 +31,17 @@ export const PetCardItem: React.FC<PetProps> = ({ name, gender, image }) => {
         <p id={`pet-name-${name}`} className="text-18 font-bold tablet:text-20">
           {name}
         </p>
-        <div
+        <figure
           className={cn(
             gender === "female" ? "fill-[#F576E0]" : "fill-[#80CAFF]",
             "stroke-dark",
           )}
-          aria-label={gender === "female" ? "samiczka" : "samiec"}
         >
           <IconPetGender className="size-[26px]" aria-hidden="true" />
-        </div>
+          <figcaption className="sr-only">
+            {gender === "female" ? "samiczka" : "samiec"}
+          </figcaption>
+        </figure>
       </div>
       <Button
         content="Poznaj historię"
