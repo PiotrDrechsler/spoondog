@@ -36,7 +36,7 @@ export default function Home() {
         <PetCardItem
           key={pet.name}
           name={pet.name}
-          sex={pet.sex}
+          gender={pet.gender}
           image={pet.images?.[0]}
         />
       ))}

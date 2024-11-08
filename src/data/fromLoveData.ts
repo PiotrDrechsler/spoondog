@@ -3,7 +3,7 @@ export const petsData = [
     name: "Diana",
     description:
       "18 sierpnia 2012 roku wzięliśmy sześcioletnią Akitę z fundacji. Jej losy śledziliśmy przez rok. Diana jest psem trudnej rasy, a jej złe doświadczenia sprawiły, że ciężko było znaleźć jej nowy dom. Niestety nie byłam w stanie jej wcześniej adoptować. Jak już mogła z nami zamieszkać, od samego początku wiedziała jak wkupić się w nasze łaski. Z psa podwórkowego stała się typowym pieszczochem mieszkaniowym. Musi cały czas mieć nas na oku i w pobliżu, towarzyszyć w każdej chwili. Za naszą miłość Diana odwdzięcza się każdego dnia. Jest doskonałym przykładem na to, że każdemu należy się szansa. 7 marca 2015 r. z żalem pożegnaliśmy Dianę, która odeszła za `Tęczowy Most`.",
-    sex: "female",
+    gender: "female",
     images: [
       "/images/fromLove/diana/diana01.jpg",
       "/images/fromLove/diana/diana02.jpg",
@@ -42,7 +42,7 @@ export const petsData = [
     name: "Dżeki",
     description:
       "Dżeki jest moim drugim psem jakiego miałam. Przyszedł na świat w lutym 2000 roku, jest synem Nuki. Nuka była także pieskiem po przejścach, zabrana od właściciela przez innego Pana, który nam ją dał. U nas dożyła spokojnej starości.Dżeki jest zwykłym, kochanym kundelkiem. Kocha naszą rodzinę i nie wyobraża sobie życia bez nas.Każdy, kto przyjdzie do salonu, może spotkać staruszka. Nie stanowi zagrożenia, jest przyjznie nastawiony i niezwykle cierpliwy do innych czworonogów. Swego czasu przyjaźnił się z królikem, pilnował go i nigdy nie zrobił mu krzywdy. 31 października 2014 r. z żalem pożegnaliśmy Dżekiego, który odszedł za `Tęczowy Most`.",
-    sex: "male",
+    gender: "male",
     images: [
       "/images/fromLove/dzeki/dzeki01.jpg",
       "/images/fromLove/dzeki/dzeki02.jpg",
@@ -56,7 +56,7 @@ export const petsData = [
     name: "Forest",
     description:
       "W maju 2012r, jadąc do Opola drogą przez las, znalazłam przywiązanego do drzewa psa. Wyglądał strasznie, nie można było odnaleźć jego łap ani ogona w kołtunach, które miał na sobie. Dwie godziny trwało zanim zaczął wyglądać jak pies. Pod grubą kopułą błota i sierści, był ukryty radosny około roczny mix Yorka. Jego radość i entuzjazm w każdym wzbudzały ciepłe uczucia. Za ciepły kąt i pełną miskę odwdzięczył się posłuszeństwem i miłością. Szybko się uczył i korzystał z każdej chwili. Niestety jego radość nie trwała długo, bardzo szybko odszedł do psiego nieba. Przypuszczam, że w jego główce był guz, który spowodował szybką śmierć. Brakuje mi jego błysku w oczach i merdającego ogona, ale cieszę się że ostatnie dni życia spędził jako szczęśliwy, kochany psiak.",
-    sex: "male",
+    gender: "male",
     images: [
       "/images/fromLove/forest/forest01.jpg",
       "/images/fromLove/forest/forest02.jpg",
@@ -74,7 +74,7 @@ export const petsData = [
     name: "Lizi",
     description:
       "W 2009 roku odbywałam staż w Miejskim Schronisku dla Bezdomnych Zwierząt w Opolu i właśnie wtedy przyniosłam trzy miesięczną labradorkę, do brata. Czułam, że tam jest jej miejsce, ona także to wiedziała i od razu zdobyła serce całej rodziny. Lizi niesamowicie kocha ludzi, a zwłaszcza dzieci. Uwielbia wodę, długie spacery i gre w piłkę. Nie znam drugiego tak radosnego psa. Ten psiak zajmuje szczególne miejsce w moim sercu. Cieszę się, że mogłam obdarzyć ją tak kochającym domem. Lizi doskonale nadaje się do Spoondoga, napewno wykorzystam jej cudowny charakter.",
-    sex: "female",
+    gender: "female",
     images: [
       "/images/fromLove/lizi/lizi01.jpg",
       "/images/fromLove/lizi/lizi02.jpg",
@@ -103,7 +103,7 @@ export const petsData = [
     name: "Lucky",
     description:
       "27 grudnia 2012 roku bratowa przywiozła około rocznego kundelka, który leżał w rowie przy głównej drodze. Psiak był zachudzony i zapchlony, bał się podejść, nie znał smyczy. Pierwszej nocy uciekł, nie było go 12 godzin. Jak wrócił to się cieszył i zaczął nam ufać, oficjalnie stał się kolejnym psem rodziców. Zaprzyjaźnił się z Dżekim i Rozalią. Rodzice nauczyli go chodzenia na smyczy i przyzwyczaili do normalnej karmy. Polubił głaskanie i zrozumiał, że człowiek to nie tylko zło.",
-    sex: "male",
+    gender: "male",
     images: [
       "/images/fromLove/lucky/lucky01.jpg",
       "/images/fromLove/lucky/lucky02.jpg",
@@ -116,7 +116,7 @@ export const petsData = [
     name: "Rozalia",
     description:
       "W październiku 2010r adoptowaliśmy ze schroniska przestraszoną i wychudzoną kotkę, która miała problem z oczami. Na początku bała się ludzi i innych zwierząt, teraz jest pieszczochem uwielbijącym ludzi. Rozalia nie boi się psów, dzięki czemu moi czworonożni klienci mogą ją powąchać i przywitać się. Czasami się zastanawiam jak to jest możliwe (ona chyba myśli, że jest psem). Nawet adoptowany kot potrafi się odwdzięczyć i kochać bezgranicznie.",
-    sex: "female",
+    gender: "female",
     images: [
       "/images/fromLove/rozalia/rozalia01.jpg",
       "/images/fromLove/rozalia/rozalia02.jpg",
@@ -140,7 +140,7 @@ export const petsData = [
     name: "Tola",
     description:
       "Po stracie Diany zrobiło się bardzo smutno i pusto, konieczne więc było zapełnić tą pustkę w sercu nowym domownikiem. Na początku czerwca przyjechała do Nas porzucona sierotka, znaleziona w centrum Warszawy - Tola, która jest jak duże psie dziecko. Tola i mój synek Julek będą dorastać razem i od samego początku łączy ich niesamowita przyjaźń. Wszystko robią razem.",
-    sex: "female",
+    gender: "female",
     images: [
       "/images/fromLove/tola/tola01.jpg",
       "/images/fromLove/tola/tola02.jpg",
