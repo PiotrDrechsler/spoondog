@@ -212,7 +212,7 @@ The `SwiperButton` component provides navigation controls for the `Swiper` compo
 </Swiper>
 ```
 
-## LightboxGallery Component
+## `LightboxGallery` Component
 
 The `LightboxGallery` component is used to display images in a modal lightbox view, allowing users to navigate through images within a specified list of slides. The component leverages the `yet-another-react-lightbox` library and includes support for setting an initial slide index and tracking the current slide index.
 
@@ -275,7 +275,7 @@ const GalleryComponent = () => {
 };
 ```
 
-## PetCardItem Component
+## `PetCardItem` Component
 
 The `PetCardItem` component displays detailed information about a pet, including its name, gender, and image. It also includes a button to view the pet's story. This component is designed with responsive styles and offers a visually structured card for each pet.
 
