@@ -13,10 +13,12 @@ const petCardItemSchema = z.object({
 export type PetProps = z.infer<typeof petCardItemSchema>;
 
 export const PetCardItem: React.FC<PetProps> = ({ name, gender, image }) => {
+  const ariaLabelText = `${name} - ${gender === "female" ? "samiczka" : "samiec"}`;
+
   return (
     <div
       className="flex max-w-[242px] flex-col items-center rounded-[32px] border px-[16px] py-[24px] leading-[1.5] shadow-card-shadow tablet:max-w-[275px] tablet:py-[32px] desktop:px-[32px] desktop:py-[24px]"
-      aria-label={`${name} - ${gender === "female" ? "samiczka" : "samiec"}`}
+      aria-label={ariaLabelText}
     >
       <div className="relative h-[159px] w-[167px] desktop:h-[180px] desktop:w-[180px]">
         <Image
@@ -38,9 +40,7 @@ export const PetCardItem: React.FC<PetProps> = ({ name, gender, image }) => {
           )}
         >
           <IconPetGender className="size-[26px]" aria-hidden="true" />
-          <figcaption className="sr-only">
-            {gender === "female" ? "samiczka" : "samiec"}
-          </figcaption>
+          <figcaption className="sr-only">{ariaLabelText}</figcaption>
         </figure>
       </div>
       <Button
