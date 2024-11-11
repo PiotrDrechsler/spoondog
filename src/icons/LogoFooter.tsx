@@ -1,13 +1,20 @@
 type LogoFooterProps = {
   isWatermark?: boolean;
+  isThumbnail?: boolean;
   className?: string;
 };
 
-export const LogoFooter = ({ isWatermark = false }: LogoFooterProps) => {
+export const LogoFooter = ({
+  isWatermark = false,
+  isThumbnail = false,
+}: LogoFooterProps) => {
+  const width = isThumbnail ? 48 : 120;
+  const height = isThumbnail ? 32 : 97;
+
   return (
     <svg
-      width="120"
-      height="97"
+      width={width}
+      height={height}
       viewBox="0 0 120 97"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
