@@ -1,6 +1,8 @@
 import { ImageSource } from "@/utils/Types";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import { Watermark } from "../Share/Watermark";
+import Image from "next/image";
 
 interface LightboxGalleryProps {
   isOpen: boolean;
@@ -29,6 +31,19 @@ export const LightboxGallery = ({
         src: typeof item === "string" ? item : item.src,
         alt: `Zdjęcie ${index + 1}`,
       }))}
+      render={{
+        slide: ({ slide }) => (
+          <div className="relative w-full h-full">
+            <Image
+              src={slide.src || ""}
+              alt={slide.alt || ""}
+              fill
+              className="rounded-lg object-contain"
+            />
+            <Watermark isGalleryWatermark={true}/>
+          </div>
+        ),
+      }}
     />
   );
 };
