@@ -33,15 +33,14 @@ export const LightboxGallery = ({
       }))}
       render={{
         slide: ({ slide }) => (
-          <div className="relative w-full h-full">
-            <Image
+          <div className="relative h-fit w-fit">
+            <img
               src={slide.src || ""}
               alt={slide.alt || ""}
-              fill
-              className="rounded-lg object-contain"
+              className="max-h-[350px] max-w-[350px] rounded-lg object-cover tablet:max-h-[787px] tablet:max-w-[787px] desktop:max-h-[1080px] desktop:max-w-[1080px]"
             />
-            <Watermark isGalleryWatermark={true}/>
-          </div>
+            <Watermark isGalleryWatermark={true} />
+            </div>
         ),
       }}
     />

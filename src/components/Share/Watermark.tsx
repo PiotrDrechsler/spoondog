@@ -7,11 +7,7 @@ export const Watermark = ({
 }) => {
   return (
     <div
-      className={
-        isGalleryWatermark
-          ? "absolute"
-          : "absolute bottom-3 right-1 flex h-4 w-5 opacity-50 tablet:right-3 tablet:h-8 tablet:w-12"
-      }
+      className={`absolute opacity-50 ${isGalleryWatermark ? "bottom-5 right-5 max-w-[48px] tablet:max-w-[72px] desktop:max-w-[120px]" : "bottom-1 right-1 flex h-5 tablet:h-10 w-[26px] tablet:bottom-5 tablet:right-5 tablet:w-12 tablet:max-w-[48px]"}`}
     >
       <LogoFooter isWatermark={true} isThumbnail={!isGalleryWatermark} />
     </div>
