@@ -2,7 +2,7 @@ import { ImageSource } from "@/utils/Types";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { Watermark } from "../Share/Watermark";
-import Image from "next/image";
+
 
 interface LightboxGalleryProps {
   isOpen: boolean;
