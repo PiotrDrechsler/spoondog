@@ -8,6 +8,7 @@ import { SwiperGalleryTitle } from "./SwiperGalleryTitle";
 import { useLightbox } from "@/hooks/useLightbox";
 import { LightboxGallery } from "../Share/LightboxGallery";
 import { ImageSource } from "@/utils/Types";
+import { Watermark } from "../Share/Watermark";
 
 export const SwiperGallery = () => {
   const { isOpen, photoIndex, openLightbox, closeLightbox } = useLightbox();
@@ -31,6 +32,7 @@ export const SwiperGallery = () => {
                 placeholder="blur"
                 className="rounded-lg object-cover"
               />
+              <Watermark isGalleryWatermark={false} />
             </div>
           ))}
         </Swiper>
