@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useLightbox } from "@/hooks/useLightbox";
-import { galleryGridData } from "@/data/galleryGridData";
 import Container from "../Share/Container";
 import { LightboxGallery } from "../Share/LightboxGallery";
 import { GalleryGridItem } from "./GalleryGridItem";
