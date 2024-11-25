@@ -1,7 +1,6 @@
 import { GalleryGridTitle } from "@/components/GalleryGrid/GalleryGridTitle";
 import { GalleryGrid } from "../../components/GalleryGrid/GalleryGrid";
 
-import { galleryGridData } from "@/data/galleryGridData";
 import { galleryGridHairstyeData } from "@/data/galleryGridHairstyeData";
 import { galleryGridTeethData } from "@/data/galleryGridTeethData";
 
