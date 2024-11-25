@@ -10,13 +10,21 @@ import { GalleryGridTitle } from "./GalleryGridTitle";
 
 const ITEMS_PER_PAGE = 8; // Liczba elementów na stronę
 
-export const GalleryGrid = () => {
+export interface GalleryGridProps {
+  galleryTitle: string;
+  galleryData: string[];
+}
+
+export const GalleryGrid = ({
+  galleryTitle,
+  galleryData,
+}: GalleryGridProps) => {
   const { isOpen, photoIndex, openLightbox, closeLightbox } = useLightbox();
   const [currentPage, setCurrentPage] = useState(1);
 
-  const totalPages = Math.ceil(galleryGridData.length / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(galleryData.length / ITEMS_PER_PAGE);
 
-  const currentData = galleryGridData.slice(
+  const currentData = galleryData.slice(
     (currentPage - 1) * ITEMS_PER_PAGE,
     currentPage * ITEMS_PER_PAGE,
   );
@@ -33,16 +41,15 @@ export const GalleryGrid = () => {
     }
   };
 
-  // Zdefiniowanie wspólnego className dla przycisków
   const buttonClassName =
     "items-center justify-center gap-[10px] rounded-full bg-gradient-btn px-[20px] py-[12px] shadow-button-shadow transition duration-300 ease-in-out hover:scale-[1.05] hover:text-violet focus:scale-[1.05] focus:text-violet desktop:px-[32px] desktop:py-[16px]";
 
   return (
-    <section
-      id="gallery-grid"
-      className="pb-10 pt-[100px] desktop:pb-[140px] desktop:pt-[220px]"
-    >
+    <section id="gallery-grid" className="pt-[100px]">
       <Container>
+        <h2 className="my-8 text-center text-24 font-medium leading-[1.2] tracking-[-0.02em] desktop:text-44 desktop:font-bold">
+          {galleryTitle}
+        </h2>
         <ul className="grid grid-cols-4 gap-x-2.5 gap-y-3 desktop:gap-x-5 desktop:gap-y-[60px]">
           {currentData.map((item: string, index: number) => (
             <GalleryGridItem
@@ -78,7 +85,7 @@ export const GalleryGrid = () => {
         isOpen={isOpen}
         onClose={closeLightbox}
         index={photoIndex}
-        slides={galleryGridData}
+        slides={galleryData}
       />
     </section>
   );
