@@ -3,7 +3,6 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { Watermark } from "../Share/Watermark";
 
-
 interface LightboxGalleryProps {
   isOpen: boolean;
   onClose: () => void;
@@ -37,10 +36,10 @@ export const LightboxGallery = ({
             <img
               src={slide.src || ""}
               alt={slide.alt || ""}
-              className="max-h-[350px] max-w-[350px] rounded-lg object-cover tablet:max-h-[787px] tablet:max-w-[787px] desktop:max-h-[1080px] desktop:max-w-[1080px]"
+              className="max-h-[95vh] max-w-[350px] rounded-lg object-cover desktop:max-w-[1080px]"
             />
             <Watermark isGalleryWatermark={true} />
-            </div>
+          </div>
         ),
       }}
     />
