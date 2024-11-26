@@ -49,7 +49,7 @@ export const GalleryGrid = ({
         <h2 className="my-8 text-center text-24 font-medium leading-[1.2] tracking-[-0.02em] desktop:text-44 desktop:font-bold">
           {galleryTitle}
         </h2>
-        <ul className="grid grid-cols-4 gap-x-2.5 gap-y-3 desktop:gap-x-5 desktop:gap-y-[60px]">
+        <ul className="grid h-[170px] grid-cols-4 gap-x-2.5 gap-y-3 tablet:h-[400px] desktop:h-[650px] desktop:gap-x-5 desktop:gap-y-[60px]">
           {currentData.map((item: string, index: number) => (
             <GalleryGridItem
               key={index}
@@ -62,24 +62,25 @@ export const GalleryGrid = ({
             />
           ))}
         </ul>
+        <div className="mt-8 flex items-center justify-center">
+          <button
+            onClick={handlePrevPage}
+            disabled={currentPage === 1}
+            className={buttonClassName}
+          >
+            Wróć
+          </button>
+          <span className="px-4 py-2">{`${currentPage} / ${totalPages}`}</span>
+          <button
+            onClick={handleNextPage}
+            disabled={currentPage === totalPages}
+            className={buttonClassName}
+          >
+            Dalej
+          </button>
+        </div>
       </Container>
-      <div className="mt-8 flex items-center justify-center">
-        <button
-          onClick={handlePrevPage}
-          disabled={currentPage === 1}
-          className={buttonClassName}
-        >
-          Wróć
-        </button>
-        <span className="px-4 py-2">{`${currentPage} / ${totalPages}`}</span>
-        <button
-          onClick={handleNextPage}
-          disabled={currentPage === totalPages}
-          className={buttonClassName}
-        >
-          Dalej
-        </button>
-      </div>
+
       <LightboxGallery
         isOpen={isOpen}
         onClose={closeLightbox}
