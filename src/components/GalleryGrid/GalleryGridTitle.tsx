@@ -1,6 +1,6 @@
 export const GalleryGridTitle = () => {
   return (
-    <div className="mb-10 px-6 desktop:mb-36">
+    <div className="px-6 pt-[100px]">
       <p className="mb-[60px] text-14 font-semibold leading-normal text-black desktop:hidden">
         O nas // Galeria zdjęć
       </p>

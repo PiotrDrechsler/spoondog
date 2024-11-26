@@ -2,6 +2,8 @@ import Image from "next/image";
 import { IconLoupe } from "@/icons/IconLoupe";
 import { Clickable, ImageSource } from "@/utils/Types";
 import { Watermark } from "../Share/Watermark";
+import { toBase64, shimmer } from "@/utils/GalleryGridUitils";
+
 
 interface GalleryGridItemProps extends Clickable {
   imageUrl: ImageSource;
@@ -24,6 +26,8 @@ export const GalleryGridItem = ({
         src={imageUrl}
         alt={altText}
         fill
+        quality={50}
+        placeholder={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
         sizes="25vw"
         priority={priority}
         className="rounded object-cover desktop:rounded-3xl"
