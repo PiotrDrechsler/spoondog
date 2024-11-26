@@ -1,13 +1,13 @@
-"use client";
-
 import { FromLoveDescription } from "@/components/FromLoveDescription/FromLoveDescription";
 import { PetHistoryItem } from "@/components/PetHistoryItem/PetHistoryItem";
 import { petsData } from "@/data/petsData";
 
-import { useParams } from "next/navigation";
+interface FromLovePageProps {
+  params: { id: string };
+}
 
-export default function FromLovePage() {
-  const { id } = useParams();
+export default function FromLovePage({ params }: FromLovePageProps) {
+  const { id } = params;
   const pet = petsData.find((pet) => pet.name === id);
 
   return (
