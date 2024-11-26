@@ -4,6 +4,7 @@ import { Clickable, ImageSource } from "@/utils/Types";
 import { Watermark } from "../Share/Watermark";
 import { toBase64, shimmer } from "@/utils/GalleryGridUitils";
 
+
 interface GalleryGridItemProps extends Clickable {
   imageUrl: ImageSource;
   altText: string;
