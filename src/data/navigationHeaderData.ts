@@ -1,6 +1,6 @@
 export const navigationHeaderData = [
   { href: "/", label: "Start" },
-  { href: "/#about", label: "O nas" },
+  { href: "", label: "O nas" },
   // { href: "/#price", label: "Cennik" },
   { href: "/#contact", label: "Kontakt" },
   { href: "/#faq", label: "FAQ" },
