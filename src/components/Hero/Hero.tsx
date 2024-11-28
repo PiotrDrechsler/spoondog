@@ -11,9 +11,9 @@ export const Hero = () => {
         <HeroImg />
       </div>
       <Container>
-        <div className="h-auto w-full tablet:h-auto desktop:h-[873px] desktop:mt-[140px] xl:h-full">
-          <div className="flex flex-column">
-            <div className="tablet:h-auto desktop:h-[873px] flex-col">
+        <div className="h-auto w-full tablet:h-auto desktop:mt-[140px] desktop:h-[873px] xl:h-full">
+          <div className="flex-column flex">
+            <div className="flex-col tablet:h-auto desktop:h-[873px]">
               <HeroInfo />
             </div>
           </div>

@@ -48,6 +48,13 @@ export const HeaderNavigation = ({
           >
             <div
               className="group flex cursor-pointer items-center gap-[10px]"
+              onMouseEnter={(event) => {
+                if (index === 1) {
+                  handleToggle(index, event);
+                } else if (onLinkClick) {
+                  onLinkClick(event);
+                }
+              }}
               onClick={(event) => {
                 if (index === 1) {
                   handleToggle(index, event);
@@ -75,7 +82,10 @@ export const HeaderNavigation = ({
               )}
             </div>
             {index === 1 && openIndex === index && (
-              <ul className="ml-[24px] w-auto bg-white pt-[12px] desktop:absolute desktop:z-50 desktop:ml-[12px] desktop:px-[8px] desktop:pt-[18px]">
+              <ul
+                className="ml-[24px] w-auto bg-white pt-[12px] desktop:absolute desktop:z-50 desktop:ml-[12px] desktop:px-[8px] desktop:pt-[18px]"
+                onMouseLeave={handleSubMenuLinkClick}
+              >
                 {aboutSubMenu.map((subItem, subIndex) => (
                   <li
                     key={subIndex}

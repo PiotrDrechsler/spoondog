@@ -26,7 +26,7 @@ export const HeroInfo = () => {
       </div>
       <div className="mt-[20px] flex flex-col items-center justify-center gap-[60px] tablet:hidden desktop:mt-[32px] desktop:block desktop:items-start desktop:justify-end">
         <HeroButtonBox />
-        <div className="block tablet:hidden desktop:mt-[156px] desktop:block">
+        <div className="block tablet:hidden desktop:mt-[106px] desktop:block">
           <HeroIcons />
         </div>
       </div>
