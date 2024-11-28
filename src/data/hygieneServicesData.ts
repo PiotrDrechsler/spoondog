@@ -46,7 +46,7 @@ export const hygieneServicesData: CareHygieneService[] = [
     cat: "koty -  ",
     catPrice: "50 zł",
     src1: "/images/hygieneServices/earsDog1.jpg",
-    src2: "/images/hygieneServices/earsDog2.jpeg",
+    src2: "/images/hygieneServices/earsDog2.jpg",
     alt: "Zdjęcie psa podczas usuwania kamienia nazębnego",
   },
   {
