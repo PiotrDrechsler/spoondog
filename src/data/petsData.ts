@@ -3,6 +3,7 @@ import { PetProps } from "./../utils/Types";
 export const petsData: PetProps[] = [
   {
     name: "diana",
+    declension: "dianie",
     description:
       "18 sierpnia 2012 roku wzięliśmy sześcioletnią Akitę z fundacji. Jej losy śledziliśmy przez rok. Diana jest psem trudnej rasy, a jej złe doświadczenia sprawiły, że ciężko było znaleźć jej nowy dom. Niestety nie byłam w stanie jej wcześniej adoptować. Jak już mogła z nami zamieszkać, od samego początku wiedziała jak wkupić się w nasze łaski. Z psa podwórkowego stała się typowym pieszczochem mieszkaniowym. Musi cały czas mieć nas na oku i w pobliżu, towarzyszyć w każdej chwili. Za naszą miłość Diana odwdzięcza się każdego dnia. Jest doskonałym przykładem na to, że każdemu należy się szansa. 7 marca 2015 r. z żalem pożegnaliśmy Dianę, która odeszła za `Tęczowy Most`.",
     gender: "female",
@@ -42,6 +43,7 @@ export const petsData: PetProps[] = [
   },
   {
     name: "dżeki",
+    declension: "dżekim",
     description:
       "Dżeki jest moim drugim psem jakiego miałam. Przyszedł na świat w lutym 2000 roku, jest synem Nuki. Nuka była także pieskiem po przejścach, zabrana od właściciela przez innego Pana, który nam ją dał. U nas dożyła spokojnej starości.Dżeki jest zwykłym, kochanym kundelkiem. Kocha naszą rodzinę i nie wyobraża sobie życia bez nas.Każdy, kto przyjdzie do salonu, może spotkać staruszka. Nie stanowi zagrożenia, jest przyjznie nastawiony i niezwykle cierpliwy do innych czworonogów. Swego czasu przyjaźnił się z królikem, pilnował go i nigdy nie zrobił mu krzywdy. 31 października 2014 r. z żalem pożegnaliśmy Dżekiego, który odszedł za `Tęczowy Most`.",
     gender: "male",
@@ -56,6 +58,7 @@ export const petsData: PetProps[] = [
   },
   {
     name: "forest",
+    declension: "foreście",
     description:
       "W maju 2012r, jadąc do Opola drogą przez las, znalazłam przywiązanego do drzewa psa. Wyglądał strasznie, nie można było odnaleźć jego łap ani ogona w kołtunach, które miał na sobie. Dwie godziny trwało zanim zaczął wyglądać jak pies. Pod grubą kopułą błota i sierści, był ukryty radosny około roczny mix Yorka. Jego radość i entuzjazm w każdym wzbudzały ciepłe uczucia. Za ciepły kąt i pełną miskę odwdzięczył się posłuszeństwem i miłością. Szybko się uczył i korzystał z każdej chwili. Niestety jego radość nie trwała długo, bardzo szybko odszedł do psiego nieba. Przypuszczam, że w jego główce był guz, który spowodował szybką śmierć. Brakuje mi jego błysku w oczach i merdającego ogona, ale cieszę się że ostatnie dni życia spędził jako szczęśliwy, kochany psiak.",
     gender: "male",
@@ -74,6 +77,7 @@ export const petsData: PetProps[] = [
   },
   {
     name: "lizi",
+    declension: "lizi",
     description:
       "W 2009 roku odbywałam staż w Miejskim Schronisku dla Bezdomnych Zwierząt w Opolu i właśnie wtedy przyniosłam trzy miesięczną labradorkę, do brata. Czułam, że tam jest jej miejsce, ona także to wiedziała i od razu zdobyła serce całej rodziny. Lizi niesamowicie kocha ludzi, a zwłaszcza dzieci. Uwielbia wodę, długie spacery i gre w piłkę. Nie znam drugiego tak radosnego psa. Ten psiak zajmuje szczególne miejsce w moim sercu. Cieszę się, że mogłam obdarzyć ją tak kochającym domem. Lizi doskonale nadaje się do Spoondoga, napewno wykorzystam jej cudowny charakter.",
     gender: "female",
@@ -103,6 +107,7 @@ export const petsData: PetProps[] = [
   },
   {
     name: "lucky",
+    declension: "lucky'm",
     description:
       "27 grudnia 2012 roku bratowa przywiozła około rocznego kundelka, który leżał w rowie przy głównej drodze. Psiak był zachudzony i zapchlony, bał się podejść, nie znał smyczy. Pierwszej nocy uciekł, nie było go 12 godzin. Jak wrócił to się cieszył i zaczął nam ufać, oficjalnie stał się kolejnym psem rodziców. Zaprzyjaźnił się z Dżekim i Rozalią. Rodzice nauczyli go chodzenia na smyczy i przyzwyczaili do normalnej karmy. Polubił głaskanie i zrozumiał, że człowiek to nie tylko zło.",
     gender: "male",
@@ -116,6 +121,7 @@ export const petsData: PetProps[] = [
   },
   {
     name: "rozalia",
+    declension: "rozalii",
     description:
       "W październiku 2010r adoptowaliśmy ze schroniska przestraszoną i wychudzoną kotkę, która miała problem z oczami. Na początku bała się ludzi i innych zwierząt, teraz jest pieszczochem uwielbijącym ludzi. Rozalia nie boi się psów, dzięki czemu moi czworonożni klienci mogą ją powąchać i przywitać się. Czasami się zastanawiam jak to jest możliwe (ona chyba myśli, że jest psem). Nawet adoptowany kot potrafi się odwdzięczyć i kochać bezgranicznie.",
     gender: "female",
@@ -140,6 +146,7 @@ export const petsData: PetProps[] = [
   },
   {
     name: "tola",
+    declension: "toli",
     description:
       "Po stracie Diany zrobiło się bardzo smutno i pusto, konieczne więc było zapełnić tą pustkę w sercu nowym domownikiem. Na początku czerwca przyjechała do Nas porzucona sierotka, znaleziona w centrum Warszawy - Tola, która jest jak duże psie dziecko. Tola i mój synek Julek będą dorastać razem i od samego początku łączy ich niesamowita przyjaźń. Wszystko robią razem.",
     gender: "female",
@@ -163,6 +170,7 @@ export const petsData: PetProps[] = [
   },
   {
     name: "bestia",
+    declension: "bestii",
     description:
       "Nasz kotek, znaleziony na placu budowy, jest z nami od kwietnia 2017 roku. Bestia jest wysterylizowany, a w domu – niekwestionowany przywódca, którego słuchają się wszystkie psy.",
     gender: "male",
@@ -186,6 +194,7 @@ export const petsData: PetProps[] = [
   },
   {
     name: "boni",
+    declension: "boni",
     description:
       "Poznajcie Boni – uroczego hawańczyka, który od razu skradł nasze serca! Boni to spełnienie marzeń naszych synów – kochany, ciepły i zawsze gotowy na pieszczoty. Jest z nami od 28 stycznia 2024 roku i już stał się ukochaną, żywą przytulanką całej rodziny.",
     gender: "male",
@@ -215,6 +224,7 @@ export const petsData: PetProps[] = [
   },
   {
     name: "grażynka",
+    declension: "grażynce",
     description:
       "Gekon orzęsiony (Correlophus ciliatus) to doskonały wybór dla początkujących terrarystów. Jest łatwy w hodowli, nie wymaga skomplikowanego oświetlenia ani ogrzewania, co czyni go idealnym pierwszym gadem. Pochodzący z lasów tropikalnych gekon potrzebuje terrarium o wymiarach 45 × 45 × 60 cm z warstwą drenażową, włókniną i specjalnym podłożem. Warto posadzić w nim żywe rośliny, dodać korkowe kryjówki i regularnie zraszać ścianki, aby zapewnić odpowiednią wilgotność. Podstawą diety są żywe owady, takie jak świerszcze i karaczany, uzupełniane owocami (banany, kiwi, truskawki) oraz suplementami wapnia i witamin. Gekon orzęsiony jest łagodnym i przyjaznym zwierzęciem, które lubi wspinaczki i kontakt z właścicielem. Trzeba jednak uważać na jego ogon, który może odpaść w sytuacji stresowej i nie odrośnie. Gekony mogą żyć nawet 15 lat w odpowiednich warunkach. Grażynkę kupiliśmy od sprawdzonego hodowcy, jakim jest „Gady spod Lady”. Z czystym sumieniem polecam tego hodowcę każdemu, kto szuka fachowego wsparcia w opiece nad egzotycznym stworzeniem.",
     gender: "female",

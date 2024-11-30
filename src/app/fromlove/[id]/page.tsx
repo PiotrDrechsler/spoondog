@@ -10,11 +10,12 @@ export default function FromLovePage({ params }: FromLovePageProps) {
   const { id } = params;
   const pet = petsData.find((pet) => pet.name === "tola"); // !!! IMPORTANT SELF NOTE !!! Pod koniec pracy z komponentem PetHistoryItem zmień ponownie na id !!!
   const petDescription = pet?.description || "";
+  const petNameDeclension = pet?.declension || "";
 
   return (
     <div className="mt-20">
       {pet ? (
-        <PetHistoryItem name={pet.name} description={petDescription} />
+        <PetHistoryItem name={pet.name} description={petDescription} nameDeclension={petNameDeclension} />
       ) : (
         <FromLoveDescription />
       )}

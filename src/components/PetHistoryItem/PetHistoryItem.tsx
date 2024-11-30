@@ -4,9 +4,11 @@ import { SectionHeading } from "../Share/SectionHeading";
 export const PetHistoryItem = ({
   name,
   description,
+  nameDeclension,
 }: {
   name: string;
   description: string;
+  nameDeclension: string;
 }) => {
   return (
     <section className="pb-[48px] pt-[70px] desktop:gap-[60px] desktop:pt-[88px]">
@@ -23,7 +25,10 @@ export const PetHistoryItem = ({
             </h4>
             <div className="h-[1px] w-full bg-yellow desktop:mb-[70px]"></div>
             <div>
-              <h5>Kilka słów o </h5>
+              <h5>
+                Kilka słów o{" "}
+                <span className="capitalize">{nameDeclension}</span>
+              </h5>
               <p>{description}</p>
             </div>
           </article>
