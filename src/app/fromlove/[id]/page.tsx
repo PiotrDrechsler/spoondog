@@ -8,11 +8,16 @@ interface FromLovePageProps {
 
 export default function FromLovePage({ params }: FromLovePageProps) {
   const { id } = params;
-  const pet = petsData.find((pet) => pet.name === id);
+  const pet = petsData.find((pet) => pet.name === "tola"); // !!! IMPORTANT SELF NOTE !!! Pod koniec pracy z komponentem PetHistoryItem zmień ponownie na id !!!
+  const petDescription = pet?.description || "";
 
   return (
     <div className="mt-20">
-      {pet ? <PetHistoryItem name={pet.name} /> : <FromLoveDescription />}
+      {pet ? (
+        <PetHistoryItem name={pet.name} description={petDescription} />
+      ) : (
+        <FromLoveDescription />
+      )}
     </div>
   );
 }
