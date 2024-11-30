@@ -19,17 +19,21 @@ export const PetHistoryItem = ({
             sectionMainHeading="Historie naszych zwierząt"
             className="p-5 desktop:p-0"
           />
-          <article>
-            <h4 className="text-20 font-medium capitalize desktop:text-28">
+          <article className="px-6 py-10 desktop:px-0">
+            <h4 className="desktop: text-20 font-medium capitalize leading-tight tracking-[-0.02em] desktop:text-28">
               {name}
             </h4>
-            <div className="h-[1px] w-full bg-yellow desktop:mb-[70px]"></div>
-            <div>
-              <h5>
-                Kilka słów o{" "}
-                <span className="capitalize">{nameDeclension}</span>
-              </h5>
-              <p>{description}</p>
+            <div className="mb-9 h-[1px] w-full bg-yellow desktop:mb-[70px]"></div>
+            <div className="py-4">
+              <div>
+                <h5 className="mb-2 text-20 font-medium tracking-[-0.02em]">
+                  Kilka słów o{" "}
+                  <span className="capitalize">{nameDeclension}</span>
+                </h5>
+                <p className="self-stretch py-4 text-16 leading-6 text-dark">
+                  {description}
+                </p>
+              </div>
             </div>
           </article>
         </div>
