@@ -1,8 +1,11 @@
-import { SwiperSlide } from "swiper/react";
+"use client";
 import Container from "../Share/Container";
 import { SectionHeading } from "../Share/SectionHeading";
 import { Swiper } from "../Share/Swiper/Swiper";
 import Image from "next/image";
+import { Watermark } from "../Share/Watermark";
+import { useLightbox } from "@/hooks/useLightbox";
+import { LightboxGallery } from "../Share/LightboxGallery";
 
 export const PetHistoryItem = ({
   name,
@@ -15,6 +18,7 @@ export const PetHistoryItem = ({
   nameDeclension: string;
   images: string[];
 }) => {
+  const { isOpen, photoIndex, openLightbox, closeLightbox } = useLightbox();
   return (
     <section className="pb-[48px] pt-[70px] desktop:gap-[60px] desktop:pt-[88px]">
       <Container>
@@ -29,7 +33,7 @@ export const PetHistoryItem = ({
               {name}
             </h4>
             <div className="mb-9 h-[1px] w-full bg-yellow desktop:mb-[70px]"></div>
-            <div className="flex py-4 desktop:flex-row">
+            <div className="flex gap-[160px] py-4 desktop:flex-row">
               <div>
                 <h5 className="mb-2 text-20 font-medium tracking-[-0.02em]">
                   Kilka słów o{" "}
@@ -39,26 +43,28 @@ export const PetHistoryItem = ({
                   {description}
                 </p>
               </div>
-              <div className="w-[540px]">
+              <div className="">
                 <Swiper
                   arrowVisibility="largeScreen"
                   loop={true}
-                  slidesPerView={1}
-                  spaceBetween={0}
+                  slidesPerView={"auto"}
+                  spaceBetween={20}
                 >
                   {images.map((image, index) => (
                     <div
                       key={index}
-                      className="relative h-[342px] w-[540px] cursor-pointer"
+                      className="relative cursor-pointer desktop:h-[342px] desktop:w-[540px]"
+                      onClick={() => openLightbox(index)}
                     >
                       <Image
                         src={image}
-                        alt={`Zdjęcie ${index + 1} zwierzaka o imieniu ${name}`}
+                        alt={`Zdjęcie ${index + 1} zwierzaka o imieniu ${name.charAt(0).toUpperCase() + name.slice(1)}`}
                         className="rounded-lg object-cover"
                         fill
                         priority
                         sizes="(max-width: 1439px) 342px, (min-width: 1440px) 540px"
                       />
+                      <Watermark isGalleryWatermark={false} />
                     </div>
                   ))}
                 </Swiper>
@@ -67,6 +73,12 @@ export const PetHistoryItem = ({
           </article>
         </div>
       </Container>
+      <LightboxGallery
+        isOpen={isOpen}
+        onClose={closeLightbox}
+        index={photoIndex}
+        slides={images}
+      />
     </section>
   );
 };
