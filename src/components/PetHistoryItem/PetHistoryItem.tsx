@@ -33,8 +33,8 @@ export const PetHistoryItem = ({
               {name}
             </h4>
             <div className="mb-9 h-[1px] w-full bg-yellow desktop:mb-[70px]"></div>
-            <div className="flex gap-[160px] py-4 desktop:flex-row">
-              <div>
+            <div className="flex py-4 desktop:h-auto desktop:flex-row desktop:gap-[80px]">
+              <div className="desktop:w-[579px]">
                 <h5 className="mb-2 text-20 font-medium tracking-[-0.02em]">
                   Kilka słów o{" "}
                   <span className="capitalize">{nameDeclension}</span>
@@ -43,7 +43,7 @@ export const PetHistoryItem = ({
                   {description}
                 </p>
               </div>
-              <div className="">
+              <div className="desktop:w-[40%]">
                 <Swiper
                   arrowVisibility="largeScreen"
                   loop={true}
