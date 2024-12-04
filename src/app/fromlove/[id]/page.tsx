@@ -1,4 +1,4 @@
-import { FromLoveDescription } from "@/components/FromLoveDescription/FromLoveDescription";
+import FromLoveDescription from "@/components/FromLoveDescription/FromLoveDescription";
 import { PetHistoryItem } from "@/components/PetHistoryItem/PetHistoryItem";
 import { petsData } from "@/data/petsData";
 
