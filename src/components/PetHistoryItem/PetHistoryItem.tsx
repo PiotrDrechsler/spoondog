@@ -1,8 +1,9 @@
 "use client";
+
+import Image from "next/image";
 import Container from "../Share/Container";
 import { SectionHeading } from "../Share/SectionHeading";
 import { Swiper } from "../Share/Swiper/Swiper";
-import Image from "next/image";
 import { Watermark } from "../Share/Watermark";
 import { useLightbox } from "@/hooks/useLightbox";
 import { LightboxGallery } from "../Share/LightboxGallery";
