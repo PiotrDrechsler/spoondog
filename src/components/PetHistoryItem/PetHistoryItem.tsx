@@ -33,27 +33,26 @@ export const PetHistoryItem = ({
               {name}
             </h4>
             <div className="mb-9 h-[1px] w-full bg-yellow desktop:mb-[70px]"></div>
-            <div className="flex py-4 desktop:h-auto desktop:flex-row desktop:gap-[80px]">
-              <div className="desktop:w-[579px]">
+            <div className="flex flex-col-reverse py-4 desktop:h-auto tablet:flex-row gap-[24px] desktop:gap-[120px]">
+              <div className="w-[100%] desktop:w-[579px]">
                 <h5 className="mb-2 text-20 font-medium tracking-[-0.02em]">
                   Kilka słów o{" "}
                   <span className="capitalize">{nameDeclension}</span>
                 </h5>
                 <p className="self-stretch py-4 text-16 leading-6 text-dark">
                   {description}
-                </p>
+                </p>  
               </div>
-              <div className="desktop:w-[40%]">
+              <div className="w-[100%] tablet:w-[45%] desktop:w-[40%]">
                 <Swiper
                   arrowVisibility="largeScreen"
                   loop={true}
-                  slidesPerView={"auto"}
-                  spaceBetween={20}
+                  breakpoints={{ 320: { slidesPerView: 1, spaceBetween: 20 } }}
                 >
                   {images.map((image, index) => (
                     <div
                       key={index}
-                      className="relative cursor-pointer desktop:h-[342px] desktop:w-[540px]"
+                      className="relative h-[229px] w-auto cursor-pointer desktop:h-[342px]"
                       onClick={() => openLightbox(index)}
                     >
                       <Image
@@ -62,7 +61,7 @@ export const PetHistoryItem = ({
                         className="rounded-lg object-cover"
                         fill
                         priority
-                        sizes="(max-width: 1439px) 342px, (min-width: 1440px) 540px"
+                        sizes="(max-width: 1439px) 332px, (min-width: 1440px) 540px"
                       />
                       <Watermark isGalleryWatermark={false} />
                     </div>
