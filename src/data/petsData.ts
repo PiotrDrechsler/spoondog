@@ -42,7 +42,7 @@ export const petsData: PetProps[] = [
     ],
   },
   {
-    name: "dżeki",
+    name: "dzeki",
     declension: "dżekim",
     description:
       "Dżeki jest moim drugim psem jakiego miałam. Przyszedł na świat w lutym 2000 roku, jest synem Nuki. Nuka była także pieskiem po przejścach, zabrana od właściciela przez innego Pana, który nam ją dał. U nas dożyła spokojnej starości.Dżeki jest zwykłym, kochanym kundelkiem. Kocha naszą rodzinę i nie wyobraża sobie życia bez nas.Każdy, kto przyjdzie do salonu, może spotkać staruszka. Nie stanowi zagrożenia, jest przyjznie nastawiony i niezwykle cierpliwy do innych czworonogów. Swego czasu przyjaźnił się z królikem, pilnował go i nigdy nie zrobił mu krzywdy. 31 października 2014 r. z żalem pożegnaliśmy Dżekiego, który odszedł za `Tęczowy Most`.",
@@ -68,7 +68,6 @@ export const petsData: PetProps[] = [
       "/images/fromLove/forest/forest03.jpg",
       "/images/fromLove/forest/forest04.jpg",
       "/images/fromLove/forest/forest05.jpg",
-      "/images/fromLove/forest/forest06.jpg",
       "/images/fromLove/forest/forest07.jpg",
       "/images/fromLove/forest/forest08.jpg",
       "/images/fromLove/forest/forest09.jpg",
@@ -185,8 +184,6 @@ export const petsData: PetProps[] = [
       "/images/fromLove/bestia/bestia11.jpg",
       "/images/fromLove/bestia/bestia12.jpg",
       "/images/fromLove/bestia/bestia13.jpg",
-      "/images/fromLove/bestia/bestia14.jpg",
-      "/images/fromLove/bestia/bestia15.jpg",
     ],
   },
   {
@@ -220,7 +217,7 @@ export const petsData: PetProps[] = [
     ],
   },
   {
-    name: "grażynka",
+    name: "grazynka",
     declension: "grażynce",
     description:
       "Gekon orzęsiony (Correlophus ciliatus) to doskonały wybór dla początkujących terrarystów. Jest łatwy w hodowli, nie wymaga skomplikowanego oświetlenia ani ogrzewania, co czyni go idealnym pierwszym gadem. Pochodzący z lasów tropikalnych gekon potrzebuje terrarium o wymiarach 45 × 45 × 60 cm z warstwą drenażową, włókniną i specjalnym podłożem. Warto posadzić w nim żywe rośliny, dodać korkowe kryjówki i regularnie zraszać ścianki, aby zapewnić odpowiednią wilgotność. Podstawą diety są żywe owady, takie jak świerszcze i karaczany, uzupełniane owocami (banany, kiwi, truskawki) oraz suplementami wapnia i witamin. Gekon orzęsiony jest łagodnym i przyjaznym zwierzęciem, które lubi wspinaczki i kontakt z właścicielem. Trzeba jednak uważać na jego ogon, który może odpaść w sytuacji stresowej i nie odrośnie. Gekony mogą żyć nawet 15 lat w odpowiednich warunkach. Grażynkę kupiliśmy od sprawdzonego hodowcy, jakim jest „Gady spod Lady”. Z czystym sumieniem polecam tego hodowcę każdemu, kto szuka fachowego wsparcia w opiece nad egzotycznym stworzeniem.",

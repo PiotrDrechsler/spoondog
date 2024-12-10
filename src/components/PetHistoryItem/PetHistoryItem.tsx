@@ -37,7 +37,7 @@ export const PetHistoryItem = ({
               className="desktop: text-20 font-medium capitalize leading-tight tracking-[-0.02em] desktop:text-28"
               id="pet-name"
             >
-              {name}
+               {name === "dzeki" ? "dżeki" : name === "grazynka" ? "grażynka" : name}
             </h4>
             <div
               className="mb-9 h-[1px] w-full bg-yellow desktop:mb-[70px]"
