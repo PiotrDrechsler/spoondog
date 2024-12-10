@@ -21,6 +21,7 @@ export interface Clickable {
 
 export interface PetProps {
   name: string;
+  declension?: string;
   description?: string;
   gender: "male" | "female";
   images: string[];
