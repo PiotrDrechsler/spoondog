@@ -7,6 +7,7 @@ import { Hero } from "../components/Hero/Hero";
 import SalonOwner from "../components/SalonOwner/SalonOwner";
 import { ClickOnMe } from "../components/ClickOnMe/ClickOnMe";
 import { OpinionsSection } from "../components/OpinionsSection/OpinionsSection";
+import { PetGallery } from "@/components/Share/PetGallery";
 
 const SwiperGallery = dynamic(
   () =>
@@ -28,6 +29,7 @@ export default function Home() {
       <ClickOnMe />
       <SwiperGallery />
       <OpinionsSection />
+      <PetGallery />
       <Contact />
       <Faq />
     </>
