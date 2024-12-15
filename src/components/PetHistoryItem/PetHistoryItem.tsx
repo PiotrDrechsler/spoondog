@@ -21,7 +21,7 @@ export const PetHistoryItem = ({
 }) => {
   const { isOpen, photoIndex, openLightbox, closeLightbox } = useLightbox();
   return (
-    <section className="pb-[48px] pt-[70px] desktop:gap-[60px] desktop:pt-[88px]">
+    <section className="pb-[40px] pt-[70px] desktop:gap-[60px] desktop:pt-[88px]">
       <Container>
         <div className="flex flex-col gap-10 desktop:gap-[60px]">
           <SectionHeading
