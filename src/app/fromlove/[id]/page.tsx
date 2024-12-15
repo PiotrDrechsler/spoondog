@@ -1,5 +1,6 @@
 import FromLoveDescription from "@/components/FromLoveDescription/FromLoveDescription";
 import { PetHistoryItem } from "@/components/PetHistoryItem/PetHistoryItem";
+import { PetGallery } from "@/components/Share/PetGallery";
 import { petsData } from "@/data/petsData";
 
 interface FromLovePageProps {
@@ -14,17 +15,20 @@ export default function FromLovePage({ params }: FromLovePageProps) {
   const petImages = pet?.images || [];
 
   return (
-    <div className="mt-20">
-      {pet ? (
-        <PetHistoryItem
-          name={pet.name}
-          description={petDescription}
-          nameDeclension={petNameDeclension}
-          images={petImages}
-        />
-      ) : (
-        <FromLoveDescription />
-      )}
-    </div>
+    <>
+      <div className="mt-20">
+        {pet ? (
+          <PetHistoryItem
+            name={pet.name}
+            description={petDescription}
+            nameDeclension={petNameDeclension}
+            images={petImages}
+          />
+        ) : (
+          <FromLoveDescription />
+        )}
+      </div>
+      <PetGallery />
+    </>
   );
 }

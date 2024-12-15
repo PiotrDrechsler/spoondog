@@ -12,7 +12,12 @@ const petCardItemSchema = z.object({
 
 export type PetProps = z.infer<typeof petCardItemSchema>;
 
-export const PetCardItem: React.FC<PetProps> = ({ name, gender, image }) => {
+export const PetCardItem: React.FC<PetProps & { href: string }> = ({
+  name,
+  gender,
+  image,
+  href,
+}) => {
   const ariaLabelText = `${name} - ${gender === "female" ? "samiczka" : "samiec"}`;
 
   return (
@@ -45,7 +50,7 @@ export const PetCardItem: React.FC<PetProps> = ({ name, gender, image }) => {
       </div>
       <Button
         content="Poznaj historię"
-        href="/"
+        href={href}
         className="py-3 desktop:py-3"
         aria-label={`Idź do strony z historią zwierzaka ${name}`}
       />
