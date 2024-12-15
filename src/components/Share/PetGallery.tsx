@@ -6,7 +6,7 @@ import { SectionHeading } from "./SectionHeading";
 
 export const PetGallery = () => {
   return (
-    <section id="fromlove" className="py-[48px]">
+    <section className="py-[48px]">
       <Container>
         <div className="py-[48px] tablet:py-0">
           <SectionHeading
