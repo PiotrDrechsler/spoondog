@@ -12,7 +12,12 @@ const petCardItemSchema = z.object({
 
 export type PetProps = z.infer<typeof petCardItemSchema>;
 
-export const PetCardItem: React.FC<PetProps> = ({ name, gender, image }) => {
+export const PetCardItem: React.FC<PetProps & { href: string }> = ({
+  name,
+  gender,
+  image,
+  href,
+}) => {
   const ariaLabelText = `${name} - ${gender === "female" ? "samiczka" : "samiec"}`;
 
   return (
@@ -27,6 +32,7 @@ export const PetCardItem: React.FC<PetProps> = ({ name, gender, image }) => {
           fill
           className="rounded-[24px] object-cover"
           aria-label={name}
+          sizes="(max-width: 1439px) 167px, (min-width: 1440px) 180px"
         />
       </div>
       <div className="my-[16px] flex w-full justify-between">
@@ -45,7 +51,7 @@ export const PetCardItem: React.FC<PetProps> = ({ name, gender, image }) => {
       </div>
       <Button
         content="Poznaj historię"
-        href="/"
+        href={href}
         className="py-3 desktop:py-3"
         aria-label={`Idź do strony z historią zwierzaka ${name}`}
       />
