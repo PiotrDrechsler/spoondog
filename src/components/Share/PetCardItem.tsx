@@ -32,6 +32,7 @@ export const PetCardItem: React.FC<PetProps & { href: string }> = ({
           fill
           className="rounded-[24px] object-cover"
           aria-label={name}
+          sizes="(max-width: 1439px) 167px, (min-width: 1440px) 180px"
         />
       </div>
       <div className="my-[16px] flex w-full justify-between">
