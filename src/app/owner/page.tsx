@@ -42,7 +42,7 @@ const About = () => {
           </nav>
 
           <p className="mt-[80px] text-[16px] font-bold leading-6 desktop:md:mt-[29px]">
-            O nas // Katarzyna Bober
+            O mnie // Katarzyna Bober
           </p>
           <h1 className="mt-[40px] text-center text-[24px] font-medium leading-[28.8px] tracking-[-0.04em] desktop:text-[44px] desktop:leading-[52.8px]">
             Katarzyna Bober
@@ -105,7 +105,7 @@ const About = () => {
 
           <div className="mx-auto mb-[100px] mt-[80px] block h-[44px] w-[246px] md:mt-[100px] tablet:mt-[40px]">
             <DropdownButton
-              buttonText="Zobacz nasze usługi"
+              buttonText="Zobacz moje usługi"
               options={serviceOptions}
               onSelect={handleSelect}
               aria-label="Przejdź do usług"

@@ -25,8 +25,8 @@ export const PetHistoryItem = ({
       <Container>
         <div className="flex flex-col gap-10 desktop:gap-[60px]">
           <SectionHeading
-            sectionTitle="Z miłości"
-            sectionMainHeading="Historie naszych zwierząt"
+            sectionTitle="Moje zwierzęta"
+            sectionMainHeading="Historie moich zwierząt"
             className="p-5 desktop:p-0"
           />
           <article

@@ -1,7 +1,7 @@
 export const navigationHeaderData = [
   { href: "/", label: "Start" },
-  { href: "", label: "O nas" },
-  { href: "/fromlove", label: "Z Miłości" },
+  { href: "", label: "O mnie" },
+  { href: "/fromlove", label: "Moje zwierzęta" },
   // { href: "/#price", label: "Cennik" },
   { href: "/#contact", label: "Kontakt" },
   { href: "/#faq", label: "FAQ" },

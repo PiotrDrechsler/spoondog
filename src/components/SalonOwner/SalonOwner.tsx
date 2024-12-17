@@ -9,7 +9,7 @@ const SalonOwner: React.FC = () => {
     <section id="owner" className="pb-[48px] pt-[70px] desktop:pt-[88px]">
       <Container>
         <SectionHeading
-          sectionTitle="O nas / Katarzyna Bober"
+          sectionTitle="O mnie / Katarzyna Bober"
           sectionMainHeading="O właścicielce salonu"
           sectionInfo={
             <>

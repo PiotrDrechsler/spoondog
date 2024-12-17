@@ -17,7 +17,7 @@ export const NewOffer = () => {
               </div>
               <div className="my-[36px] flex h-auto w-[250px] flex-col gap-[16px] py-[20px] text-center desktop:my-0 tablet:w-[450px] desktop:w-[376px] desktop:py-[42px]">
                 <p className="text-[18px] font-bold leading-[1.3] desktop:text-[28px] desktop:leading-[1.2]">
-                  Zobacz nową usługę w naszym salonie
+                  Zobacz nową usługę w moim salonie
                 </p>
 
                 <div className="w-auto">

@@ -15,7 +15,7 @@ export const servicesData = [
     label2: "Higiena uszu",
     label3: "Przycięcie pazurków",
     description:
-      "Oferujemy kompleksowe zabiegi higienizacyjne, aby Twój pupil był zawsze zdrowy i czysty. Nasze usługi obejmują profesjonalne czyszczenie uszu, kąpiele oraz usuwanie kamienia nazębnego. Zaufaj nam i ciesz się pięknym wyglądem swojego pupila.",
+      "Oferuję kompleksowe zabiegi higienizacyjne, aby Twój pupil był zawsze zdrowy i czysty. Moje usługi obejmują profesjonalne czyszczenie uszu, kąpiele oraz usuwanie kamienia nazębnego. Zaufaj mi i ciesz się pięknym wyglądem swojego pupila.",
     price: "od 50 zł",
     href: "/hygiene-services",
   },
