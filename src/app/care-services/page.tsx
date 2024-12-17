@@ -6,7 +6,7 @@ export default function CareServicesPage() {
     <>
       <CareHygieneServices
         data={careServicesData}
-        title="Poznaj nasze usługi zabiegów podstawowych"
+        title="Poznaj usługi zabiegów podstawowych"
         subtitleBold="Rozczesywanie"
         subtitle=" / Strzyżenie / Trymowanie"
       />

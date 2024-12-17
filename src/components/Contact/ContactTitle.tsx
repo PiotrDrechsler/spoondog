@@ -5,7 +5,7 @@ export const ContactTitle = () => {
     <SectionHeading
       sectionTitle="Kontakt"
       sectionMainHeading="Skontaktuj się z nami"
-      sectionInfo="Zapraszamy do naszego salonu w Tułowicach"
+      sectionInfo="Zapraszam do mojego salonu w Tułowicach"
       className="mb-[24px]"
     />
   );

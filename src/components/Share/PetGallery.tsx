@@ -11,7 +11,7 @@ export const PetGallery = () => {
         <div className="py-[48px] tablet:py-0">
           <SectionHeading
             sectionMainHeading="Poznaj historię moich zwierząt"
-            sectionTitle="Z miłości"
+            sectionTitle="Moje zwierzęta"
             className="mb-[64px]"
           />
           <Swiper

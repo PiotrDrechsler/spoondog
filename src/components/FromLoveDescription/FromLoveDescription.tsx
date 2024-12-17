@@ -9,8 +9,8 @@ const FromLoveDescription = () => {
     <section className="pb-[48px] pt-[70px] desktop:pt-[88px]">
       <Container>
         <SectionHeading
-          sectionTitle="Poznaj historię naszych zwierząt"
-          sectionMainHeading="Z miłości..."
+          sectionTitle="Poznaj historie moich zwierząt"
+          sectionMainHeading="Moje zwierzęta"
           className="pb-6"
         />
 
