@@ -10,8 +10,8 @@ export const PetGallery = () => {
       <Container>
         <div className="py-[48px] tablet:py-0">
           <SectionHeading
-            sectionMainHeading="Poznaj historię naszych zwierząt"
-            sectionTitle="Z miłości"
+            sectionMainHeading="Poznaj historię moich zwierząt"
+            sectionTitle="Moje zwierzęta"
             className="mb-[64px]"
           />
           <Swiper
@@ -21,7 +21,7 @@ export const PetGallery = () => {
             breakpoints={{
               320: { slidesPerView: 1.5, spaceBetween: 20 },
               835: { slidesPerView: 3.5, spaceBetween: 20 },
-              1440: { slidesPerView: 5, spaceBetween: 40 },
+              1440: { slidesPerView: 4.3, spaceBetween: 40 },
             }}
           >
             {petsData.map((pet, index) => (

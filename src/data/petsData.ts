@@ -45,7 +45,7 @@ export const petsData: PetProps[] = [
     name: "dzeki",
     declension: "dżekim",
     description:
-      "Dżeki jest moim drugim psem jakiego miałam. Przyszedł na świat w lutym 2000 roku, jest synem Nuki. Nuka była także pieskiem po przejścach, zabrana od właściciela przez innego Pana, który nam ją dał. U nas dożyła spokojnej starości.Dżeki jest zwykłym, kochanym kundelkiem. Kocha naszą rodzinę i nie wyobraża sobie życia bez nas.Każdy, kto przyjdzie do salonu, może spotkać staruszka. Nie stanowi zagrożenia, jest przyjznie nastawiony i niezwykle cierpliwy do innych czworonogów. Swego czasu przyjaźnił się z królikem, pilnował go i nigdy nie zrobił mu krzywdy. 31 października 2014 r. z żalem pożegnaliśmy Dżekiego, który odszedł za `Tęczowy Most`.",
+      "Dżeki jest moim drugim psem jakiego miałam. Przyszedł na świat w lutym 2000 roku, jest synem Nuki. Nuka była także pieskiem po przejścach, zabrana od właściciela przez innego Pana, który nam ją dał. U nas dożyła spokojnej starości. Dżeki jest zwykłym, kochanym kundelkiem. Kocha naszą rodzinę i nie wyobraża sobie życia bez nas. Każdy, kto przyjdzie do salonu, może spotkać staruszka. Nie stanowi zagrożenia, jest przyjznie nastawiony i niezwykle cierpliwy do innych czworonogów. Swego czasu przyjaźnił się z królikem, pilnował go i nigdy nie zrobił mu krzywdy. 31 października 2014 r. z żalem pożegnaliśmy Dżekiego, który odszedł za `Tęczowy Most`.",
     gender: "male",
     images: [
       "/images/fromLove/dzeki/dzeki01.jpg",
@@ -60,7 +60,7 @@ export const petsData: PetProps[] = [
     name: "forest",
     declension: "foreście",
     description:
-      "W maju 2012r, jadąc do Opola drogą przez las, znalazłam przywiązanego do drzewa psa. Wyglądał strasznie, nie można było odnaleźć jego łap ani ogona w kołtunach, które miał na sobie. Dwie godziny trwało zanim zaczął wyglądać jak pies. Pod grubą kopułą błota i sierści, był ukryty radosny około roczny mix Yorka. Jego radość i entuzjazm w każdym wzbudzały ciepłe uczucia. Za ciepły kąt i pełną miskę odwdzięczył się posłuszeństwem i miłością. Szybko się uczył i korzystał z każdej chwili. Niestety jego radość nie trwała długo, bardzo szybko odszedł do psiego nieba. Przypuszczam, że w jego główce był guz, który spowodował szybką śmierć. Brakuje mi jego błysku w oczach i merdającego ogona, ale cieszę się że ostatnie dni życia spędził jako szczęśliwy, kochany psiak.",
+      "W maju 2012r, jadąc do Opola drogą przez las, znalazłam przywiązanego do drzewa psa. Wyglądał strasznie, nie można było odnaleźć jego łap ani ogona w kołtunach, które miał na sobie. Dwie godziny trwało, zanim zaczął wyglądać jak pies. Pod grubą kopułą błota i sierści, był ukryty radosny około roczny mix Yorka. Jego radość i entuzjazm w każdym wzbudzały ciepłe uczucia. Za ciepły kąt i pełną miskę odwdzięczył się posłuszeństwem i miłością. Szybko się uczył i korzystał z każdej chwili. Niestety, jego radość nie trwała długo, bardzo szybko odszedł do psiego nieba. Przypuszczam, że w jego główce był guz, który spowodował szybką śmierć. Brakuje mi jego błysku w oczach i merdającego ogona, ale cieszę się że ostatnie dni życia spędził jako szczęśliwy, kochany psiak.",
     gender: "male",
     images: [
       "/images/fromLove/forest/forest01.jpg",
@@ -78,7 +78,7 @@ export const petsData: PetProps[] = [
     name: "lizi",
     declension: "lizi",
     description:
-      "W 2009 roku odbywałam staż w Miejskim Schronisku dla Bezdomnych Zwierząt w Opolu i właśnie wtedy przyniosłam trzy miesięczną labradorkę, do brata. Czułam, że tam jest jej miejsce, ona także to wiedziała i od razu zdobyła serce całej rodziny. Lizi niesamowicie kocha ludzi, a zwłaszcza dzieci. Uwielbia wodę, długie spacery i gre w piłkę. Nie znam drugiego tak radosnego psa. Ten psiak zajmuje szczególne miejsce w moim sercu. Cieszę się, że mogłam obdarzyć ją tak kochającym domem. Lizi doskonale nadaje się do Spoondoga, napewno wykorzystam jej cudowny charakter.",
+      "W 2009 roku odbywałam staż w Miejskim Schronisku dla Bezdomnych Zwierząt w Opolu i właśnie wtedy przyniosłam trzy miesięczną labradorkę, do brata. Czułam, że tam jest jej miejsce, ona także to wiedziała i od razu zdobyła serce całej rodziny. Lizi niesamowicie kocha ludzi, a zwłaszcza dzieci. Uwielbia wodę, długie spacery i grę w piłkę. Nie znam drugiego tak radosnego psa. Ten psiak zajmuje szczególne miejsce w moim sercu. Cieszę się, że mogłam obdarzyć ją tak kochającym domem. Lizi doskonale nadaje się do Blue Dog, na pewno wykorzystam jej cudowny charakter.",
     gender: "female",
     images: [
       "/images/fromLove/lizi/lizi01.jpg",
@@ -122,7 +122,7 @@ export const petsData: PetProps[] = [
     name: "rozalia",
     declension: "rozalii",
     description:
-      "W październiku 2010r adoptowaliśmy ze schroniska przestraszoną i wychudzoną kotkę, która miała problem z oczami. Na początku bała się ludzi i innych zwierząt, teraz jest pieszczochem uwielbijącym ludzi. Rozalia nie boi się psów, dzięki czemu moi czworonożni klienci mogą ją powąchać i przywitać się. Czasami się zastanawiam jak to jest możliwe (ona chyba myśli, że jest psem). Nawet adoptowany kot potrafi się odwdzięczyć i kochać bezgranicznie.",
+      "W październiku 2010 roku adoptowaliśmy ze schroniska przestraszoną i wychudzoną kotkę, która miała problem z oczami. Na początku bała się ludzi i innych zwierząt, teraz jest pieszczochem uwielbijącym ludzi. Rozalia nie boi się psów, dzięki czemu moi czworonożni klienci mogą ją powąchać i przywitać się. Czasami się zastanawiam, jak to jest możliwe (ona chyba myśli, że jest psem). Nawet adoptowany kot potrafi się odwdzięczyć i kochać bezgranicznie.",
     gender: "female",
     images: [
       "/images/fromLove/rozalia/rozalia01.jpg",
@@ -147,29 +147,39 @@ export const petsData: PetProps[] = [
     name: "tola",
     declension: "toli",
     description:
-      "Po stracie Diany zrobiło się bardzo smutno i pusto, konieczne więc było zapełnić tą pustkę w sercu nowym domownikiem. Na początku czerwca przyjechała do Nas porzucona sierotka, znaleziona w centrum Warszawy - Tola, która jest jak duże psie dziecko. Tola i mój synek Julek będą dorastać razem i od samego początku łączy ich niesamowita przyjaźń. Wszystko robią razem.",
+      "Po stracie Diany zrobiło się bardzo smutno i pusto, konieczne więc było zapełnić tą pustkę w sercu nowym domownikiem. Na początku czerwca przyjechała do Nas porzucona sierotka znaleziona w centrum Warszawy - Tola, która jest jak duże psie dziecko. Tola i mój synek Julek będą dorastać razem i od samego początku łączy ich niesamowita przyjaźń. Wszystko robią razem.",
     gender: "female",
     images: [
       "/images/fromLove/tola/tola01.jpg",
       "/images/fromLove/tola/tola02.jpg",
       "/images/fromLove/tola/tola03.jpg",
+      "/images/fromLove/tola/tola04.jpg",
       "/images/fromLove/tola/tola05.jpg",
       "/images/fromLove/tola/tola06.jpg",
       "/images/fromLove/tola/tola07.jpg",
       "/images/fromLove/tola/tola08.jpg",
       "/images/fromLove/tola/tola09.jpg",
+      "/images/fromLove/tola/tola10.jpg",
       "/images/fromLove/tola/tola11.jpg",
       "/images/fromLove/tola/tola12.jpg",
       "/images/fromLove/tola/tola13.jpg",
+      "/images/fromLove/tola/tola14.jpg",
       "/images/fromLove/tola/tola15.jpg",
+      "/images/fromLove/tola/tola16.jpg",
+      "/images/fromLove/tola/tola17.jpg",
+      "/images/fromLove/tola/tola18.jpg",
+      "/images/fromLove/tola/tola19.jpg",
+      "/images/fromLove/tola/tola20.jpg",
+      "/images/fromLove/tola/tola21.jpg",
+      "/images/fromLove/tola/tola22.jpeg",
     ],
   },
   {
     name: "bestia",
     declension: "bestii",
     description:
-      "Nasz kotek, znaleziony na placu budowy, jest z nami od kwietnia 2017 roku. Bestia jest wysterylizowany, a w domu – niekwestionowany przywódca, którego słuchają się wszystkie psy.",
-    gender: "male",
+      "Nasza kotka, znaleziona na placu budowy, jest z nami od kwietnia 2017 roku. Bestia jest wysterylizowana, a w domu – niekwestionowana przywódczyni, której słuchają się wszystkie psy.",
+    gender: "female",
     images: [
       "/images/fromLove/bestia/bestia01.jpg",
       "/images/fromLove/bestia/bestia02.jpg",

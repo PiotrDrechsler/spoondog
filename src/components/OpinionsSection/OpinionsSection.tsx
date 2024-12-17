@@ -13,7 +13,7 @@ export const OpinionsSection = () => {
           <SectionHeading
             sectionTitle="Strona główna / Opinie"
             sectionMainHeading="Dołącz do grona zadowolonych klientów!"
-            sectionInfo="Przykładowe recenzje naszych usług"
+            sectionInfo="Przykładowe recenzje moich usług"
             variant="opinions-section"
           />
           <div className="absolute right-0 top-10">

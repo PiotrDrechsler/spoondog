@@ -35,7 +35,7 @@ export const Prices = () => {
                 Cennik
               </h1>
               <p className="text-center text-[14px] leading-[1.5] desktop:text-[28px] desktop:leading-[1.75]">
-                Sprawdź ceny naszych usług
+                Sprawdź ceny moich usług
               </p>
             </div>
             <div className="relative flex items-center justify-center">

@@ -45,7 +45,7 @@ export const activeboxes: ClickOnMeActiveBoxes[] = [
     id: 4,
     title: "Usługi fryzjerskie",
     description:
-      "Czesanie, rozczesywanie, strzyżenie i trymowanie to nasze zabiegi podstawowe, wykonywane w ramach dbania o zdrowie, komfort i dobre samopoczucie Twojego czworonoga.",
+      "Czesanie, rozczesywanie, strzyżenie i trymowanie to zabiegi podstawowe, wykonywane w ramach dbania o zdrowie, komfort i dobre samopoczucie Twojego czworonoga.",
     position: { left: "57.6px", top: "383px" },
     positionLine: { left: "32px", top: "-35px" },
     positionInfoBox: { left: "240px", top: "-66px" },
