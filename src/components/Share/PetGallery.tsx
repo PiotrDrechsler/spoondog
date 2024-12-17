@@ -21,7 +21,7 @@ export const PetGallery = () => {
             breakpoints={{
               320: { slidesPerView: 1.5, spaceBetween: 20 },
               835: { slidesPerView: 3.5, spaceBetween: 20 },
-              1440: { slidesPerView: 5, spaceBetween: 40 },
+              1440: { slidesPerView: 4.3, spaceBetween: 40 },
             }}
           >
             {petsData.map((pet, index) => (

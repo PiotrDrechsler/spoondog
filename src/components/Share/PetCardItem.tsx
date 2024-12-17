@@ -52,7 +52,7 @@ export const PetCardItem: React.FC<PetProps & { href: string }> = ({
       <Button
         content="Poznaj historię"
         href={href}
-        className="py-3 desktop:py-3"
+        className="py-3"
         aria-label={`Idź do strony z historią zwierzaka ${name}`}
       />
     </div>
