@@ -4,7 +4,7 @@ export const SwiperGalleryTitle = () => (
   <SectionHeading
     sectionTitle="O nas / Galeria"
     sectionMainHeading="Galeria"
-    sectionInfo="Zobacz efekty naszej pracy"
+    sectionInfo="Zobacz efekty mojej pracy"
     className="mb-[40px] desktop:mb-[64px]"
   />
 );

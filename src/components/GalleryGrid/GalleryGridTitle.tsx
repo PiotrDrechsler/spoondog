@@ -5,7 +5,7 @@ export const GalleryGridTitle = () => {
         O nas // Galeria zdjęć
       </p>
       <h1 className="text-center text-24 font-medium leading-[1.2] tracking-[-0.02em] desktop:text-44 desktop:font-bold">
-        Zobacz galerię naszych zdjęć
+        Zobacz galerię zdjęć
       </h1>
     </div>
   );
