@@ -10,7 +10,7 @@ export const PetGallery = () => {
       <Container>
         <div className="py-[48px] tablet:py-0">
           <SectionHeading
-            sectionMainHeading="Poznaj historię naszych zwierząt"
+            sectionMainHeading="Poznaj historię moich zwierząt"
             sectionTitle="Z miłości"
             className="mb-[64px]"
           />
